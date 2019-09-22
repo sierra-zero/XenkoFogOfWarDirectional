@@ -1,0 +1,7 @@
+Goals:
+======
+1) Extremly easy to use.
+2) Efficient, runs faster than 3ms, perhaps ~2.75ms.
+3) Uses directional line of sight.
+4) Uses a tile base system.
+5) Renders smoothly with fade-in/fade-out.
