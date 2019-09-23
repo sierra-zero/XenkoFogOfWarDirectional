@@ -1,0 +1,15 @@
+!Model
+Id: 99bc9bfb-70e2-4dec-af66-ac20289848b2
+SerializedVersion: {Xenko: 2.0.0.0}
+Tags: []
+Source: !file naturePack_124.obj
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    d10e7cc303c90b4f0c5fc7387f0c3123:
+        Name: Wood
+        MaterialInstance:
+            Material: a8cf9e2f-95df-41ed-a387-5e2dd77880e7:Models/Wood
+Modifiers: {}
+~SourceHashes:
+    30c4174a293b9697c83cedbbc54c0571~naturePack_124.obj: 15fca95cafd5dec772ed6fe8859de8c0

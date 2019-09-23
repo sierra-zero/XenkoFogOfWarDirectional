@@ -1,0 +1,19 @@
+!Model
+Id: f1bda728-3d2a-4082-a7f7-77c1aa8323e1
+SerializedVersion: {Xenko: 2.0.0.0}
+Tags: []
+Source: !file naturePack_126.obj
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    e384f0c2ab303b008936a45650b3e904:
+        Name: Wood
+        MaterialInstance:
+            Material: a8cf9e2f-95df-41ed-a387-5e2dd77880e7:Models/Wood
+    1143c88196aa6a86ef8332574d9cd455:
+        Name: Water
+        MaterialInstance:
+            Material: 4908cf0e-87a5-497b-bb15-bd4409fbd2ab:Models/Water
+Modifiers: {}
+~SourceHashes:
+    bd7c1c72a05fc3b8d371188ab0d3e019~naturePack_126.obj: ac53ea2854b92e3b14dae63897f3faf1

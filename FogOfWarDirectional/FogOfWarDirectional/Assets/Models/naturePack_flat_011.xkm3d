@@ -1,0 +1,19 @@
+!Model
+Id: eb69db11-a638-414e-b82a-e5bac1dea047
+SerializedVersion: {Xenko: 2.0.0.0}
+Tags: []
+Source: !file naturePack_flat_011.obj
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    82d3e7236486edd829fd2f6ed9d08ccd:
+        Name: Green_leafs
+        MaterialInstance:
+            Material: 526ebac3-f4b0-407e-bed7-8ef6eabe2137:Models/Green_leafs
+    ccfe154c0e587803d01ad7ffa3c9d2a1:
+        Name: Mushroom_Red
+        MaterialInstance:
+            Material: 4c5671f5-9e04-4094-80e5-2f433102c170:Models/Mushroom_Red
+Modifiers: {}
+~SourceHashes:
+    0450a010fb4424992c1e37c2ba4939e7~naturePack_flat_011.obj: 44477404d90d4bde0227af5c98a5d55c

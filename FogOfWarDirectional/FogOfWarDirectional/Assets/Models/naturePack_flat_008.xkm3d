@@ -1,0 +1,19 @@
+!Model
+Id: 8626a6e3-dda4-4c0b-9755-ba18a03fdcf8
+SerializedVersion: {Xenko: 2.0.0.0}
+Tags: []
+Source: !file naturePack_flat_008.obj
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    dcc6cb2261fa370f9723ff74fd35fbbe:
+        Name: Green_leafs
+        MaterialInstance:
+            Material: 526ebac3-f4b0-407e-bed7-8ef6eabe2137:Models/Green_leafs
+    fe4deb20c0574c34a981221c8c1f1e4e:
+        Name: Water
+        MaterialInstance:
+            Material: 4908cf0e-87a5-497b-bb15-bd4409fbd2ab:Models/Water
+Modifiers: {}
+~SourceHashes:
+    dd7309b48cbc173612a3c45387a50345~naturePack_flat_008.obj: 6a2dc8fcf68c20829d41d342f2d546c4

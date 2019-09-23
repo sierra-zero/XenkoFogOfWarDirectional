@@ -1,0 +1,19 @@
+!Model
+Id: 9240d88a-1ab9-4616-bd8f-8413838161b9
+SerializedVersion: {Xenko: 2.0.0.0}
+Tags: []
+Source: !file naturePack_111.obj
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    75dc3e2519479c26e4eb96766d5ca952:
+        Name: FrontColor
+        MaterialInstance:
+            Material: 572a7b7a-da8d-4250-92be-e46da1a578e8:Models/FrontColor
+    aebc9be4f044223f29a842ace75f9980:
+        Name: Mushroom_Red
+        MaterialInstance:
+            Material: 4c5671f5-9e04-4094-80e5-2f433102c170:Models/Mushroom_Red
+Modifiers: {}
+~SourceHashes:
+    70bce670a9bc5ff9dc6a78e8e7f4b3e1~naturePack_111.obj: 139f3746ff69ffdd432724f0f82a0397

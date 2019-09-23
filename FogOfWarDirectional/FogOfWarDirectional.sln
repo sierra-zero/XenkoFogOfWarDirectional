@@ -1,0 +1,11 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 16
+VisualStudioVersion = 16.0.0.0
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FogOfWarDirectional.Windows", "FogOfWarDirectional.Windows\FogOfWarDirectional.Windows.csproj", "{A9153D37-4231-4DC4-B6B6-B3E0F4F98A58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FogOfWarDirectional", "FogOfWarDirectional\FogOfWarDirectional.csproj", "{EED4D51F-C7FD-44FC-AE23-7C1D77B6CDE7}"
+EndProject
+Global
+EndGlobal

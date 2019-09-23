@@ -1,0 +1,19 @@
+!Model
+Id: fba1ccd2-54ae-4ce4-9c08-e761eeeacb27
+SerializedVersion: {Xenko: 2.0.0.0}
+Tags: []
+Source: !file naturePack_119.obj
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    f08868eabf81d74d4b98e7fc9d8095b0:
+        Name: Wood
+        MaterialInstance:
+            Material: a8cf9e2f-95df-41ed-a387-5e2dd77880e7:Models/Wood
+    ec943f56a0d2b7623c1a5e5888f80e92:
+        Name: Leafs
+        MaterialInstance:
+            Material: 526ebac3-f4b0-407e-bed7-8ef6eabe2137:Models/Green_leafs
+Modifiers: {}
+~SourceHashes:
+    5ee2c15bf898510c86e736b3a9502354~naturePack_119.obj: 58e47d8640275de324ae8db3e5d706c2

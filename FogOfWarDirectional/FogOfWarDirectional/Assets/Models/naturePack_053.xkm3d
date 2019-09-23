@@ -1,0 +1,15 @@
+!Model
+Id: b64ed701-d08e-44c1-adba-a8aca663066d
+SerializedVersion: {Xenko: 2.0.0.0}
+Tags: []
+Source: !file naturePack_053.obj
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    c6ee7f3c5147761964004ad8ca9b6bf4:
+        Name: Leafs
+        MaterialInstance:
+            Material: 6b9a0a2e-8dde-403f-b0b6-63b3097f25ba:Models/Leafs
+Modifiers: {}
+~SourceHashes:
+    32c74763f67fd9cf3715c06ace066704~naturePack_053.obj: 63d6f7f3aa98cc7471183db022ba356a

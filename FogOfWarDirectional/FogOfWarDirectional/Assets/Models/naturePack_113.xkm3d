@@ -1,0 +1,19 @@
+!Model
+Id: d4e66b00-286a-49eb-8af7-f5d752872295
+SerializedVersion: {Xenko: 2.0.0.0}
+Tags: []
+Source: !file naturePack_113.obj
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    b03b2127179cd2c3b1fe9886a11106d0:
+        Name: Wood
+        MaterialInstance:
+            Material: a8cf9e2f-95df-41ed-a387-5e2dd77880e7:Models/Wood
+    0cf99dee388f2398a756f0eaecd81c12:
+        Name: FrontColor
+        MaterialInstance:
+            Material: 572a7b7a-da8d-4250-92be-e46da1a578e8:Models/FrontColor
+Modifiers: {}
+~SourceHashes:
+    58f5bacdb4f366052676af30a971d208~naturePack_113.obj: 4d49fc4da3e7a161485212fa68853d1c

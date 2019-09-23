@@ -1,0 +1,15 @@
+!Model
+Id: fa518cce-f121-4eca-940a-1287f324c03d
+SerializedVersion: {Xenko: 2.0.0.0}
+Tags: []
+Source: !file naturePack_131.obj
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    9eda9cb83220323dde61625a9eddde99:
+        Name: Stone
+        MaterialInstance:
+            Material: f0fda214-9f7d-46e7-8a36-95d7c6dd5e98:Models/Stone
+Modifiers: {}
+~SourceHashes:
+    33514e34eb15889552b6b248dc6ff5aa~naturePack_131.obj: 3e4f5774c54abfa64f9e14ce17491d8f

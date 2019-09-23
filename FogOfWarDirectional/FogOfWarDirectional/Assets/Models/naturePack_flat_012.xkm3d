@@ -1,0 +1,15 @@
+!Model
+Id: 50d2e0a1-bbef-4e81-bf36-da73d845cbbc
+SerializedVersion: {Xenko: 2.0.0.0}
+Tags: []
+Source: !file naturePack_flat_012.obj
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    c03ddb870b54cee55e1ad287f68a2a57:
+        Name: Green_leafs
+        MaterialInstance:
+            Material: 526ebac3-f4b0-407e-bed7-8ef6eabe2137:Models/Green_leafs
+Modifiers: {}
+~SourceHashes:
+    6d0a94557ec3b23af1590d8c2a0071d6~naturePack_flat_012.obj: 77a97e8ba926c02210eb73ac79edcf20

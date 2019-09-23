@@ -1,0 +1,116 @@
+!SceneAsset
+Id: 7bd0b86e-cf30-4796-a4ee-4b8598295248
+SerializedVersion: {Xenko: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! f940eb20-0ddb-4c26-a9ce-0ef4c9ea5b5c
+        - ref!! 1c7f48b5-459d-4a1a-8f12-484809600e58
+        - ref!! fd142ba2-58a5-4ffb-9de5-1d17ea81fdf3
+        - ref!! 56d95ef9-76cc-4fb7-b968-5f4101f06ff2
+    Parts:
+        -   Entity:
+                Id: 1c7f48b5-459d-4a1a-8f12-484809600e58
+                Name: Ambient light
+                Components:
+                    9684689abbd814a7aa3fa3e54b2b913e: !TransformComponent
+                        Id: 199c1a27-5a5f-4973-a3aa-0847494eded0
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    3d741788ca7ad29c0570293cfe14e92f: !LightComponent
+                        Id: 5910fb35-4503-4a76-b433-55014241e0f4
+                        Type: !LightAmbient
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                        Intensity: 0.5
+        -   Entity:
+                Id: 56d95ef9-76cc-4fb7-b968-5f4101f06ff2
+                Name: FogOfWar
+                Components:
+                    765691148d704282b6fe13d0d8df98fc: !TransformComponent
+                        Id: e2d63c86-9b27-49c6-80ad-8633b672aac4
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0a1428cedd1a19e8e9f2329173caca4f: ref!! 0ca7cb99-e600-4124-aadf-f3947a09c474
+        -   Entity:
+                Id: c776b317-5764-45e9-9dd7-a2035433292b
+                Name: Perspective
+                Components:
+                    4e9c1ba57953d5b0bb21c1856a7ad2ef: !TransformComponent
+                        Id: 0ca7cb99-e600-4124-aadf-f3947a09c474
+                        Position: {X: 0.0, Y: 150.0, Z: 70.0}
+                        Rotation: {X: -0.537299633, Y: 0.0, Z: 0.0, W: 0.8433914}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    f9ef6de60e4174118b7e4d9d7deb716d: !CameraComponent
+                        Id: 235bfe47-f46b-496d-86fd-503890f7b1c8
+                        Name: Perspective
+                        Projection: Perspective
+                        VerticalFieldOfView: 8.0
+                        FarClipPlane: 225.0
+                        Slot: 54fb6c31-cfe7-4374-9ce0-0d5d2027016a
+                    15ac40765a303e143c369b709d51b7eb: !FogOfWarDirectional.BasicCameraController,FogOfWarDirectional
+                        Id: 67980669-7fa5-4dd3-b946-249126abd255
+                        Gamepad: false
+                        KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
+                        TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
+                        SpeedFactor: 5.0
+                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
+                        MouseRotationSpeed: {X: 1.0, Y: 1.0}
+                        TouchRotationSpeed: {X: 1.0, Y: 0.7}
+        -   Entity:
+                Id: ce52090c-5fe6-49f8-b420-e3d1355e2186
+                Name: Ground
+                Components:
+                    1b6350068dd0faa315c01b2fae1842ae: !TransformComponent
+                        Id: fd820e72-9ddf-4930-b21f-2a73db2ed887
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    81a190d7308c5880624dead0b4c67d71: !ModelComponent
+                        Id: bd54fa2a-a26f-4f31-a946-8e6006c00a0b
+                        Model: 63cc7a21-3406-4e73-8109-838d9855f3f5:Models/Ground
+                        Materials: {}
+        -   Entity:
+                Id: f940eb20-0ddb-4c26-a9ce-0ef4c9ea5b5c
+                Name: Directional light
+                Components:
+                    7eb328c0d2eb1488418191bc8cb7facb: !TransformComponent
+                        Id: a8064bcd-5f2e-4747-a463-7042288c36c5
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: -0.13885051, Y: -0.8459572, Z: -0.440377474, W: 0.266729325}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    8f4e43c310bc24bda35e151944ad173e: !LightComponent
+                        Id: 0eee50a9-389b-4743-80fb-d90d2af17d85
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 0.9882353, B: 0.847058833}
+                            Shadow:
+                                Enabled: true
+                                Filter: !LightShadowMapFilterTypePcf
+                                    FilterSize: Filter5x5
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 1.5
+        -   Entity:
+                Id: fd142ba2-58a5-4ffb-9de5-1d17ea81fdf3
+                Name: Arena
+                Components:
+                    d1d27e800943dd0fe271c8210e130287: !TransformComponent
+                        Id: e626a103-6922-42bd-8569-f0a8974edcbc
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            53409288eba4f748f96029745b688e5e: ref!! fd820e72-9ddf-4930-b21f-2a73db2ed887
