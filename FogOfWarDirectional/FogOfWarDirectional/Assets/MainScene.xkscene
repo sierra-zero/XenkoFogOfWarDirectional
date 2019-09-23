@@ -12,6 +12,16 @@ Hierarchy:
         - ref!! 56d95ef9-76cc-4fb7-b968-5f4101f06ff2
     Parts:
         -   Entity:
+                Id: 0660e4ef-6cf0-4b78-af0f-4103da495cb5
+                Name: TileSpace
+                Components:
+                    a52aad72442f85422af24fe81eedf853: !TransformComponent
+                        Id: bd249357-2709-4a82-9327-0f5b57941f14
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+        -   Entity:
                 Id: 1c7f48b5-459d-4a1a-8f12-484809600e58
                 Name: Ambient light
                 Components:
@@ -38,6 +48,7 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             0a1428cedd1a19e8e9f2329173caca4f: ref!! 0ca7cb99-e600-4124-aadf-f3947a09c474
+                            c10cd0c6ad9082941605fb6aa1e422a6: ref!! bd249357-2709-4a82-9327-0f5b57941f14
         -   Entity:
                 Id: c776b317-5764-45e9-9dd7-a2035433292b
                 Name: Perspective
