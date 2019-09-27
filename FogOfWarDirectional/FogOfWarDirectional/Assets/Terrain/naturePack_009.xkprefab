@@ -1,0 +1,34 @@
+!PrefabAsset
+Id: 1e023559-53e5-4284-85d4-6ea8734ee8b9
+SerializedVersion: {Xenko: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! fe05529b-4879-4fad-9459-b0d21e515417
+    Parts:
+        -   Entity:
+                Id: fe05529b-4879-4fad-9459-b0d21e515417
+                Name: naturePack_009
+                Components:
+                    f7506df7bdc50d6c7759b96ab7945cbb: !TransformComponent
+                        Id: 456e4a15-beec-485c-adbf-12ca0090ea9b
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Children: {}
+                    dfaf768b093d4f6b7c6cc3f3ecdf32d4: !ModelComponent
+                        Id: 2ff13fe4-47cf-4d4c-8772-3bcf782d3504
+                        Model: fe51c1b2-3794-49c1-b372-427336586731:Models/naturePack_009
+                        Materials: {}
+                    14fd6cec745e32fcb6605339371bcffd: !StaticColliderComponent
+                        Id: 55d37b18-ece3-44e8-8264-334c6acb432f
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            e5ea3bff3d37b2e13b3cf79d7b86a9cd: !ColliderShapeAssetDesc
+                                Shape: 7286cbca-d7ab-4813-821f-4369b677a9fc:Models/naturePack_009_hull

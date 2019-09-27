@@ -1,13 +1,16 @@
 Goals:
-======
+==================================================================
+==================================================================
+==================================================================
 1) Extremly easy to use.
 2) Efficient, runs faster than 3ms, perhaps ~2.75ms.
 3) Uses directional line of sight.
 4) Uses a tile base system.
 5) Renders smoothly with fade-in/fade-out.
-
-
-=================
+==================================================================
+==================================================================
+==================================================================
+==================================================================
 1) Generate prefabs from map items for terrain (hull colliders).
 2) Create a sample map to walk around with various obstructions and corners.
 3) Create a player controller and import the mech model (the mech walking).
