@@ -3,7 +3,7 @@ Id: 63cc7a21-3406-4e73-8109-838d9855f3f5
 SerializedVersion: {Xenko: 2.0.0.0}
 Tags: []
 Type: !PlaneProceduralModel
-    Size: {X: 60.0, Y: 60.0}
+    Size: {X: 24.5, Y: 24.0}
     Tessellation: {X: 1, Y: 1}
     Scale: {X: 1.0, Y: 1.0, Z: 1.0}
     UvScale: {X: 1.0, Y: 1.0}

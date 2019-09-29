@@ -9,7 +9,7 @@ Hierarchy:
         - ref!! f940eb20-0ddb-4c26-a9ce-0ef4c9ea5b5c
         - ref!! 1c7f48b5-459d-4a1a-8f12-484809600e58
         - ref!! fd142ba2-58a5-4ffb-9de5-1d17ea81fdf3
-        - ref!! 56d95ef9-76cc-4fb7-b968-5f4101f06ff2
+        - ref!! bf7309ed-035b-4b66-a75a-7d632ca5cbb4
     Parts:
         -   Entity:
                 Id: 0158ebff-1a9c-4991-a71f-dcc18daf31eb
@@ -19,7 +19,7 @@ Hierarchy:
                         Id: 272eb736-3bbb-4aa2-8804-c3040a3c2f4c
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 472d6d0c-8c05-4a77-83f6-eb85909f22c1
@@ -49,7 +49,7 @@ Hierarchy:
                         Id: e7027d96-fe7b-4403-bc1b-92c9804c3ab3
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: f775d63f-40cd-4ff9-becd-6ec2e7120369
@@ -79,7 +79,7 @@ Hierarchy:
                         Id: aae6b601-ec8f-4be5-b5f5-9ca0f8f5c6f9
                         Position*: {X: -0.8566747, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: e945c092-a952-410d-beeb-71034a4b4de2
@@ -171,23 +171,12 @@ Hierarchy:
                         Children:
                             e6e2742ffa7331c87e73c84e6c4b7f3a: ref!! b7ca5f42-fffc-4b20-8170-d4ccc64f44fd
         -   Entity:
-                Id: 14bdf5f2-252c-40e4-8cd0-d59cf65a10b3
-                Name: naturePack_008
-                Components:
-                    faef9f5edd2be911409020c7474add69: !TransformComponent
-                        Id: 0924a356-af8d-4663-8b63-f62b718db000
-                        Position: {X: 7.168213, Y: 0.0, Z: -26.5601158}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            e60203a0773c60c310afdac2a56371ac: ref!! 9a62e318-4e86-4833-8fac-f1857bb68d2c
-        -   Entity:
                 Id: 1645f646-e6c6-44de-abce-c751d366047e
                 Name: naturePack_014
                 Components:
                     1479cbdffb5d3abdb54d28464b9bcd67: !TransformComponent
                         Id: 29c4522c-3f7e-46b1-b7b5-0a8933cc6c24
-                        Position: {X: 23.2171631, Y: 0.0, Z: -33.20055}
+                        Position: {X: 13.20656, Y: 0.0, Z: -15.6565456}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -207,7 +196,7 @@ Hierarchy:
                         Type: !LightAmbient
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
-                        Intensity: 0.5
+                        Intensity: 0.25
         -   Folder: null
             Entity:
                 Id: 1d12385f-559f-444f-8e95-91bfe25cac5e
@@ -228,7 +217,7 @@ Hierarchy:
                         Id: 82399652-fbde-4119-a309-68b7dca45db8
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 17027224-c5ba-41f9-a4d8-ea34afcfd244
@@ -258,7 +247,7 @@ Hierarchy:
                         Id: 2ed825b2-6087-43f5-91fd-46c78c4ee14f
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: f9d11d62-bb70-4820-b762-758cdbc17894
@@ -300,7 +289,7 @@ Hierarchy:
                         Id: 4007238f-e7a4-44e9-a021-549a0b7e5e6f
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: ea5af38f-13d4-4b71-bea6-1f3655b8e5ca
@@ -330,7 +319,7 @@ Hierarchy:
                         Id: fd73b5b0-77fa-4dc5-b994-5c2b5f37c96f
                         Position*: {X: 0.1802502, Y: 0.0, Z: -0.8303653}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 43a45126-ebdf-490c-ba23-4255b0c81d1e
@@ -360,7 +349,7 @@ Hierarchy:
                         Id: f8744d4a-3a88-4ec3-b244-aedf6808f53c
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: b9b615db-f821-4dad-bef7-0b6ea8082900
@@ -390,7 +379,7 @@ Hierarchy:
                         Id: be749883-f871-4f67-8bda-a3ac71d2bd36
                         Position*: {X: 0.177999988, Y: 0.0, Z: -0.7221207}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: e52f3295-0590-4739-9d83-360ee2c6f19d
@@ -420,7 +409,7 @@ Hierarchy:
                         Id: 9c93f659-a3db-4991-854b-0e0eabcd5fb9
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 4d08f854-1362-4fc4-adc0-cea5639d9af0
@@ -467,36 +456,6 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! cd45cca5-6d1a-40f0-b602-dd2751f78526
         -   Entity:
-                Id: 42038efe-753a-4e2e-adc0-f386d4f57955
-                Name: naturePack_009
-                Components:
-                    f7506df7bdc50d6c7759b96ab7945cbb: !TransformComponent
-                        Id: 9ead2ce2-651e-43f1-ad74-16f21b717751
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
-                        Children: {}
-                    dfaf768b093d4f6b7c6cc3f3ecdf32d4: !ModelComponent
-                        Id: e0ae8faa-ef9e-415d-b3ab-a28d802d5220
-                        Model: fe51c1b2-3794-49c1-b372-427336586731:Models/naturePack_009
-                        Materials: {}
-                    14fd6cec745e32fcb6605339371bcffd: !StaticColliderComponent
-                        Id: 58a7ce35-257e-4958-8267-1d2ff65d5668
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        IsTrigger: false
-                        ColliderShapes:
-                            e5ea3bff3d37b2e13b3cf79d7b86a9cd: !ColliderShapeAssetDesc
-                                Shape: 7286cbca-d7ab-4813-821f-4369b677a9fc:Models/naturePack_009_hull
-            Base:
-                BasePartAsset: 1e023559-53e5-4284-85d4-6ea8734ee8b9:Terrain/naturePack_009
-                BasePartId: fe05529b-4879-4fad-9459-b0d21e515417
-                InstanceId: 118293b4-af10-4df7-9bba-7adfd726f549
-        -   Entity:
                 Id: 4361c51d-d685-4b97-972a-5129313ef128
                 Name: naturePack_011
                 Components:
@@ -504,7 +463,7 @@ Hierarchy:
                         Id: b7ca5f42-fffc-4b20-8170-d4ccc64f44fd
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 4.0, Y: 4.0, Z: 4.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     f7c70c3b8f89523c049a5d7802f09c57: !ModelComponent
                         Id: 099733c8-1ce7-4797-b400-9dcf43fb9a13
@@ -546,7 +505,7 @@ Hierarchy:
                         Id: 02708d1b-8939-4e85-898c-8e1f21e064d6
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 05265827-311e-42c5-96eb-b1d7317c34eb
@@ -599,7 +558,7 @@ Hierarchy:
                         Id: cd45cca5-6d1a-40f0-b602-dd2751f78526
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: a5b8d501-f803-4e94-821f-328ae84e0c47
@@ -640,7 +599,7 @@ Hierarchy:
                         Id: 0132ea99-2fb5-46a4-aa3c-1a040dab9306
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: a9001e85-7c40-460e-8817-52e5a13fae33
@@ -670,7 +629,7 @@ Hierarchy:
                         Id: 0df9f92a-0b3b-4ff7-9095-f078230ea80b
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 9367da16-5523-46c9-a771-b2ab615beb3d
@@ -698,7 +657,7 @@ Hierarchy:
                 Components:
                     765691148d704282b6fe13d0d8df98fc: !TransformComponent
                         Id: e2d63c86-9b27-49c6-80ad-8633b672aac4
-                        Position: {X: 8.0, Y: 0.0, Z: 1.0}
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -712,7 +671,7 @@ Hierarchy:
                         Id: f7ce6e42-43b1-49c1-9e11-1fc3daebb748
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 59f55b60-bbb7-43df-b940-da5e05ac0b7e
@@ -766,7 +725,7 @@ Hierarchy:
                         Id: e3d97e1a-cb33-40ce-925d-83742d59bb3b
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: a7bea6be-3145-403e-a271-4d42c3e92d14
@@ -796,7 +755,7 @@ Hierarchy:
                         Id: 50ea3dcc-095a-4171-9c6d-8c01f8943f2b
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 4.0, Y: 4.0, Z: 4.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     71b42da6f642bf922fa6568af5c6a555: !ModelComponent
                         Id: 6e4e0a8f-46db-40aa-8b51-abcb5a6e9eba
@@ -826,7 +785,7 @@ Hierarchy:
                         Id: ea9a0a82-cdb5-4054-bc72-27e9e86b731f
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 8a9b38c8-6078-4fdf-9ea6-2a8b9850517c
@@ -856,7 +815,7 @@ Hierarchy:
                         Id: 730e16e9-ea0d-4ffa-bc26-6fc7f911e090
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 836dc186-c3f0-4616-86e1-ce765447c66a
@@ -886,7 +845,7 @@ Hierarchy:
                         Id: ddc0e71d-cc48-42ae-a0e0-04cf8b4fd6b1
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 8b5c21e6-30d4-46d5-a962-34b24cab1d6e
@@ -916,7 +875,7 @@ Hierarchy:
                         Id: 0da0a590-02e2-43dc-8479-af892ac6468f
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 8367b813-c896-4770-a0fc-6d7fda6b0f16
@@ -944,7 +903,7 @@ Hierarchy:
                 Components:
                     8206c58e7908b83b42f463ef24dce863: !TransformComponent
                         Id: e219dff5-a883-4b65-851a-e9122d4ef7f2
-                        Position: {X: 23.0, Y: 0.0, Z: -23.0}
+                        Position: {X: 23.5, Y: 0.0, Z: -24.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 2.0, Y: 2.0, Z: 2.0}
                         Children: {}
@@ -953,6 +912,19 @@ Hierarchy:
                         Model: 63cc7a21-3406-4e73-8109-838d9855f3f5:Models/Ground
                         Materials:
                             1303750f691de68dec99bbc595fff721~0: 6b9a0a2e-8dde-403f-b0b6-63b3097f25ba:Models/Leafs
+                    40bdcc08e9037245703fad4a37c148fd: !StaticColliderComponent
+                        Id: 7a997bbe-4dbb-4f7b-b196-451c4356cc1d
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            688c82a32cb3e2825f84d6d985d644f0: !StaticPlaneColliderShapeDesc
+                                Normal: {X: 0.0, Y: 1.0, Z: 0.0}
+                                Offset: 0.0
         -   Entity:
                 Id: 757c8b0e-8edd-4146-a012-213cf8bb2ffb
                 Name: naturePack_116
@@ -961,7 +933,7 @@ Hierarchy:
                         Id: 027fc299-c85c-4c5d-bc36-b2181fbac874
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: f08c3c7b-ad10-4769-ba2c-950943962799
@@ -983,17 +955,6 @@ Hierarchy:
                 BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
                 BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
                 InstanceId: bb4f0788-881b-4a6e-bb0d-140a096b521f
-        -   Entity:
-                Id: 7ba721dc-bcb6-4823-bff1-7d8761fe8153
-                Name: naturePack_008
-                Components:
-                    d0d87a1013161624ee046c5b7b8a6a37: !TransformComponent
-                        Id: f310b7e5-2ae9-4cf4-9022-b8e9608fc68f
-                        Position: {X: 37.13747, Y: 0.0, Z: -18.2429638}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            f84dbec567c7b612521f393c857ec33c: ref!! ab6d70f8-4466-4547-994e-a72ce1c42e24
         -   Folder: null
             Entity:
                 Id: 7dff1019-9439-40d2-8187-00dd2308f1ba
@@ -1031,17 +992,6 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! ad6a707e-db81-46e5-b632-6783a499cd41
         -   Entity:
-                Id: 84ec2ca8-9ac5-4a1d-a176-cdad4dbbfbdc
-                Name: naturePack_009
-                Components:
-                    1c60913153ab6c342abcdbf03c697627: !TransformComponent
-                        Id: e760a035-a358-4643-b6f9-5dfe01a726cf
-                        Position: {X: 21.9845123, Y: 0.0, Z: -21.4440289}
-                        Rotation: {X: 0.0, Y: 0.537299633, Z: 0.0, W: 0.8433914}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            7086d54695f11f6ea57852b7a04f5de2: ref!! fdd5d35b-576c-4025-8ca8-47f627d5a9c1
-        -   Entity:
                 Id: 86955806-b42e-465d-9355-308eafaa3f1f
                 Name: naturePack_116
                 Components:
@@ -1049,7 +999,7 @@ Hierarchy:
                         Id: ad6a707e-db81-46e5-b632-6783a499cd41
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: d9ae79d4-ebb0-4f7d-8bce-45b1a123974b
@@ -1115,7 +1065,7 @@ Hierarchy:
                         Id: 114204e0-934e-4008-80f5-c63133a2a8d0
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 57d2de09-2d06-4264-8b40-57a34410ea5d
@@ -1145,7 +1095,7 @@ Hierarchy:
                         Id: 51ddc86c-b983-4dde-b90f-ec1d61676c92
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 9a755993-62cf-458d-bed7-4f46f87b1659
@@ -1199,7 +1149,7 @@ Hierarchy:
                         Id: 74f2dd47-013b-46f9-9675-d034031311fd
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 1ac746b7-28f9-42e4-a8cd-a2df106b59be
@@ -1253,7 +1203,7 @@ Hierarchy:
                         Id: 997b6cd7-45ac-462b-ade6-e719e99292ac
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: c876a32f-e4c5-43c0-aec4-ebaea634e2f0
@@ -1276,36 +1226,6 @@ Hierarchy:
                 BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
                 InstanceId: 96888f03-e29e-4c4d-b02f-7aab7049e780
         -   Entity:
-                Id: 96ad555d-03e7-4bab-8833-1d07bc8c6128
-                Name: naturePack_008
-                Components:
-                    45362535727748e706526d8d80303203: !TransformComponent
-                        Id: ab6d70f8-4466-4547-994e-a72ce1c42e24
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
-                        Children: {}
-                    08b0ed3f5237ea1218a6c272000ecd33: !ModelComponent
-                        Id: 03392228-6588-4a0d-85c0-5f7826f8279b
-                        Model: 82c7079d-5c71-4fe1-bd2e-f83a9d094452:Models/naturePack_008
-                        Materials: {}
-                    22825e90c4417e238276a88090122a7d: !StaticColliderComponent
-                        Id: da4ca09e-354c-4f0e-84a2-8dd4d78fd755
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        IsTrigger: false
-                        ColliderShapes:
-                            e3141c585c878fc312f02b56771e6474: !ColliderShapeAssetDesc
-                                Shape: 06e356fc-831c-4441-b861-4e24a4af9fc3:Models/naturePack_008_hull
-            Base:
-                BasePartAsset: c280bcbb-765c-4469-acf5-fd62d0e73eea:Terrain/naturePack_008
-                BasePartId: 1feca141-9e71-4b40-be76-ef5700ecc7a7
-                InstanceId: 4733da11-2fdf-45e1-ac3b-f09b12a6a34a
-        -   Entity:
                 Id: 971f334f-5d9e-4af5-abb4-a45c4f0569eb
                 Name: naturePack_116
                 Components:
@@ -1313,7 +1233,7 @@ Hierarchy:
                         Id: 78420637-27db-442a-8cb5-65823a2a8cf7
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 4e5bcd7c-5f19-400b-8fc3-7bf03e7df55e
@@ -1343,7 +1263,7 @@ Hierarchy:
                         Id: 543e13d2-1425-4c02-bca1-505537989367
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 086aead6-36fe-4cbf-aae3-f9735547f929
@@ -1385,7 +1305,7 @@ Hierarchy:
                         Id: f4be5604-2cbd-4045-a273-2e2a9c680065
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 4.0, Y: 4.0, Z: 4.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     71b42da6f642bf922fa6568af5c6a555: !ModelComponent
                         Id: 1580e4a6-4d58-4502-99a1-2e627116602b
@@ -1450,7 +1370,7 @@ Hierarchy:
                         Id: 601683ab-97e4-475b-8dd1-1b54ef9beca7
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 5438a1bc-a729-465a-a272-bb9fa680b053
@@ -1472,47 +1392,6 @@ Hierarchy:
                 BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
                 BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
                 InstanceId: 326f42f9-1048-47e5-afa8-d60575e929ab
-        -   Entity:
-                Id: af4eb7e6-9578-4b39-b30f-f87286a4359f
-                Name: naturePack_008
-                Components:
-                    45362535727748e706526d8d80303203: !TransformComponent
-                        Id: 9a62e318-4e86-4833-8fac-f1857bb68d2c
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
-                        Children: {}
-                    08b0ed3f5237ea1218a6c272000ecd33: !ModelComponent
-                        Id: 48d5f45b-9c3e-4fd0-93e3-ecdee0208864
-                        Model: 82c7079d-5c71-4fe1-bd2e-f83a9d094452:Models/naturePack_008
-                        Materials: {}
-                    22825e90c4417e238276a88090122a7d: !StaticColliderComponent
-                        Id: 0b0676f4-d677-40fb-99fe-653ae235e9eb
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        IsTrigger: false
-                        ColliderShapes:
-                            e3141c585c878fc312f02b56771e6474: !ColliderShapeAssetDesc
-                                Shape: 06e356fc-831c-4441-b861-4e24a4af9fc3:Models/naturePack_008_hull
-            Base:
-                BasePartAsset: c280bcbb-765c-4469-acf5-fd62d0e73eea:Terrain/naturePack_008
-                BasePartId: 1feca141-9e71-4b40-be76-ef5700ecc7a7
-                InstanceId: c94667dd-127e-4ef5-b283-ece65ac0b1d1
-        -   Entity:
-                Id: b00f290f-20ff-4cb8-add4-5afd8541ff7b
-                Name: naturePack_009
-                Components:
-                    a673e50189f711a8aa93fcfa7dfed580: !TransformComponent
-                        Id: 0256facd-fbed-4886-904f-93012d844ec2
-                        Position: {X: 6.08690071, Y: 0.0, Z: -11.2072811}
-                        Rotation: {X: 0.0, Y: -0.199367926, Z: 0.0, W: 0.9799247}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            ddcc0afd0a4e9cadaf64f245fb953cc2: ref!! 9ead2ce2-651e-43f1-ad74-16f21b717751
         -   Folder: null
             Entity:
                 Id: b02597f7-f208-4eb5-a773-f575207ccf35
@@ -1533,7 +1412,7 @@ Hierarchy:
                         Id: 8244a100-f5fa-4c91-9278-8cacc53a184a
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 92d7b45d-6394-4a1a-8f6e-44d918e2d305
@@ -1575,7 +1454,7 @@ Hierarchy:
                         Id: 123ff14d-99ed-4ebb-9a2b-734f24ae523d
                         Position*: {X: -1.86326039, Y: 0.0, Z: 0.990658164}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 1fb57d49-1b87-4a13-8bde-d309ce70b0b6
@@ -1605,7 +1484,7 @@ Hierarchy:
                         Id: cf261d72-f898-449a-81b6-3a0dd79e260b
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 6caf639b-83d6-42a0-bf33-38741c427456
@@ -1635,7 +1514,7 @@ Hierarchy:
                         Id: 5e92a0be-d1c4-47c9-8177-d66c9de8af4e
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 7fa19ebd-d6ad-4bf6-8fda-a98f64fcb585
@@ -1658,6 +1537,41 @@ Hierarchy:
                 BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
                 InstanceId: aae5fcc3-c348-487d-8b0c-bca93ca9df3e
         -   Entity:
+                Id: bf7309ed-035b-4b66-a75a-7d632ca5cbb4
+                Name: Character
+                Components:
+                    9dfd9ba3ec5690ce1540c5ed24d1dcbc: !TransformComponent
+                        Id: 627c010b-6321-494a-9682-68ef082bdead
+                        Position: {X: 7.0, Y: 0.25, Z: -7.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 0.5, Y: 0.5, Z: 0.5}
+                        Children:
+                            042f2b6f8f9fcc4d82338c3c92552fc2: ref!! e2d63c86-9b27-49c6-80ad-8633b672aac4
+                    4b82a5c88ee681bc717ae4e2e5d094a2: !ModelComponent
+                        Id: 0c36ec45-5454-4d5a-ac4b-6cbbc6cc5181
+                        Model: 3b7ae418-4e30-4d68-966a-e8f6f10612a5:Models/Cube
+                        Materials: {}
+                    1a6cc2aea3f4fd773148193719785e7c: !CharacterComponent
+                        Id: 627bd541-5360-4ba9-8222-68dcd6c8f76d
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        FallSpeed: 10.0
+                        MaxSlope: {Radians: 0.7853982}
+                        JumpSpeed: 5.0
+                        Gravity: {X: 0.0, Y: -10.0, Z: 0.0}
+                        ColliderShapes:
+                            a977989d27512145d901a77742b53032: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    7e5f5e40b037501f8ccf0a361b434416: !FogOfWarDirectional.PlayerController,FogOfWarDirectional
+                        Id: 87ade47e-3c27-451d-8e0d-a907bfca59ff
+        -   Entity:
                 Id: c6775ee5-a543-46b3-bdb5-37cdf256b1cf
                 Name: naturePack_116
                 Components:
@@ -1665,7 +1579,7 @@ Hierarchy:
                         Id: f870b58f-fc3d-4412-8a37-8159b765faf5
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 1efcc312-aa3a-4483-87ee-163d5d438759
@@ -1693,7 +1607,7 @@ Hierarchy:
                 Components:
                     4e9c1ba57953d5b0bb21c1856a7ad2ef: !TransformComponent
                         Id: 0ca7cb99-e600-4124-aadf-f3947a09c474
-                        Position: {X: 0.0, Y: 130.0, Z: 55.0}
+                        Position: {X: 0.0, Y: 100.0, Z: 46.0}
                         Rotation: {X: -0.537299633, Y: 0.0, Z: 0.0, W: 0.8433914}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -1701,25 +1615,16 @@ Hierarchy:
                         Id: 235bfe47-f46b-496d-86fd-503890f7b1c8
                         Name: Perspective
                         Projection: Perspective
-                        VerticalFieldOfView: 8.0
+                        VerticalFieldOfView: 9.0
                         FarClipPlane: 225.0
                         Slot: 54fb6c31-cfe7-4374-9ce0-0d5d2027016a
-                    15ac40765a303e143c369b709d51b7eb: !FogOfWarDirectional.BasicCameraController,FogOfWarDirectional
-                        Id: 67980669-7fa5-4dd3-b946-249126abd255
-                        Gamepad: false
-                        KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
-                        TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
-                        SpeedFactor: 5.0
-                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
-                        MouseRotationSpeed: {X: 1.0, Y: 1.0}
-                        TouchRotationSpeed: {X: 1.0, Y: 0.7}
         -   Entity:
                 Id: cd3a68b8-955f-4da9-b020-8967e069229e
                 Name: naturePack_014
                 Components:
                     3657c454a20f09d2a762e83a74039abd: !TransformComponent
                         Id: 2cf53781-f7b9-4f16-b607-342fe23cc77b
-                        Position: {X: 37.9296646, Y: 0.0, Z: -26.9471474}
+                        Position: {X: 32.70882, Y: 0.0, Z: -22.07005}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -1736,6 +1641,17 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 8244a100-f5fa-4c91-9278-8cacc53a184a
+        -   Entity:
+                Id: cf56c943-3cf3-4c08-bdfa-5901a451e17f
+                Name: naturePack_009
+                Components:
+                    a382ff20e4885d98667d5027fb1727c7: !TransformComponent
+                        Id: ad161895-d6e7-4906-90b9-d6b265aa16dd
+                        Position: {X: 4.303834, Y: 0.0, Z: -17.5662365}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            fb3a3795c6bd31c8b14251bad9409b36: ref!! 446594ee-c85a-4ffb-9067-c1f3f4b6ec25
         -   Folder: null
             Entity:
                 Id: d1c73e1e-f2b4-4a0c-a958-2c6cb41e884d
@@ -1767,7 +1683,7 @@ Hierarchy:
                         Id: dc410777-6ad6-43ce-aa2f-b43e803c6210
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 04cded8b-0a80-434c-b5f9-b39a2b807208
@@ -1801,6 +1717,36 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 601683ab-97e4-475b-8dd1-1b54ef9beca7
+        -   Entity:
+                Id: e6a50285-e5a9-4a1a-adf2-14764af50567
+                Name: naturePack_009
+                Components:
+                    f7506df7bdc50d6c7759b96ab7945cbb: !TransformComponent
+                        Id: 446594ee-c85a-4ffb-9067-c1f3f4b6ec25
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    dfaf768b093d4f6b7c6cc3f3ecdf32d4: !ModelComponent
+                        Id: 221252ef-30ed-4ba4-bd59-6e14dfbf4b6d
+                        Model: fe51c1b2-3794-49c1-b372-427336586731:Models/naturePack_009
+                        Materials: {}
+                    14fd6cec745e32fcb6605339371bcffd: !StaticColliderComponent
+                        Id: f141c2af-5a02-421c-8b8a-f5fab988e978
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            e5ea3bff3d37b2e13b3cf79d7b86a9cd: !ColliderShapeAssetDesc
+                                Shape: 7286cbca-d7ab-4813-821f-4369b677a9fc:Models/naturePack_009_hull
+            Base:
+                BasePartAsset: 1e023559-53e5-4284-85d4-6ea8734ee8b9:Terrain/naturePack_009
+                BasePartId: fe05529b-4879-4fad-9459-b0d21e515417
+                InstanceId: 47160bfe-83d6-4c2f-a7da-189ed4f5d8af
         -   Folder: null
             Entity:
                 Id: ea047abb-3e97-40bc-99d4-07919d811c3c
@@ -1821,7 +1767,7 @@ Hierarchy:
                         Id: 618ae583-a8ff-40e1-9ee2-60c4c9150e68
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 6ad10d82-21ff-4c11-b741-25b99fd252ad
@@ -1866,38 +1812,9 @@ Hierarchy:
                                 DepthRange: {}
                                 PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
                                 ComputeTransmittance: false
-                                BiasParameters: {}
-                        Intensity: 1.5
-        -   Entity:
-                Id: f9780b56-41b4-4405-b7ef-7da3aafd2243
-                Name: naturePack_009
-                Components:
-                    f7506df7bdc50d6c7759b96ab7945cbb: !TransformComponent
-                        Id: fdd5d35b-576c-4025-8ca8-47f627d5a9c1
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
-                        Children: {}
-                    dfaf768b093d4f6b7c6cc3f3ecdf32d4: !ModelComponent
-                        Id: cde3fee2-5279-443e-bf7d-376d049263cc
-                        Model: fe51c1b2-3794-49c1-b372-427336586731:Models/naturePack_009
-                        Materials: {}
-                    14fd6cec745e32fcb6605339371bcffd: !StaticColliderComponent
-                        Id: 50dd06be-f512-47f3-8144-bc9805078225
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        IsTrigger: false
-                        ColliderShapes:
-                            e5ea3bff3d37b2e13b3cf79d7b86a9cd: !ColliderShapeAssetDesc
-                                Shape: 7286cbca-d7ab-4813-821f-4369b677a9fc:Models/naturePack_009_hull
-            Base:
-                BasePartAsset: 1e023559-53e5-4284-85d4-6ea8734ee8b9:Terrain/naturePack_009
-                BasePartId: fe05529b-4879-4fad-9459-b0d21e515417
-                InstanceId: 94c62a4c-4956-4f5b-8ed5-526af04a2971
+                                BiasParameters:
+                                    DepthBias: 0.005
+                        Intensity: 1.85
         -   Folder: null
             Entity:
                 Id: f993a138-0aea-480f-ae97-02120f5e1645
@@ -1953,8 +1870,6 @@ Hierarchy:
                             094a3c5ecb27182490f492c5a5d88209: ref!! 9d29fdf5-93a3-435d-825e-66be34b29e47
                             a6f7403c75a9e976d00565755ac903ab: ref!! 45d04ecd-2d56-4b7e-884b-b1ea9fed6bb9
                             7265b205b0fe9c10cae290f457c593f0: ref!! c7bff8d3-6287-47c4-87d9-32237ceae18d
-                            977710fc38a06d66658786ccb03f61b5: ref!! 0256facd-fbed-4886-904f-93012d844ec2
-                            02cccd7bf06beda52c60dc8cc80b48b7: ref!! f310b7e5-2ae9-4cf4-9022-b8e9608fc68f
                             e9d7626b271a825c676ab823deba2754: ref!! d5fab8ac-2240-4b17-8ecb-b446294f259b
                             4839f865bcea7029cb7e7857d119391e: ref!! 29c4522c-3f7e-46b1-b7b5-0a8933cc6c24
                             587b69e42a370b017ac9f87418e7bd8a: ref!! 87cec842-74bd-4cf1-a1c3-8a5991684b2d
@@ -1962,9 +1877,8 @@ Hierarchy:
                             94daf05c0a1208cb638fcec25c2973fa: ref!! 1143a592-14f5-4dff-8293-98b8e78b5519
                             3081daa39a16c7d0615b24896ea0ccb2: ref!! f499d664-fd6c-4a86-9bf5-f71290490f7c
                             f949b843d1c73da408186d6f2729bbab: ref!! 1d761835-529e-4fc8-a8e2-db8c676362c7
-                            c1d39fd0f0b5ddd568379f82b313dad6: ref!! 0924a356-af8d-4663-8b63-f62b718db000
-                            3575962cf7726f39f299f2936338b07d: ref!! e760a035-a358-4643-b6f9-5dfe01a726cf
                             a52403bce761a794c1338dbcf1d492c5: ref!! 2cf53781-f7b9-4f16-b607-342fe23cc77b
+                            468d12b8470bbdb451fcc8c8e0e4d491: ref!! ad161895-d6e7-4906-90b9-d6b265aa16dd
         -   Folder: null
             Entity:
                 Id: fd227a36-f6ef-4906-999a-b35c19b955c0

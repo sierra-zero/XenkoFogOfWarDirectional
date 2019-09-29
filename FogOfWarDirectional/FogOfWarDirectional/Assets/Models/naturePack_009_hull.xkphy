@@ -9,7 +9,7 @@ ColliderShapes:
         Model: fe51c1b2-3794-49c1-b372-427336586731:Models/naturePack_009
         LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
         LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-        Scaling: {X: 2.0, Y: 2.0, Z: 2.0}
+        Scaling: {X: 1.0, Y: 1.0, Z: 1.0}
         Decomposition:
             Depth: 3
             PosSampling: 3

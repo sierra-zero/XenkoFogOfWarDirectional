@@ -120,7 +120,7 @@ SharedRenderers:
         Id: 77996492-9ebf-471f-83ef-a3839dd28f51
         Clear:
             Id: 4bc4b2ca-027e-4e4a-94cb-2912709bef5f
-            Color: {R: 0.40491876, G: 0.411895424, B: 0.43775, A: 1.0}
+            Color*: {R: 0.0, G: 0.0, B: 0.0, A: 1.0}
         LightProbes: true
         OpaqueRenderStage: ref!! 9d24e318-daaa-4150-b7f1-5766c9e1b984
         TransparentRenderStage: ref!! f5aaff53-3ce6-41ee-9c70-ee62ded0c8d9
@@ -164,19 +164,25 @@ SharedRenderers:
             Enabled: false
             ResolvePassResolution: Full
             DepthResolution: Half
+            TemporalEffect*: false
         DepthOfField:
             Enabled: false
             DOFAreas: {X: 0.5, Y: 6.0, Z: 50.0, W: 200.0}
         BrightFilter:
+            Enabled*: false
             Color: {R: 1.0, G: 1.0, B: 1.0}
         Bloom:
+            Enabled*: false
             Distortion: {X: 1.0, Y: 1.0}
             Afterimage:
                 Enabled: false
         LightStreak:
+            Enabled*: false
             Attenuation: 0.7
-        LensFlare: {}
+        LensFlare:
+            Enabled*: false
         ColorTransforms:
+            Enabled*: false
             Transforms:
                 1e06f805f8b2e949a06c30d45fe413ef: !ToneMap
                     Operator: !ToneMapHejl2Operator {}
@@ -186,7 +192,8 @@ SharedRenderers:
                 e86e22e9a5d65545b8b55fca26e0afee: !Vignetting
                     Enabled: false
                     Color: {R: 0.0, G: 0.0, B: 0.0}
-        Antialiasing: !FXAAEffect {}
+        Antialiasing*: !FXAAEffect
+            Quality*: 7
     ee80a20a9bd99f2d70711114e15fe7ca: !Xenko.Rendering.Compositing.DebugRenderer,Xenko.Rendering
         Id: b2bfa014-10de-43a2-9828-b3c5c5eab9e3
         DebugRenderStages: {}

@@ -11,10 +11,12 @@ Goals:
 ==================================================================
 ==================================================================
 ==================================================================
-1) Generate prefabs from map items for terrain (hull colliders).
-2) Create a sample map to walk around with various obstructions and corners.
-3) Create a player controller and import the mech model (the mech walking).
-4) Create the circuilar raycasting based on a customizable degrees.
+[DONE] 1) Generate prefabs from map items for terrain (hull colliders).
+[DONE] 2) Create a sample map to walk around with various obstructions and corners.
+[SKIP] 3) Create a player controller and import the mech model (the mech walking).
+	[DONE] - Create a ball player walking around.
+0) Fix the arena after scaling fix.
+4) Create the circular raycasting based on a customizable degrees.
 5) Create the fog collider object with the texture.
 6) Get a very primative version of things working without transparency masking or fog of war.
 7) Create the fog textures (png or jpg), using transparency for the non visible parts and black for the reveal.

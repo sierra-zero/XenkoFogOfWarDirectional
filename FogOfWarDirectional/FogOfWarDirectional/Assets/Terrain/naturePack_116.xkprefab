@@ -14,7 +14,7 @@ Hierarchy:
                         Id: e040d9dc-152c-4efb-8d9c-b88754257c16
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
                         Id: 838608be-55f7-4848-b4bc-9a8c48fce077
