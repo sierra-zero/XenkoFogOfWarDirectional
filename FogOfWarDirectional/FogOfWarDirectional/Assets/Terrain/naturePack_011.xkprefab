@@ -22,6 +22,7 @@ Hierarchy:
                         Materials: {}
                     33b6ba91d5983af7c5a418b573dbfe79: !StaticColliderComponent
                         Id: c5c4620c-d39c-4a30-a439-ca97e8a10ddf
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5

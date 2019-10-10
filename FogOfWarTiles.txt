@@ -11,6 +11,7 @@ Goals:
 ==================================================================
 ==================================================================
 ==================================================================
+0) Convert to use orthographic camera for the next few steps.
 0) Create the fog collider object with the texture.
 	- Test the sizing of this by placing it arbitrarily into FogTileSpace.
 1) Write the script to initialize all the fog tiles into FogTileSpace and create an array with a point as key.

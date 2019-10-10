@@ -28,6 +28,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 79e63e91-375d-49a1-9490-587b4f871561
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -58,6 +59,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: f41b7a44-25ca-4d24-bc1d-a4c773c208cb
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -78,10 +80,17 @@ Hierarchy:
                 Components:
                     a52aad72442f85422af24fe81eedf853: !TransformComponent
                         Id: bd249357-2709-4a82-9327-0f5b57941f14
-                        Position: {X: -22.0, Y: 0.0, Z: 12.0}
+                        Position: {X: -22.0, Y: 0.0, Z: -12.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
+                    efb57d530fa56de2662a5658660f61fa: !FogOfWarDirectional.FogTileSpace,FogOfWarDirectional
+                        Id: 5641e520-e7b7-44f8-800d-cb467a4e6725
+                        Priority: 255
+                        FogTile: 1f3666af-137a-4f1a-bc2e-0a05eb4dc1a1:Prefabs/FogTile
+                        FogTileSpacing: 1.0
+                        FogRows: 25
+                        FogColumns: 45
         -   Folder: null
             Entity:
                 Id: 09aa0511-5dab-4f51-92be-b32ea77d8e84
@@ -196,6 +205,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 624c4f88-d9d4-448c-b951-92566034f1a4
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -226,6 +236,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 7954aeeb-deed-433c-951f-9cd1351d92e5
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -268,6 +279,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 809f70da-b69c-4760-9444-3639f9802f8f
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -298,6 +310,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 83b532c9-681e-4872-9a0e-ef0d31b91307
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -328,6 +341,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 403716be-4d1f-4b70-9ded-71b097d4acda
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -358,6 +372,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 5336afb6-10e3-484e-94e6-497410de1359
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -388,6 +403,7 @@ Hierarchy:
                         Materials: {}
                     22825e90c4417e238276a88090122a7d: !StaticColliderComponent
                         Id: 1a252904-f7b3-4df5-882f-0b6f63d4a7a8
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -418,6 +434,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: e4f91470-4bff-4058-bd43-db9e4a8eafb4
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -472,6 +489,7 @@ Hierarchy:
                         Materials: {}
                     33b6ba91d5983af7c5a418b573dbfe79: !StaticColliderComponent
                         Id: 7e1838cb-08a2-4cd1-aef9-47fa6fa00f86
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -502,6 +520,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: cd84dd25-413e-4f18-a543-294ef8a51383
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -529,9 +548,9 @@ Hierarchy:
                     757742331a277b46dda2846437490c4f: !FogOfWarDirectional.FogOfWarDetector,FogOfWarDirectional
                         Id: b467b8c4-3234-4d7d-a2ab-585e7115cfbd
                         Enable: true
-                        FrequencyModulo: 5
-                        VisionRadius: 10.0
-                        DegreeStep: 1.0
+                        FrequencyModulo: 2
+                        VisionRadius: 8.0
+                        DegreeStep: 5
         -   Folder: null
             Entity:
                 Id: 4a984038-914f-42bf-a09d-fa20880fe0de
@@ -560,6 +579,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 5e8f81de-79d2-42a2-b7fb-c7bf5b2373c4
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -613,6 +633,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 8e8f7332-703a-4168-bceb-9b30d2f46797
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -654,6 +675,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 643f47be-d9a9-4d51-b978-96cd93c236e7
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -684,6 +706,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 144a0d56-d2f9-45e1-9631-ee59e2bd826b
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -727,6 +750,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 4c80c82f-2293-4630-afee-67b742c5d1b3
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -769,6 +793,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 03ba5fc3-c051-47d6-ae09-0e6b98b8e742
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -799,6 +824,7 @@ Hierarchy:
                         Materials: {}
                     01f06cf2e3c620a250bf67ac57ee5dfd: !StaticColliderComponent
                         Id: 27813b26-b6a1-4180-ac22-88c287219aff
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -829,6 +855,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 746b95e1-af35-4f1b-8497-0a1e8f680cd1
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -858,7 +885,7 @@ Hierarchy:
                         Name: Orthographic
                         Projection: Orthographic
                         OrthographicSize: 12.0
-                        Slot: 00000000-0000-0000-0000-000000000000
+                        Slot: 54fb6c31-cfe7-4374-9ce0-0d5d2027016a
         -   Entity:
                 Id: 6840b34e-bdd0-41ac-966e-10bb90f43676
                 Name: naturePack_116
@@ -875,6 +902,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 611a2ff9-778e-40b3-b380-a88a1cae69cd
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -905,6 +933,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 814d6d62-c777-445e-b6f7-5e0ee6aadccc
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -946,6 +975,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 2b04329d-7dbf-4f9b-be45-6b10b1b35c33
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1016,6 +1046,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: d84e8269-ba49-41e8-abda-60b05d6635f6
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1094,6 +1125,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: c3da85da-03a5-4c71-8029-08b16c8bd547
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1160,6 +1192,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: f2284f5e-2474-4089-8603-7a8166925682
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1190,6 +1223,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 1e60dfe7-8efe-4ecb-a3e6-1ddb64f101cb
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1244,6 +1278,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 4f90b826-f66c-4b7b-a016-1a9b3ec6f260
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1298,6 +1333,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 405185f4-2063-4d86-9569-2f5f0d293ecf
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1328,6 +1364,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: db72b9d3-1e90-4c2a-9825-0a085bee52e1
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1358,6 +1395,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 00341d12-57ba-4515-b419-08e40de6addf
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1400,6 +1438,7 @@ Hierarchy:
                         Materials: {}
                     01f06cf2e3c620a250bf67ac57ee5dfd: !StaticColliderComponent
                         Id: 49ddce1d-59c2-441d-88c1-8e24875c108d
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1465,6 +1504,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 53bf7db5-af5f-40c0-ba46-54f7e1205f24
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1507,6 +1547,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 5ee4fc12-4a6f-49f2-8bc8-f0e212d31b01
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1549,6 +1590,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 6d14ec3e-63f5-4a6e-9277-9bcfaf6033c8
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1579,6 +1621,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: a1ec2d46-d17f-4e13-9dea-4fbf4571ffa5
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1609,6 +1652,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: c03d889a-5306-4509-880f-53bc0cfcfcbd
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1639,6 +1683,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: a12b2d48-0e86-44ff-992d-2dbf8044f6ad
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1669,6 +1714,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 047db20d-c786-4f05-b63f-258b8015c907
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1735,6 +1781,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 03452c69-34b5-4123-97aa-79edf8655df0
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1761,6 +1808,7 @@ Hierarchy:
                         Children: {}
                     f9ef6de60e4174118b7e4d9d7deb716d: !CameraComponent
                         Id: 235bfe47-f46b-496d-86fd-503890f7b1c8
+                        Enabled: false
                         Name: Perspective
                         Projection: Perspective
                         VerticalFieldOfView: 9.0
@@ -1857,6 +1905,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: c8114169-b678-4f83-9f3c-23f7b8a9ab3d
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1899,6 +1948,7 @@ Hierarchy:
                         Materials: {}
                     14fd6cec745e32fcb6605339371bcffd: !StaticColliderComponent
                         Id: f141c2af-5a02-421c-8b8a-f5fab988e978
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1941,6 +1991,7 @@ Hierarchy:
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
                         Id: 7ec6177d-2f00-4e26-8a08-27feab8f3ead
+                        CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5

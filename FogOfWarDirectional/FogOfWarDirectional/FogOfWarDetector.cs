@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Xenko.Core.Collections;
 using Xenko.Core.Mathematics;
 using Xenko.Engine;
@@ -14,12 +16,16 @@ namespace FogOfWarDirectional
         public bool Enable;
         public byte FrequencyModulo;
         public float VisionRadius;
-        public float DegreeStep;
+        public int DegreeStep;
 
         private long frame;
         private Vector3 positionRecycler;
+        private Vector3 lastPositionRecycler;
         private Vector3 targetRecycler;
-        private FastList<HitResult> resultList;
+        private IEnumerable<HitResult> resultList;
+        private SortedDictionary<float, PhysicsComponent> orderedResults;
+        private FogTile lastSeenRecycler;
+        private FastList<FogTile> lastSeenTiles;
         private Simulation simulation;
 
         public override void Start()
@@ -44,16 +50,33 @@ namespace FogOfWarDirectional
             }
 
             Entity.Transform.GetWorldTransformation(out positionRecycler, out _, out _);
+            if (positionRecycler == lastPositionRecycler) {
+                foreach (var lastSeenTile in lastSeenTiles) {
+                    lastSeenTile.Seen();
+                }
+                return;
+            }
 
-            for (float i = 0; i <= 360; i += DegreeStep) {
+            lastSeenTiles.Clear();
+            lastPositionRecycler = positionRecycler;
+
+            orderedResults.Clear();
+            for (int i = 0; i <= 360; i += DegreeStep) {
                 targetRecycler = new Vector3(positionRecycler.X + VisionRadius * (float)Math.Cos(i), positionRecycler.Y, 
                     positionRecycler.Z + VisionRadius * (float)Math.Sin(i));
 
-                resultList.Clear();
-                resultList = simulation.RaycastPenetrating(positionRecycler, targetRecycler);
+                foreach (var hitResult in simulation.RaycastPenetrating(positionRecycler, targetRecycler)
+                    .OrderBy(b => Vector3.Distance(positionRecycler, b.Point))) {
 
-                foreach (var hitResult in resultList) {
-                    // TODO tag the tiles as seen
+                    if (hitResult.Collider.CollisionGroup == CollisionFilterGroups.StaticFilter) {
+                        break;
+                    }
+
+                    if (hitResult.Collider.CollisionGroup == CollisionFilterGroups.CustomFilter10) {
+                        lastSeenRecycler = hitResult.Collider.Entity.Get<FogTile>();
+                        lastSeenRecycler.Seen();
+                        lastSeenTiles.Add(lastSeenRecycler);
+                    }
                 }
             }
         }
@@ -62,6 +85,8 @@ namespace FogOfWarDirectional
         {
             simulation = Entity.GetParent().Get<CharacterComponent>().Simulation;
             resultList = new FastList<HitResult>();
+            orderedResults = new SortedDictionary<float, PhysicsComponent>();
+            lastSeenTiles = new FastList<FogTile>();
 
             if (FrequencyModulo == 0) {
                 FrequencyModulo = 1;
