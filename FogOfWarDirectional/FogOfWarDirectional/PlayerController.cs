@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xenko.Core.Mathematics;
+﻿using Xenko.Core.Mathematics;
 using Xenko.Input;
 using Xenko.Engine;
 using Xenko.Physics;
@@ -14,10 +9,9 @@ namespace FogOfWarDirectional
     {
         // Declared public member fields and properties will show in the game studio
         private CharacterComponent characterComponent;
-        private Simulation simulation;
         private Vector3 velocity;
 
-        private const float Speed = 3.5f;
+        private const float Speed = 2.5f;
 
         public override void Start()
         {
@@ -55,7 +49,6 @@ namespace FogOfWarDirectional
         private void InitializePlayer()
         {
             characterComponent = Entity.Get<CharacterComponent>();
-            simulation = characterComponent.Simulation;
         }
     }
 }

@@ -11,15 +11,19 @@ Goals:
 ==================================================================
 ==================================================================
 ==================================================================
-[DONE] 1) Generate prefabs from map items for terrain (hull colliders).
-[DONE] 2) Create a sample map to walk around with various obstructions and corners.
-[SKIP] 3) Create a player controller and import the mech model (the mech walking).
-	[DONE] - Create a ball player walking around.
-0) Fix the arena after scaling fix.
-4) Create the circular raycasting based on a customizable degrees.
-5) Create the fog collider object with the texture.
-6) Get a very primative version of things working without transparency masking or fog of war.
-7) Create the fog textures (png or jpg), using transparency for the non visible parts and black for the reveal.
-8) Fog shader will take two states PreviousState and MovingToState.
+0) Create the fog collider object with the texture.
+	- Test the sizing of this by placing it arbitrarily into FogTileSpace.
+1) Write the script to initialize all the fog tiles into FogTileSpace and create an array with a point as key.
+	- This could also just be a two dimensional array.
+2) Get a very primative version of things working without transparency masking or fog of war.
+	- Perhaps do not do the diagonal or tile swapping.
+	- Just a basic version working with tiles.
+3) Create the fog textures (png or jpg), using transparency for the non visible parts and black for the reveal.
+
+--------------
+Next section needs more thought.
+
+--------------
+4) Fog shader will take two states PreviousState and MovingToState.
 	- Based on this there will be linear interpolation.
-9) Layout the camera system and test without doing alpha shader.
+5) Layout the camera system and test without doing alpha shader.

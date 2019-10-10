@@ -7,6 +7,9 @@ Cameras:
     de2e75c3b2b23e54162686363f3f138e:
         Id: 54fb6c31-cfe7-4374-9ce0-0d5d2027016a
         Name*: Perspective
+    8e59f21d77be7d3ea7c9501805d1f802*:
+        Id: 8029e506-a2f3-41ec-8568-5227e7f063ef
+        Name: Orthographic
 RenderStages:
     47116750c1a5d449b4ad3625f71439b3:
         Id: 9d24e318-daaa-4150-b7f1-5766c9e1b984
