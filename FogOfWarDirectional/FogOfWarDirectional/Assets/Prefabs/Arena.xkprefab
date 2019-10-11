@@ -298,6 +298,33 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! ee2a7f6c-f445-4b3d-baf2-f75a54d93867
+        -   Folder: null
+            Entity:
+                Id: 2447d4fc-6a66-4de2-8e89-ddc0b06c100e
+                Name: wall_collider
+                Components:
+                    9090f5c2da66bf1bda0eddb9e952a010: !TransformComponent
+                        Id: 1311d7fd-4e61-4a17-972e-dd8cc4c4a0dd
+                        Position: {X: 24.0, Y: 0.0, Z: -12.0}
+                        Rotation: {X: 0.499913663, Y: 0.5000863, Z: -0.499913663, W: 0.5000863}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    8be18cd261a3de30a1cc82cc476839e1: !StaticColliderComponent
+                        Id: 2dd41586-2a87-4b61-8e34-e833b8bc6a16
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            eb53681b65b828aacdb54bc61670cc87: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 24.0, Y: 0.75, Z: 5.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:
                 Id: 262878e5-e716-4d1d-987a-84a5a7ebd847
                 Name: naturePack_014
@@ -309,6 +336,32 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             a434961db2d51b53039dbc5e64b6a092: ref!! 9cc9a679-a29a-4437-8452-141aa5b197a3
+        -   Entity:
+                Id: 2878e9a5-72e1-4758-8de7-1c9ed565188d
+                Name: wall_collider
+                Components:
+                    9090f5c2da66bf1bda0eddb9e952a010: !TransformComponent
+                        Id: 646b99f4-75db-4f91-8d98-72687fd465ca
+                        Position: {X: 12.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.707106769, Y: 0.0, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    8be18cd261a3de30a1cc82cc476839e1: !StaticColliderComponent
+                        Id: 0422250e-deea-4974-a5b0-83a6ab569b39
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            eb53681b65b828aacdb54bc61670cc87: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 24.0, Y: 0.75, Z: 5.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:
                 Id: 296dfbdf-0c12-444c-b390-58eae9bc191e
                 Name: naturePack_116
@@ -652,6 +705,10 @@ Hierarchy:
                             20f3247971ba7eb40ba7156f7bf613d1: ref!! c4e73da3-1825-4862-a27e-a1bbe251fd9a
                             468d12b8470bbdb451fcc8c8e0e4d491: ref!! 5115078d-3dbd-4688-820a-5f5a6ca2fb94
                             f733f943f7bc12277042e406571fc30a: ref!! f6c84d72-2a7e-404b-9c7d-6a2d2723a3ca
+                            af15aebf168c190d4e90583fee3da5c6: ref!! 646b99f4-75db-4f91-8d98-72687fd465ca
+                            46275a56669a145d65dbdd786ab28c9b: ref!! e881f2c7-36a9-4859-93f5-6fdd89ed3e77
+                            3893bbcf55acd7fb0051113a9d5eaaf0: ref!! de367b46-9c59-4bfa-b221-fb143a307e90
+                            38f1719b96878a27f5fc0f440626faee: ref!! 1311d7fd-4e61-4a17-972e-dd8cc4c4a0dd
         -   Entity:
                 Id: 4284b941-b591-4a50-b291-a3db3cd70f7b
                 Name: naturePack_116
@@ -1749,6 +1806,33 @@ Hierarchy:
                 BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
                 BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
                 InstanceId: d07f9087-d545-481a-a39c-b5ae273f08f9
+        -   Folder: null
+            Entity:
+                Id: db4061c2-1bbb-458c-b7c8-10c1b030ccee
+                Name: wall_collider
+                Components:
+                    9090f5c2da66bf1bda0eddb9e952a010: !TransformComponent
+                        Id: de367b46-9c59-4bfa-b221-fb143a307e90
+                        Position: {X: 0.0, Y: 0.0, Z: -12.0}
+                        Rotation: {X: 0.499913663, Y: 0.5000863, Z: -0.499913663, W: 0.5000863}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    8be18cd261a3de30a1cc82cc476839e1: !StaticColliderComponent
+                        Id: c7ab89c3-43f3-464f-b864-575546d5a7c2
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            eb53681b65b828aacdb54bc61670cc87: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 24.0, Y: 0.75, Z: 5.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:
                 Id: e078dadf-a627-49c1-b7f1-7ea42184cfca
                 Name: naturePack_116
@@ -1811,6 +1895,33 @@ Hierarchy:
                 BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
                 BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
                 InstanceId: 48e42d3d-4d1e-47f6-88e0-0225a6000682
+        -   Folder: null
+            Entity:
+                Id: e6b0702e-1179-43d0-b1f2-b9852da65767
+                Name: wall_collider
+                Components:
+                    9090f5c2da66bf1bda0eddb9e952a010: !TransformComponent
+                        Id: e881f2c7-36a9-4859-93f5-6fdd89ed3e77
+                        Position: {X: 12.0, Y: 0.0, Z: -24.0}
+                        Rotation: {X: 0.707106769, Y: 0.0, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    8be18cd261a3de30a1cc82cc476839e1: !StaticColliderComponent
+                        Id: 89a037af-ea5c-43e9-8d82-eb66740680d8
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            eb53681b65b828aacdb54bc61670cc87: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 24.0, Y: 0.75, Z: 5.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:
                 Id: ed10294b-dbd6-4fe6-a389-ceede8b9144e
                 Name: naturePack_116

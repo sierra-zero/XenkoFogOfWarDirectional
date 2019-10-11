@@ -62,18 +62,16 @@ Hierarchy:
                 InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
         -   Entity:
                 Id: 0660e4ef-6cf0-4b78-af0f-4103da495cb5
-                Name: FogTileSpace
+                Name: FogOfWarSystem
                 Components:
                     a52aad72442f85422af24fe81eedf853: !TransformComponent
                         Id: bd249357-2709-4a82-9327-0f5b57941f14
                         Position: {X: 0.0, Y: 0.5, Z: -24.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            6fff56241a0ebd51d619abbcf6275fde: ref!! 8b7e2f6c-c9e9-422e-9ca9-d6dcdc577d18
-                    efb57d530fa56de2662a5658660f61fa: !FogOfWarDirectional.FogTileSpace,FogOfWarDirectional
-                        Id: 5641e520-e7b7-44f8-800d-cb467a4e6725
-                        Priority: 255
+                        Children: {}
+                    ced91470f273b399e044d5359505688b: !FogOfWarDirectional.FogOfWarSystem,FogOfWarDirectional
+                        Id: e9db08cf-25be-411d-a926-68ebac015ed0
                         Enable: true
                         FogTile: 1f3666af-137a-4f1a-bc2e-0a05eb4dc1a1:Prefabs/FogTile
                         FogTileSpacing: 1.0
@@ -81,7 +79,8 @@ Hierarchy:
                         FogTileStartZ: 0.0
                         FogRows: 25
                         FogColumns: 25
-                        VisionRadius: 8.0
+                        VisionRadius: 5.0
+                        VisionStep: 5
                         ElevationY: 0.5
         -   Folder: null
             Entity:
@@ -226,9 +225,43 @@ Hierarchy:
                             20f3247971ba7eb40ba7156f7bf613d1: ref!! 59db454b-2e4c-4b11-a55a-d179d1329e44
                             468d12b8470bbdb451fcc8c8e0e4d491: ref!! 278a75fc-3751-4d75-9482-9f16b8b5b1a0
                             f733f943f7bc12277042e406571fc30a: ref!! a9bc5f2e-a540-4465-b962-afa91e9ab1e8
+                            0ed9d997e2e1e767d4367a4600c88fed: ref!! 44596023-7894-483c-a734-8af29dda7a00
+                            379d489fe81e8b6f47522dc6f472caf7: ref!! 1cb1845d-ea6d-4e3d-a6ed-494d07351c20
+                            7753ecbcf80f4ab2c03a04d8f251adf7: ref!! 7653f4ff-dfae-4bc5-acd2-782c71035a2f
+                            319c453deb1584315cbea1f9da565165: ref!! baf26bc7-22c0-4ae5-bda6-ad7c9196bc29
             Base:
                 BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
                 BasePartId: 41b8009c-b8b8-42ea-8e67-17cb4bea576f
+                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+        -   Entity:
+                Id: 1b323acc-122d-4e44-9d29-736ee0ff43e7
+                Name: wall_collider
+                Components:
+                    9090f5c2da66bf1bda0eddb9e952a010: !TransformComponent
+                        Id: 44596023-7894-483c-a734-8af29dda7a00
+                        Position: {X: 12.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.707106769, Y: 0.0, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    8be18cd261a3de30a1cc82cc476839e1: !StaticColliderComponent
+                        Id: 718e2600-9e82-4df2-91c7-fd3b9fc43d1a
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            eb53681b65b828aacdb54bc61670cc87: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 24.0, Y: 0.75, Z: 5.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
+                BasePartId: 2878e9a5-72e1-4758-8de7-1c9ed565188d
                 InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
         -   Entity:
                 Id: 1c7f48b5-459d-4a1a-8f12-484809600e58
@@ -339,6 +372,37 @@ Hierarchy:
             Base:
                 BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
                 BasePartId: f3c76953-40ae-4bce-a617-0e0ed12c1fcc
+                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+        -   Folder: null
+            Entity:
+                Id: 2fa8b4ed-e3b4-4b36-936b-598b976b916d
+                Name: wall_collider
+                Components:
+                    9090f5c2da66bf1bda0eddb9e952a010: !TransformComponent
+                        Id: 7653f4ff-dfae-4bc5-acd2-782c71035a2f
+                        Position: {X: 0.0, Y: 0.0, Z: -12.0}
+                        Rotation: {X: 0.499913663, Y: 0.5000863, Z: -0.499913663, W: 0.5000863}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    8be18cd261a3de30a1cc82cc476839e1: !StaticColliderComponent
+                        Id: 745d2676-5a63-47ad-bfe2-ae68df98c75a
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            eb53681b65b828aacdb54bc61670cc87: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 24.0, Y: 0.75, Z: 5.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
+                BasePartId: db4061c2-1bbb-458c-b7c8-10c1b030ccee
                 InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
         -   Entity:
                 Id: 3261ae83-cc51-4426-8507-f7e1b6f69a2c
@@ -512,16 +576,6 @@ Hierarchy:
                 BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
                 BasePartId: 41a76b3e-691f-4679-8266-be4125fb0382
                 InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
-        -   Entity:
-                Id: 4606b888-d4d0-4776-8c4c-902c57b9495b
-                Name: FogTile
-                Components:
-                    e31b40e02eab396e9996f2a1fd388043: !TransformComponent
-                        Id: 8b7e2f6c-c9e9-422e-9ca9-d6dcdc577d18
-                        Position: {X: 2.82815385, Y: 0.0, Z: 1.36928332}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
         -   Folder: null
             Entity:
                 Id: 5011a529-c41d-4a79-a0ba-715021195387
@@ -1171,6 +1225,37 @@ Hierarchy:
                 BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
                 BasePartId: c7cd8d45-c476-4235-9d9a-d38ce6913961
                 InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+        -   Folder: null
+            Entity:
+                Id: 80ff6c7e-4118-40d0-8088-3e0ae9d29165
+                Name: wall_collider
+                Components:
+                    9090f5c2da66bf1bda0eddb9e952a010: !TransformComponent
+                        Id: baf26bc7-22c0-4ae5-bda6-ad7c9196bc29
+                        Position: {X: 24.0, Y: 0.0, Z: -12.0}
+                        Rotation: {X: 0.499913663, Y: 0.5000863, Z: -0.499913663, W: 0.5000863}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    8be18cd261a3de30a1cc82cc476839e1: !StaticColliderComponent
+                        Id: af43e68d-9101-4de9-8721-edea322a14db
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            eb53681b65b828aacdb54bc61670cc87: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 24.0, Y: 0.75, Z: 5.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
+                BasePartId: 2447d4fc-6a66-4de2-8e89-ddc0b06c100e
+                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
         -   Entity:
                 Id: 84962df3-db37-4410-a50f-ed844511c7f3
                 Name: naturePack_014
@@ -1473,6 +1558,9 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     7e5f5e40b037501f8ccf0a361b434416: !FogOfWarDirectional.PlayerController,FogOfWarDirectional
                         Id: 87ade47e-3c27-451d-8e0d-a907bfca59ff
+                    906d081a8f366fcfebc14070af0f299b: !FogOfWarDirectional.FogDetector,FogOfWarDirectional
+                        Id: d3ffd13e-7935-42ac-bffe-efb366bd934f
+                        Priority: 1
         -   Entity:
                 Id: c1ba87a2-3d0c-4f0f-a3ba-817f5fdffde4
                 Name: naturePack_116
@@ -2294,6 +2382,37 @@ Hierarchy:
             Base:
                 BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
                 BasePartId: 5f279850-09e6-4094-946d-9eae2eaa4072
+                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+        -   Folder: null
+            Entity:
+                Id: fcd80994-133d-4f64-b366-732f04a6c387
+                Name: wall_collider
+                Components:
+                    9090f5c2da66bf1bda0eddb9e952a010: !TransformComponent
+                        Id: 1cb1845d-ea6d-4e3d-a6ed-494d07351c20
+                        Position: {X: 12.0, Y: 0.0, Z: -24.0}
+                        Rotation: {X: 0.707106769, Y: 0.0, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    8be18cd261a3de30a1cc82cc476839e1: !StaticColliderComponent
+                        Id: 3c98da07-0662-4210-b7a5-d8b17e4140ac
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            eb53681b65b828aacdb54bc61670cc87: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 24.0, Y: 0.75, Z: 5.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+            Base:
+                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
+                BasePartId: e6b0702e-1179-43d0-b1f2-b9852da65767
                 InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
         -   Folder: null
             Entity:
