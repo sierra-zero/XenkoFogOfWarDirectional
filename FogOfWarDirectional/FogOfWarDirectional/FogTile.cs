@@ -1,7 +1,6 @@
 ﻿using System.Collections.Concurrent;
 using Xenko.Core.Mathematics;
 using Xenko.Engine;
-using Xenko.Graphics;
 using Xenko.Physics;
 using Xenko.Rendering.Sprites;
 
@@ -13,7 +12,8 @@ namespace FogOfWarDirectional
         // Declared public member fields and properties will show in the game studio
         public Vector2 Coord { get; }
 
-        private SpriteFromSheet sprite;
+        private SpriteComponent spriteComponent;
+        private SpriteFromSheet spriteProvider;
         private bool northVisible;
         private bool northEastVisible;
         private bool eastVisible;
@@ -33,6 +33,7 @@ namespace FogOfWarDirectional
         private Vector2 northWestRecycler;
 
         private readonly ConcurrentDictionary<Vector2, bool> fogVisibilityState;
+
         private static readonly Vector2 NorthCoord = new Vector2(0, -1);
         private static readonly Vector2 NorthEastCoord = new Vector2(1, -1);
         private static readonly Vector2 EastCoord  = new Vector2(1, 0);
@@ -60,7 +61,7 @@ namespace FogOfWarDirectional
 
         public void DisableRigidBody()
         {
-            Entity.Get<RigidbodyComponent>().Enabled = false;
+            Entity.Remove(Entity.Get<RigidbodyComponent>());
         }
 
         private void UpdateVisibility()
@@ -85,78 +86,63 @@ namespace FogOfWarDirectional
 
             if (fogVisibilityState.ContainsKey(Coord)) {
                 if (fogVisibilityState[Coord]) {
-                    sprite.CurrentFrame = 1;
+                    spriteProvider.CurrentFrame = 1;
                 }
                 else {
+                    if (northVisible && eastVisible && southVisible && westVisible) {
+                        spriteProvider.CurrentFrame = 0;
+                        return;
+                    }
+
                     if (northVisible && westVisible && eastVisible) {
-                        sprite.CurrentFrame = 0;
+                        spriteProvider.CurrentFrame = 0;
                         return;
                     }
 
                     if (southVisible && westVisible && eastVisible) {
-                        sprite.CurrentFrame = 0;
+                        spriteProvider.CurrentFrame = 0;
                         return;
                     }
 
                     if (northVisible && westVisible && southVisible) {
-                        sprite.CurrentFrame = 0;
+                        spriteProvider.CurrentFrame = 0;
                         return;
                     }
 
                     if (northVisible && eastVisible && southVisible) {
-                        sprite.CurrentFrame = 0;
+                        spriteProvider.CurrentFrame = 0;
                         return;
                     }
 
-                    //if (northVisible &&  northWestVisible &&westVisible) {
-                    //    sprite.CurrentFrame = 4;
-                    //    return;
-                    //}
-
-                    //if (northVisible && northEastVisible && eastVisible) {
-                    //    sprite.CurrentFrame = 5;
-                    //    return;
-                    //}
-
-                    //if (southVisible && southEastVisible && eastVisible) {
-                    //    sprite.CurrentFrame = 2;
-                    //    return;
-                    //}
-
-                    //if (southVisible && southWestVisible && westVisible) {
-                    //    sprite.CurrentFrame = 3;
-                    //    return;
-                    //}
-
                     if (northVisible && westVisible) {
-                        sprite.CurrentFrame = 4;
+                        spriteProvider.CurrentFrame = 4;
                         return;
                     }
 
                     if (northVisible && eastVisible) {
-                        sprite.CurrentFrame = 5;
+                        spriteProvider.CurrentFrame = 5;
                         return;
                     }
 
                     if (southVisible && eastVisible) {
-                        sprite.CurrentFrame = 2;
+                        spriteProvider.CurrentFrame = 2;
                         return;
                     }
 
                     if (southVisible && westVisible) {
-                        sprite.CurrentFrame = 3;
+                        spriteProvider.CurrentFrame = 3;
                         return;
                     }
 
-
-                    sprite.CurrentFrame = 0;
+                    spriteProvider.CurrentFrame = 0;
                 }
             }
         }
 
         private void InitializeFogTile()
         {
-            sprite = Entity.FindChild("Sprite").Get<SpriteComponent>().SpriteProvider as SpriteFromSheet;
+            spriteComponent = Entity.FindChild("Sprite").Get<SpriteComponent>();
+            spriteProvider = spriteComponent.SpriteProvider as SpriteFromSheet;
         }
     }
 }

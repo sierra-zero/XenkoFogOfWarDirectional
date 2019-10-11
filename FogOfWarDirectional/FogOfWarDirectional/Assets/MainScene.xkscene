@@ -79,8 +79,8 @@ Hierarchy:
                         FogTileStartZ: 0.0
                         FogRows: 25
                         FogColumns: 25
-                        VisionRadius: 5.0
-                        VisionStep: 5
+                        VisionRadius: 6.0
+                        VisionStep: 1
                         ElevationY: 0.5
         -   Folder: null
             Entity:
@@ -583,7 +583,7 @@ Hierarchy:
                 Components:
                     a8aa6709123ef9a3fcb0da20d01668a1: !TransformComponent
                         Id: 0be016d6-6f23-4d72-a5c3-3895b1cea2eb
-                        Position: {X: 17.5, Y: 0.0, Z: -18.0}
+                        Position: {X: 17.52, Y: 0.0, Z: -18.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -1772,7 +1772,7 @@ Hierarchy:
                 Components:
                     a8aa6709123ef9a3fcb0da20d01668a1: !TransformComponent
                         Id: 02812b3c-8542-42b8-9609-c896f2a2fa46
-                        Position: {X: 24.0, Y: 0.0, Z: -18.25}
+                        Position: {X: 23.98, Y: 0.0, Z: -18.275}
                         Rotation: {X: 0.0, Y: 0.707106769, Z: 0.0, W: 0.707106769}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -1884,7 +1884,7 @@ Hierarchy:
                 Components:
                     a8aa6709123ef9a3fcb0da20d01668a1: !TransformComponent
                         Id: e62f4f36-566f-4f2f-8cf7-175887fbff3d
-                        Position: {X: 17.5, Y: 0.0, Z: -21.0}
+                        Position: {X: 17.52, Y: 0.0, Z: -21.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
