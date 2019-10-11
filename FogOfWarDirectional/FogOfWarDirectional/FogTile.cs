@@ -34,15 +34,12 @@ namespace FogOfWarDirectional
         }
 
         internal void Seen()
-        {
-            if (fogVisibilityMap.ContainsKey(fogTileCoord)) {
-                fogVisibilityMap[fogTileCoord] = true;
-            }
+        { 
+            fogVisibilityMap[fogTileCoord] = true;
         }
 
         private void UpdateVisibility()
         {
-            throw new NotImplementedException();
         }
     }
 }

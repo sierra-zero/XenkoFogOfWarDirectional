@@ -11,20 +11,10 @@ Goals:
 ==================================================================
 ==================================================================
 ==================================================================
-0) Convert to use orthographic camera for the next few steps.
-0) Create the fog collider object with the texture.
-	- Test the sizing of this by placing it arbitrarily into FogTileSpace.
-1) Write the script to initialize all the fog tiles into FogTileSpace and create an array with a point as key.
-	- This could also just be a two dimensional array.
-2) Get a very primative version of things working without transparency masking or fog of war.
-	- Perhaps do not do the diagonal or tile swapping.
-	- Just a basic version working with tiles.
-3) Create the fog textures (png or jpg), using transparency for the non visible parts and black for the reveal.
 
---------------
-Next section needs more thought.
+Baseline:
 
---------------
-4) Fog shader will take two states PreviousState and MovingToState.
-	- Based on this there will be linear interpolation.
-5) Layout the camera system and test without doing alpha shader.
+- 1.35ms with both detector and fog tiles disabled.
+- 4.75ms with fog tiles enabled (.95 and custom filter 10).
+
+1) Get a very simple primative version of this working with sprites and only squares.

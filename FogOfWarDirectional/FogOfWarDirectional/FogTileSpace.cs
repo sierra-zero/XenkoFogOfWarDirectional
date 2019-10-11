@@ -11,6 +11,7 @@ namespace FogOfWarDirectional
     public class FogTileSpace : StartupScript
     {
         // Declared public member fields and properties will show in the game studio
+        public bool Enable;
         public Prefab FogTile;
         public float FogTileSpacing;
         public ushort FogRows;
@@ -25,6 +26,10 @@ namespace FogOfWarDirectional
 
         private void InitializeFogTileSpace()
         {
+            if (!Enable) {
+                return;
+            }
+
             fogVisibilityMap = new ConcurrentDictionary<Point, bool>();
 
             for (var i = 0; i < FogRows; i++) {

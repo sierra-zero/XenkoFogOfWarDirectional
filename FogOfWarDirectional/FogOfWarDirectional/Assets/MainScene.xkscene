@@ -87,6 +87,7 @@ Hierarchy:
                     efb57d530fa56de2662a5658660f61fa: !FogOfWarDirectional.FogTileSpace,FogOfWarDirectional
                         Id: 5641e520-e7b7-44f8-800d-cb467a4e6725
                         Priority: 255
+                        Enable: true
                         FogTile: 1f3666af-137a-4f1a-bc2e-0a05eb4dc1a1:Prefabs/FogTile
                         FogTileSpacing: 1.0
                         FogRows: 25
@@ -547,7 +548,7 @@ Hierarchy:
                         Children: {}
                     757742331a277b46dda2846437490c4f: !FogOfWarDirectional.FogOfWarDetector,FogOfWarDirectional
                         Id: b467b8c4-3234-4d7d-a2ab-585e7115cfbd
-                        Enable: true
+                        Enable: false
                         FrequencyModulo: 2
                         VisionRadius: 8.0
                         DegreeStep: 5

@@ -19,7 +19,7 @@ Hierarchy:
                     7c612cd707ecd7a64f487871dfa8d020: !RigidbodyComponent
                         Id: cd92c4f6-123b-4e96-a08f-c63de251289f
                         CollisionGroup: CustomFilter10
-                        CanCollideWith: DefaultFilter
+                        CanCollideWith: 0
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -37,6 +37,6 @@ Hierarchy:
                         ColliderShapes:
                             6bff6748c4bf0a0c6c96f25f3e88fb8d: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                Size: {X: 0.95, Y: 1.0, Z: 0.95}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}

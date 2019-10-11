@@ -23,7 +23,6 @@ namespace FogOfWarDirectional
         private Vector3 lastPositionRecycler;
         private Vector3 targetRecycler;
         private IEnumerable<HitResult> resultList;
-        private SortedDictionary<float, PhysicsComponent> orderedResults;
         private FogTile lastSeenRecycler;
         private FastList<FogTile> lastSeenTiles;
         private Simulation simulation;
@@ -60,7 +59,6 @@ namespace FogOfWarDirectional
             lastSeenTiles.Clear();
             lastPositionRecycler = positionRecycler;
 
-            orderedResults.Clear();
             for (int i = 0; i <= 360; i += DegreeStep) {
                 targetRecycler = new Vector3(positionRecycler.X + VisionRadius * (float)Math.Cos(i), positionRecycler.Y, 
                     positionRecycler.Z + VisionRadius * (float)Math.Sin(i));
@@ -85,7 +83,6 @@ namespace FogOfWarDirectional
         {
             simulation = Entity.GetParent().Get<CharacterComponent>().Simulation;
             resultList = new FastList<HitResult>();
-            orderedResults = new SortedDictionary<float, PhysicsComponent>();
             lastSeenTiles = new FastList<FogTile>();
 
             if (FrequencyModulo == 0) {
