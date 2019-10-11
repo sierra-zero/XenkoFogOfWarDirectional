@@ -1,0 +1,1930 @@
+!PrefabAsset
+Id: 4c511203-749f-49fa-a297-0349c102f317
+SerializedVersion: {Xenko: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 41b8009c-b8b8-42ea-8e67-17cb4bea576f
+    Parts:
+        -   Folder: null
+            Entity:
+                Id: 035ae240-42ad-4ccd-b341-2c2e7c2bfa20
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: c98cc9f0-52c5-4b9c-bff5-e626d09d6775
+                        Position: {X: 24.0, Y: 0.0, Z: -23.5}
+                        Rotation: {X: 0.0, Y: 0.707106769, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! fdeb8d91-e89e-4844-af4b-81bd3a43f1db
+        -   Entity:
+                Id: 0b003cf4-5b9a-464d-bd7b-c9cfe2d8f1c5
+                Name: naturePack_009
+                Components:
+                    f7506df7bdc50d6c7759b96ab7945cbb: !TransformComponent
+                        Id: 7fc79bda-80c0-44bb-932f-a5755aa488e0
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    dfaf768b093d4f6b7c6cc3f3ecdf32d4: !ModelComponent
+                        Id: 861c7404-6975-45fe-92fc-acb6564cbe17
+                        Model: fe51c1b2-3794-49c1-b372-427336586731:Models/naturePack_009
+                        Materials: {}
+                    14fd6cec745e32fcb6605339371bcffd: !StaticColliderComponent
+                        Id: 83cda00e-b926-4af5-8c7a-1160a4a441fb
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            e5ea3bff3d37b2e13b3cf79d7b86a9cd: !ColliderShapeAssetDesc
+                                Shape: 7286cbca-d7ab-4813-821f-4369b677a9fc:Models/naturePack_009_hull
+            Base:
+                BasePartAsset: 1e023559-53e5-4284-85d4-6ea8734ee8b9:Terrain/naturePack_009
+                BasePartId: fe05529b-4879-4fad-9459-b0d21e515417
+                InstanceId: 0b3020c9-4894-47aa-8169-dba01171f1c2
+        -   Entity:
+                Id: 0dbf63e4-df4a-4013-a9c4-6b96d609fe61
+                Name: naturePack_014
+                Components:
+                    6c9acaf7b0ca22bb3636f98c29f255e0: !TransformComponent
+                        Id: 420fa02a-219b-4af8-84d7-705e986a60d7
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    71b42da6f642bf922fa6568af5c6a555: !ModelComponent
+                        Id: 984d18a5-849d-4aca-816b-109af15b9e00
+                        Model: 65ed08f7-1210-475b-98a7-c7585235d0cb:Models/naturePack_014
+                        Materials: {}
+                    01f06cf2e3c620a250bf67ac57ee5dfd: !StaticColliderComponent
+                        Id: 74430df4-d960-40ca-a9a3-d466163c4d85
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            e064728d24d4aa75527495b6c224e4b2: !ColliderShapeAssetDesc
+                                Shape: 36513c4f-52a8-4222-b94c-3f805d21e9d8:Models/naturePack_014_hull
+            Base:
+                BasePartAsset: aff36c37-4b26-4a5f-b4ad-ff56b0c3142e:Terrain/naturePack_014
+                BasePartId: d428a297-ba99-4099-90d3-bfa245a7dc07
+                InstanceId: ba99c513-cd75-418b-aa1c-88f01abd2fc5
+        -   Folder: null
+            Entity:
+                Id: 0ef901db-a285-4a29-bcbb-c71899787eea
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: af16aaa8-d63b-4c75-a42b-018f4fee7014
+                        Position: {X: 12.0, Y: 0.0, Z: -0.5}
+                        Rotation: {X: 0.0, Y: -0.707106769, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! 367f9635-66c7-4d55-921a-9aa6fcd8f9b7
+        -   Entity:
+                Id: 11c7f7ad-021a-4e7e-9150-1cf6e1effa78
+                Name: naturePack_011
+                Components:
+                    1edb5a60338e034680de9c808c3391e1: !TransformComponent
+                        Id: 58aae7ab-997d-48d1-a2f1-102057f474c9
+                        Position: {X: 4.72998428, Y: 0.0, Z: -17.6490746}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            e6e2742ffa7331c87e73c84e6c4b7f3a: ref!! bf250bea-f022-4b4e-9c4a-c63a94613496
+        -   Entity:
+                Id: 12e10146-96f0-4a1d-a73f-c07fe01a4a8d
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 91937f56-89c6-4c8f-8469-10278dc96140
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: ad37d32a-72e2-463d-872e-a662e4c80f30
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: f303aeed-4c74-458c-a7cd-bbae5be18fb2
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: dbfe9193-38eb-49c2-aed7-1e2f210b5ce4
+        -   Entity:
+                Id: 164a2dee-f9b9-477f-98b9-5ef7fe731f6e
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: f085ba8e-97f6-424c-ba90-dde4c43b13c1
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 20304dc5-736f-41e9-8575-cf551875e871
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: ccb23c5b-1db2-4218-aef4-ae0555d2a0bc
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 1de9813b-0452-445d-9e25-012e7de9df67
+        -   Entity:
+                Id: 16906212-8637-4a5c-9910-0144bd674735
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 671a44e9-6a1d-4b59-983a-bb9ef8b8054a
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 2fde87da-16b9-4423-b362-2e58e610d65b
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 8023db11-0f5b-4eda-9f2f-6748c258c2f0
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 5b2b8798-6289-4671-9e13-faee51672235
+        -   Entity:
+                Id: 18139247-7ac7-493f-9ffb-a58e00106cc3
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: f7c5c5e5-1bc1-4c6b-b539-56ac8f44d5f7
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: aed8340d-5127-4630-b205-b83d73f36db4
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: f424d37a-ea84-4804-a8a5-c31a4ea6ec31
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 582d398a-06db-4df9-bbf4-f69ad24d345d
+        -   Folder: null
+            Entity:
+                Id: 1b319583-6a09-49ce-b9ee-3839e1355e6c
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: 6a83f97c-49a9-4299-8859-a564611b3ed7
+                        Position: {X: 9.0, Y: 0.0, Z: -0.5}
+                        Rotation: {X: 0.0, Y: -0.707106769, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! 47b7a722-a127-4052-8d20-b977b246d19f
+        -   Folder: null
+            Entity:
+                Id: 1b97ce67-3e5d-4ca9-96a2-dd7097dda903
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: 024b5932-0d9c-4f22-95d4-7142d7c9c431
+                        Position: {X: 21.0, Y: 0.0, Z: -23.5}
+                        Rotation: {X: 0.0, Y: 0.707106769, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! 7edec3fe-8bbc-42df-9f89-ebf40ff3f39c
+        -   Folder: null
+            Entity:
+                Id: 1caea9fc-86f2-44d9-a486-360085fb0caa
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: 5576f819-0046-4b01-b2c5-116135a9f860
+                        Position: {X: 3.0, Y: 0.0, Z: -23.5}
+                        Rotation: {X: 0.0, Y: 0.707106769, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! 29067c55-1c67-42c9-bc88-1677a64c4f90
+        -   Folder: null
+            Entity:
+                Id: 1cd34122-64e8-4bfe-8271-35bd74948f45
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: 63f7ce6c-2b3b-4026-9a62-8f2a0a64eb18
+                        Position: {X: 23.5, Y: 0.0, Z: -9.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! 504aaa9a-f216-4622-a3d3-32315291d1c2
+        -   Folder: null
+            Entity:
+                Id: 1e6e5fdd-eb90-49d8-9933-618d2462fdb0
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: 4969a799-95dc-4426-91eb-0eaffcbda3db
+                        Position: {X: 0.5, Y: 0.0, Z: -21.0}
+                        Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! 3ce10664-b082-495e-a296-78ee7c08ef96
+        -   Entity:
+                Id: 230bde0d-cbf5-4f34-9276-0a562b346812
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: 7d64349d-6215-4941-a5f2-47ccd5bee0eb
+                        Position: {X: 0.5, Y: 0.0, Z: -6.0}
+                        Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! ee2a7f6c-f445-4b3d-baf2-f75a54d93867
+        -   Entity:
+                Id: 262878e5-e716-4d1d-987a-84a5a7ebd847
+                Name: naturePack_014
+                Components:
+                    1479cbdffb5d3abdb54d28464b9bcd67: !TransformComponent
+                        Id: 5d568794-ea00-4aa0-8a68-b61764f99645
+                        Position: {X: 13.20656, Y: 0.0, Z: -15.6565456}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            a434961db2d51b53039dbc5e64b6a092: ref!! 9cc9a679-a29a-4437-8452-141aa5b197a3
+        -   Entity:
+                Id: 296dfbdf-0c12-444c-b390-58eae9bc191e
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: fdeb8d91-e89e-4844-af4b-81bd3a43f1db
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 4dbacffc-95be-49cf-b1a3-f957a23e4542
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 21357336-20e3-4064-b024-f3e40cb4551b
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: ad0f54d7-f101-4e0c-82d4-c1bbacd8dd77
+        -   Entity:
+                Id: 2a64d5ba-8424-4a40-9841-ae65b9623211
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: eaf0cb13-076f-42e6-8940-b01232c65180
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 805dff1d-8bf1-4d6d-a603-3c4d2bec5694
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 6a2a88d1-fb5c-447b-ad29-a4cc875706ca
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 1b4f56b3-9b6b-448d-aeaa-b45a373e6531
+        -   Folder: null
+            Entity:
+                Id: 2a778fe5-0ee3-4d6f-8587-3f0cd75d21d8
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: e2229be0-4a2d-4fc7-9510-777e5427bfca
+                        Position: {X: 9.0, Y: 0.0, Z: -23.5}
+                        Rotation: {X: 0.0, Y: 0.707106769, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! 789b85ab-97fd-4485-aa2a-053fea6683db
+        -   Entity:
+                Id: 2c271917-6b28-47da-b580-2c619426c4b3
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 2eefc4c2-052d-4953-b31b-bd455959512a
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: f61bc470-c786-4261-b704-9efa1f5cc30d
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 33da364a-7a18-4143-b4be-90e79a659b2b
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: bd8ab3eb-b841-421b-957b-41d59710ea49
+        -   Entity:
+                Id: 2e037a89-929b-445d-bfe3-095bc3d440a9
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 05feca6e-5c3a-4212-9b9c-1fddeb344dfd
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 026d17ee-f71d-4c20-aff9-a6686adfb57a
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 89df57d8-84e7-41db-891c-108760ce18f6
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: e51a4989-66e6-4164-9cde-ae09f0b41901
+        -   Entity:
+                Id: 2f67210d-4928-483f-814d-e3434f0ff7fb
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: b76d736f-856b-4786-9bab-3bb34b6fdca3
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: ebb19978-8e2e-43e3-afb5-374b4ca1307f
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 6bc7c3ee-99ac-429f-9fdf-3e227da16f5d
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 04d44c80-60c0-4467-8128-a407b26c9bb7
+        -   Folder: null
+            Entity:
+                Id: 2fc123aa-f593-41a0-89da-0031044a5a28
+                Name: naturePack_116
+                Components:
+                    a8aa6709123ef9a3fcb0da20d01668a1: !TransformComponent
+                        Id: 6df8c567-9885-4dc7-a1c6-d793dea6d189
+                        Position: {X: 17.5, Y: 0.0, Z: -18.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0ff29f1d8a3e6166d2f589960ca1c662: ref!! 392b0f20-c104-4af2-891f-8fa19e02afa2
+        -   Folder: null
+            Entity:
+                Id: 32e370cd-063e-4c64-8344-1c862d7d4bf1
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: a9afcfb6-ea9d-414e-a1e5-188b19be7bcf
+                        Position: {X: 15.0, Y: 0.0, Z: -23.5}
+                        Rotation: {X: 0.0, Y: 0.707106769, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! b76d736f-856b-4786-9bab-3bb34b6fdca3
+        -   Folder: null
+            Entity:
+                Id: 34dd57e8-567a-49cf-b785-0e26d551fbcb
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: 770939db-efd9-4b55-9057-bd7b73d5e612
+                        Position: {X: 6.0, Y: 0.0, Z: -23.5}
+                        Rotation: {X: 0.0, Y: 0.707106769, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! f7c5c5e5-1bc1-4c6b-b539-56ac8f44d5f7
+        -   Entity:
+                Id: 378a8ba7-6e54-4f64-ba73-acb8d56a59fb
+                Name: naturePack_011
+                Components:
+                    eb03c75a15b0d558ad74b5cc501ee7f3: !TransformComponent
+                        Id: bf250bea-f022-4b4e-9c4a-c63a94613496
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    f7c70c3b8f89523c049a5d7802f09c57: !ModelComponent
+                        Id: 4d160ba9-fdd8-4c09-9e8f-c682e336128c
+                        Model: 9494024a-94e8-43bb-ae46-c9fd723e522a:Models/naturePack_011
+                        Materials: {}
+                    33b6ba91d5983af7c5a418b573dbfe79: !StaticColliderComponent
+                        Id: 464b0ab5-d6ef-47c1-a7fa-f789b9ec7122
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            238063c80ea517e47e49782638cf440e: !ColliderShapeAssetDesc
+                                Shape: a7889d11-fd8d-4cf3-8cdb-c6410103ebbb:Models/naturePack_011_hull
+            Base:
+                BasePartAsset: 1ab1fcef-bda4-4dbd-89e7-cd14b8d1a28f:Terrain/naturePack_011
+                BasePartId: 5b86b8bb-aad8-4fbd-ae76-8f5480e499b3
+                InstanceId: 8e487a05-b87f-4eb1-bf1b-3a609fe04b6a
+        -   Entity:
+                Id: 38de2cff-08db-477a-bab4-4bc98c170743
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 7edec3fe-8bbc-42df-9f89-ebf40ff3f39c
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: d00ebe93-7c76-41b8-8010-6bfdc33108c2
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: a62bfd3f-6db0-4ada-b7ae-7f157d2660d1
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 85cbc5db-48c7-4aeb-a646-6c74eab2776f
+        -   Folder: null
+            Entity:
+                Id: 41271fe4-ac1a-475a-ad94-524ed13dbfbd
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: d8dddc85-e33d-4f16-bb47-75726053b678
+                        Position: {X: 23.5, Y: 0.0, Z: -12.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! 55fe097a-f435-44ac-84e3-9d9f38578ae2
+        -   Folder: null
+            Entity:
+                Id: 41a76b3e-691f-4679-8266-be4125fb0382
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: c17a53b8-921a-43be-b20b-f0b06c07602a
+                        Position: {X: 23.5, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! 2eefc4c2-052d-4953-b31b-bd455959512a
+        -   Entity:
+                Id: 41b8009c-b8b8-42ea-8e67-17cb4bea576f
+                Name: Arena
+                Components:
+                    d1d27e800943dd0fe271c8210e130287: !TransformComponent
+                        Id: 44b9e33b-1a56-45a3-bbd4-6e74b1f6e4df
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            eb03e7392c32f382d3f1b7de36113753: ref!! 95f1e1ac-d84b-4cdd-813d-2e8fc969bf7b
+                            6aece1d005ed3345d961c8c2b3fee777: ref!! 29b2f0c1-3854-426f-bf43-3470532742ac
+                            d1b28e87aecc876d2f860123fbbaf9a5: ref!! 7d64349d-6215-4941-a5f2-47ccd5bee0eb
+                            d1a5463003519a7fd587764a088f962a: ref!! a085a14e-6e2d-422a-b27e-171d0dc0aa9e
+                            ec9d4c7ed9fc697e5287e7c5c3ae1945: ref!! 84ffb2bc-93af-4c7d-b6be-b6d6ca4ac5ff
+                            45d8366e71a579512b74ba41dd1421d0: ref!! 65ddbfce-7cd2-4dbb-8a9c-6bf4d0b856e0
+                            f8323a17fb56ae6884dd2e27935a1613: ref!! a0b8264c-5742-4d79-b7e6-faf52f31f571
+                            feb96b317ebea4b02b0ee3e4b0dcb7ea: ref!! 4969a799-95dc-4426-91eb-0eaffcbda3db
+                            cdd93438f73d3d98d0c0fb5fa40663f6: ref!! ac781ea5-5840-4bda-8ba4-fa52c2f86355
+                            0d94c373d9a91980e012c33beb900d39: ref!! 5576f819-0046-4b01-b2c5-116135a9f860
+                            8cb3886ade7816a4398976d1529de6b5: ref!! 770939db-efd9-4b55-9057-bd7b73d5e612
+                            bd8cc3506ecfc5e82c88571f7cfae593: ref!! e2229be0-4a2d-4fc7-9510-777e5427bfca
+                            f62a205bdce77bfdf443f6430f3d09a2: ref!! 9d776420-9c82-474c-8d39-374953ebb5e6
+                            3b59f6647a0e35308157f137fa14e12d: ref!! 2e19ccd4-7374-4547-a7c3-f1d9a0516ba7
+                            83898ad9a3b337ad7ae28856721597f4: ref!! a9afcfb6-ea9d-414e-a1e5-188b19be7bcf
+                            dcfe1cd9cb124fce8717606d5b5efdd1: ref!! 5afc7cdb-6f55-47fe-92f0-1247db587db8
+                            4d111494c83b0f4796f9728e70aa6cb7: ref!! 024b5932-0d9c-4f22-95d4-7142d7c9c431
+                            f6e008934df7e99eeee2c986a473718b: ref!! c98cc9f0-52c5-4b9c-bff5-e626d09d6775
+                            e2313120f87c43fded270268f31d209b: ref!! 434a344e-0d33-49be-a061-263d51145ecf
+                            3ef5ff3e6bea8cd321f6212a8ba250d3: ref!! 4e96ddc5-f0df-4971-8dca-084b4303633a
+                            83a40d931cbae279f9f93b538ee00de8: ref!! c342ebae-0112-4aa0-8dc6-755e26d03ac4
+                            73bb5a093d0ec39512255ec656df6c3b: ref!! d8dddc85-e33d-4f16-bb47-75726053b678
+                            e3d901eb7814b4ee862bbb35aca9a2d6: ref!! 63f7ce6c-2b3b-4026-9a62-8f2a0a64eb18
+                            7e161e046ddfef6328fb0ffeffc0afeb: ref!! ba52ecb2-e17a-4dd1-b330-3fd53f2385c0
+                            83bc41ab4ca855fff5702e840eac9a05: ref!! ec9733c7-79f5-47af-9bb4-390d577b63aa
+                            13ae799188f0e1636d48331de5bc54d8: ref!! c17a53b8-921a-43be-b20b-f0b06c07602a
+                            946444dda20de8d201999798a19a9675: ref!! a933590b-ad4a-4a85-8ad2-11487feda0c8
+                            c17f70963d7740e53d1fbeb85ede715f: ref!! e0eb26e9-83b0-4e54-9173-f32b0580135d
+                            4b41d3ed6d869ee692230758db52e836: ref!! 0e45a905-f2fd-47fe-98ec-a17ce97431fa
+                            76c3e5c110bf89e687231e313cfc1c4a: ref!! 6a83f97c-49a9-4299-8859-a564611b3ed7
+                            9403258e63e3f21081838a88ab96c3eb: ref!! af16aaa8-d63b-4c75-a42b-018f4fee7014
+                            094a3c5ecb27182490f492c5a5d88209: ref!! 6c52a940-c39c-4fa6-b939-0d7a2c62d571
+                            a6f7403c75a9e976d00565755ac903ab: ref!! 6c353308-1886-40be-ad0c-db80191d1c55
+                            7265b205b0fe9c10cae290f457c593f0: ref!! 7226e1d0-117b-4110-aecf-1579544188cf
+                            e9d7626b271a825c676ab823deba2754: ref!! 58aae7ab-997d-48d1-a2f1-102057f474c9
+                            4839f865bcea7029cb7e7857d119391e: ref!! 5d568794-ea00-4aa0-8a68-b61764f99645
+                            587b69e42a370b017ac9f87418e7bd8a: ref!! 74a797c4-cd90-46e5-a672-f1aaf21dad94
+                            82a1a3ee527444592669281a7bff76e4: ref!! 06a4b16d-3011-445c-9249-e8275769fa59
+                            3081daa39a16c7d0615b24896ea0ccb2: ref!! 6df8c567-9885-4dc7-a1c6-d793dea6d189
+                            f949b843d1c73da408186d6f2729bbab: ref!! 97bfa576-a18c-4469-a450-6ac54cbb78a4
+                            a52403bce761a794c1338dbcf1d492c5: ref!! 75171c5b-c2fa-4544-8dcf-2a347d08c7f8
+                            20f3247971ba7eb40ba7156f7bf613d1: ref!! c4e73da3-1825-4862-a27e-a1bbe251fd9a
+                            468d12b8470bbdb451fcc8c8e0e4d491: ref!! 5115078d-3dbd-4688-820a-5f5a6ca2fb94
+                            f733f943f7bc12277042e406571fc30a: ref!! f6c84d72-2a7e-404b-9c7d-6a2d2723a3ca
+        -   Entity:
+                Id: 4284b941-b591-4a50-b291-a3db3cd70f7b
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 42eebd3a-8005-4d31-8e7f-210d30246635
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 0d4fc2fc-739f-42da-91ef-37019e48c1f9
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: a325afc8-4168-420f-9fe8-3a5d7760985a
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 4357ed71-9767-4281-8684-72885da62bba
+        -   Folder: null
+            Entity:
+                Id: 473cb5c3-217b-4078-8f41-e15ef98d89da
+                Name: naturePack_116
+                Components:
+                    a8aa6709123ef9a3fcb0da20d01668a1: !TransformComponent
+                        Id: 97bfa576-a18c-4469-a450-6ac54cbb78a4
+                        Position: {X: 17.5, Y: 0.0, Z: -21.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0ff29f1d8a3e6166d2f589960ca1c662: ref!! 255bcc88-1760-4b81-8fe2-41db4d0a6a18
+        -   Entity:
+                Id: 474eae19-7b4e-4277-8784-92b7ea4c2249
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 55fe097a-f435-44ac-84e3-9d9f38578ae2
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: cbce5686-7b60-4b5d-923d-8a1f71086fa6
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: c4b2b1b5-9dfb-4172-aa23-2f290b88b9ce
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 4621aed4-7357-41ce-b826-74aff4fcfa51
+        -   Folder: null
+            Entity:
+                Id: 47b47216-49c6-4a8f-be67-33b8f8a755d6
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: 2e19ccd4-7374-4547-a7c3-f1d9a0516ba7
+                        Position: {X: 11.5, Y: 0.0, Z: -19.46182}
+                        Rotation: {X: 0.0, Y: 0.707106769, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! 671a44e9-6a1d-4b59-983a-bb9ef8b8054a
+        -   Folder: null
+            Entity:
+                Id: 517c41a7-c9ee-46bf-8f14-8f4ce2c3d402
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: 6c353308-1886-40be-ad0c-db80191d1c55
+                        Position: {X: 18.0, Y: 0.0, Z: -0.5}
+                        Rotation: {X: 0.0, Y: -0.707106769, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! c04b1ae0-6fd4-4001-8d8b-98989e8abc61
+        -   Entity:
+                Id: 5335b43c-6375-48de-bec9-c531c0ff90f8
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: 29b2f0c1-3854-426f-bf43-3470532742ac
+                        Position: {X: 0.5, Y: 0.0, Z: -3.0}
+                        Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! 97c663f5-a34c-4813-a869-a792a7cdbb55
+        -   Entity:
+                Id: 533d524b-632e-4d7f-8470-1ca0fa8d0067
+                Name: naturePack_014
+                Components:
+                    3657c454a20f09d2a762e83a74039abd: !TransformComponent
+                        Id: 75171c5b-c2fa-4544-8dcf-2a347d08c7f8
+                        Position: {X: 18.4804974, Y: 0.0, Z: -7.63247776}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            a0845c1e9f86d046a46e75a5fd2bf50f: ref!! 420fa02a-219b-4af8-84d7-705e986a60d7
+        -   Entity:
+                Id: 534d690f-d732-4469-be6b-5cb71b1f8d8a
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 3ce10664-b082-495e-a296-78ee7c08ef96
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 9ba9ed75-fa34-41d4-8546-171c5405f81b
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 3d084dc2-172b-4397-bbb3-45659fa34328
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: c6029fc2-6110-43c7-b5b6-561b893d88cf
+        -   Folder: null
+            Entity:
+                Id: 54a7a122-80e3-4e91-a711-07280a200aad
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: 6c52a940-c39c-4fa6-b939-0d7a2c62d571
+                        Position: {X: 15.0, Y: 0.0, Z: -0.5}
+                        Rotation: {X: 0.0, Y: -0.707106769, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! 4b6ebcf5-a3ad-4e98-be8f-b00fc0ab13cb
+        -   Entity:
+                Id: 5681a890-ddee-436f-81ac-bbb29200b9df
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 2f162515-506c-4621-9088-b6ca04bd24e8
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: e00811bb-8703-406a-8ac8-ccb645d3d760
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 59600dce-e675-45ee-ab01-3cc1595f8eba
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 166981dd-47c6-4c55-b627-4fae61eaa9c6
+        -   Entity:
+                Id: 58b0d8ec-9733-47ba-a374-47d89597d51a
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: bd8a1852-2566-44d5-9d59-e3a513db0022
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 6530d774-445e-4d2c-b2f0-16bfb08b869e
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: deb03e01-a449-4bff-9709-c8ed5659fe84
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 3a25c6b0-11b6-40b3-9029-e1f06bfb065a
+        -   Entity:
+                Id: 59d21280-026a-46b2-921a-73c6031c40a7
+                Name: naturePack_116
+                Components:
+                    a8aa6709123ef9a3fcb0da20d01668a1: !TransformComponent
+                        Id: 74a797c4-cd90-46e5-a672-f1aaf21dad94
+                        Position: {X: 24.0, Y: 0.0, Z: -18.25}
+                        Rotation: {X: 0.0, Y: 0.707106769, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0ff29f1d8a3e6166d2f589960ca1c662: ref!! 4fdb0538-bc0c-461c-a2d7-9d2509fb76c6
+        -   Entity:
+                Id: 5d9136fb-4e5c-4580-985c-cb095ba0ad25
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 97c663f5-a34c-4813-a869-a792a7cdbb55
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: d74d4e81-ebde-488c-ab2d-e7745e743afa
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: b88a0081-62a1-459f-9565-cadec2d15a42
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: b3fab75d-e921-4b44-9130-5cf93b0d624e
+        -   Folder: null
+            Entity:
+                Id: 5eec8fac-a885-4696-9165-07e6f3e73333
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: a0b8264c-5742-4d79-b7e6-faf52f31f571
+                        Position: {X: 0.5, Y: 0.0, Z: -18.0}
+                        Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! fa4a0ae7-e6ed-4403-904d-c8fe5aa45287
+        -   Entity:
+                Id: 5f279850-09e6-4094-946d-9eae2eaa4072
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 37415494-70e5-45f0-ba99-c3606e092a0a
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: dffd7865-a8f5-4f35-88da-cebe36358318
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 6fcb867f-8301-4cba-a8f3-3ea2c225804a
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 27358595-ae76-4bec-a52e-7c4c3676db65
+        -   Entity:
+                Id: 60ab9e26-d2f7-43bd-85bd-c25ac8dc2d89
+                Name: naturePack_008
+                Components:
+                    b2f9bf93dd024be7bcf2e0d206a83c44: !TransformComponent
+                        Id: c4e73da3-1825-4862-a27e-a1bbe251fd9a
+                        Position: {X: 9.261371, Y: 0.0, Z: -3.844872}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            bbbc541dbd5c81f8d1654bf364f44b55: ref!! 2ba3af4e-07b7-49ff-9abc-5842ea04d6d7
+        -   Entity:
+                Id: 616f66a3-e14f-41f3-ad58-0886edfa9e09
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: 434a344e-0d33-49be-a061-263d51145ecf
+                        Position: {X: 23.5, Y: 0.0, Z: -21.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! dd250926-1022-4b7f-9b2c-1553f5fdc17a
+        -   Folder: null
+            Entity:
+                Id: 63bd985d-a503-436a-a21b-f5553ad826a2
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: 4e96ddc5-f0df-4971-8dca-084b4303633a
+                        Position: {X: 23.5, Y: 0.0, Z: -18.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! 2052a524-4e85-4be7-b1e5-5944806f1846
+        -   Folder: null
+            Entity:
+                Id: 68374b7e-037c-41b0-be2f-a4959aafe443
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: ec9733c7-79f5-47af-9bb4-390d577b63aa
+                        Position: {X: 23.5, Y: 0.0, Z: -3.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! 2f162515-506c-4621-9088-b6ca04bd24e8
+        -   Folder: null
+            Entity:
+                Id: 68c5d791-a7b9-4371-9993-5294b708888e
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: 84ffb2bc-93af-4c7d-b6be-b6d6ca4ac5ff
+                        Position: {X: 0.5, Y: 0.0, Z: -12.0}
+                        Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! d15de87f-3e02-4298-b4c2-380fd422ccce
+        -   Entity:
+                Id: 6e58f709-6e2e-469d-8b64-fa0596687e3f
+                Name: naturePack_008
+                Components:
+                    45362535727748e706526d8d80303203: !TransformComponent
+                        Id: 2ba3af4e-07b7-49ff-9abc-5842ea04d6d7
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    08b0ed3f5237ea1218a6c272000ecd33: !ModelComponent
+                        Id: 4caadbe5-fbce-47ad-809c-2e1263a41a2c
+                        Model: 82c7079d-5c71-4fe1-bd2e-f83a9d094452:Models/naturePack_008
+                        Materials: {}
+                    22825e90c4417e238276a88090122a7d: !StaticColliderComponent
+                        Id: ef26bea5-cb48-439a-9952-95aab9b556a5
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            e3141c585c878fc312f02b56771e6474: !ColliderShapeAssetDesc
+                                Shape: 06e356fc-831c-4441-b861-4e24a4af9fc3:Models/naturePack_008_hull
+            Base:
+                BasePartAsset: c280bcbb-765c-4469-acf5-fd62d0e73eea:Terrain/naturePack_008
+                BasePartId: 1feca141-9e71-4b40-be76-ef5700ecc7a7
+                InstanceId: 4a417165-f7df-4ecd-bad2-6fb86ea04668
+        -   Folder: null
+            Entity:
+                Id: 6ea25f95-2c80-4177-b05c-2070d4a3746d
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: c342ebae-0112-4aa0-8dc6-755e26d03ac4
+                        Position: {X: 23.5, Y: 0.0, Z: -15.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! 91937f56-89c6-4c8f-8469-10278dc96140
+        -   Entity:
+                Id: 702f81a8-6e62-438c-8611-80af64a57efa
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 966bcec7-a51a-4f35-9abd-49118da973cc
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: da6f0340-c828-47eb-bc61-12a26841fa0c
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: fe3a7fe5-3036-4a40-8b5b-3b61a1d10718
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 7e8756aa-8cf8-452f-95b4-86e8890d38a3
+        -   Entity:
+                Id: 76010677-bb1a-4ef0-a678-8308500b5698
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 2052a524-4e85-4be7-b1e5-5944806f1846
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 8bea5297-d844-4449-901a-4ef270f5c071
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 27e355de-adff-44ce-b742-b37b628246ff
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 2142c402-7c72-4849-8367-0acdaf1936f5
+        -   Folder: null
+            Entity:
+                Id: 7b43d2eb-756e-44ea-af83-3cc961a437d4
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: 5afc7cdb-6f55-47fe-92f0-1247db587db8
+                        Position: {X: 18.0, Y: 0.0, Z: -23.5}
+                        Rotation: {X: 0.0, Y: 0.707106769, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! eaf0cb13-076f-42e6-8940-b01232c65180
+        -   Entity:
+                Id: 7bb80b95-c602-4ffd-bddd-53d7ffd340d7
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 29067c55-1c67-42c9-bc88-1677a64c4f90
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 1df0ac01-bb2d-42d1-aed2-ae79e4cffb31
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: c2b97196-5113-404c-a87b-797843e4939f
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 37eb334a-af27-4fdd-a472-bb212713a6e4
+        -   Entity:
+                Id: 7f39b740-be6e-49c7-9ec2-a78bbe4dd5ae
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 47b7a722-a127-4052-8d20-b977b246d19f
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: e1ed1e43-dca1-400f-8b3f-26bae5ea83bb
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 8f3429d0-ea08-4563-8b55-872e1efe5eca
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: ece2cc73-3929-4ba3-a3d5-af4461fe6b7b
+        -   Entity:
+                Id: 7fb298ec-f561-4088-aebd-af96146e93d6
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: fa4a0ae7-e6ed-4403-904d-c8fe5aa45287
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 3ba5a2e4-e8f6-447c-b417-7e01e6698887
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 56efd5d1-3e70-43fb-8323-cafbb2803e5f
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 735cada5-2b1c-49df-a839-bb762c05d1dd
+        -   Entity:
+                Id: 82e610dd-6186-446d-bafb-c2069c0ed0a4
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 255bcc88-1760-4b81-8fe2-41db4d0a6a18
+                        Position*: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 3db022bd-fa4d-456a-bf53-5f4380db9cc9
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: abaaeb2e-2b75-4c0b-9357-e2fe767da1a8
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: a93eaab7-714c-41fe-84fb-65ed2b38ad71
+        -   Folder: null
+            Entity:
+                Id: 852b0330-3cd5-4ca3-af4a-3888b3fd3db5
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: a933590b-ad4a-4a85-8ad2-11487feda0c8
+                        Position: {X: 0.0, Y: 0.0, Z: -0.5}
+                        Rotation: {X: 0.0, Y: -0.707106769, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! f085ba8e-97f6-424c-ba90-dde4c43b13c1
+        -   Entity:
+                Id: 8640a37c-b895-4dbd-afc3-dd6a556a5a59
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 9bd17629-9cff-45fc-ab20-214123471913
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 57259420-8699-4687-ad65-0fb399cb86ad
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: beac7174-b92b-413d-88bc-f7f12dd11157
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: d079c181-a144-4a8b-aec7-1c32cacbed1d
+        -   Entity:
+                Id: 88874e1d-e48a-49b5-9ffb-e3b12f4962c9
+                Name: naturePack_009
+                Components:
+                    a382ff20e4885d98667d5027fb1727c7: !TransformComponent
+                        Id: 5115078d-3dbd-4688-820a-5f5a6ca2fb94
+                        Position: {X: 4.303834, Y: 0.0, Z: -8.917643}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            fb3a3795c6bd31c8b14251bad9409b36: ref!! 7fc79bda-80c0-44bb-932f-a5755aa488e0
+        -   Entity:
+                Id: 918d865f-c5cb-4989-bd8c-3ad97740b622
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 4fdb0538-bc0c-461c-a2d7-9d2509fb76c6
+                        Position*: {X: 0.0, Y: 0.0, Z: -8.840758E-08}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 3c6739d9-e0ab-41bf-92bb-f9dc252ae38f
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: e140ceb3-93f9-4d86-9ab1-dd51563e1e33
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 18ff635c-6947-4de6-b158-d4edd6c5b581
+        -   Entity:
+                Id: 93335043-9f4b-49d7-bba1-9d6abc1f057b
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: d4fe9458-8c94-46fe-9664-2349a9afc8f2
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 5737cb67-49ea-4928-b180-a7903efabfe2
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 7cd0956c-5160-4fdf-a68c-094f42c73d15
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: a133786a-9a61-4111-8772-666d55f58d58
+        -   Entity:
+                Id: 990ec697-da33-4d78-99d2-071539ef2c20
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 4b6ebcf5-a3ad-4e98-be8f-b00fc0ab13cb
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 20849991-1efb-4959-bc5e-7da405896c30
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 178944bf-475e-4a59-bd6d-101da90af769
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 810e0918-82c3-4d9a-8dd6-8fb7a485856e
+        -   Entity:
+                Id: 9cffdd55-54d4-41dc-b260-b1b5275877de
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 367f9635-66c7-4d55-921a-9aa6fcd8f9b7
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 3be5e610-10a3-49bb-8680-49647c8bc36a
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 57c22b9f-37b7-4ac2-93a7-dabb146fe81d
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 1b52769f-cda4-42d8-aecc-a8a119a14268
+        -   Folder: null
+            Entity:
+                Id: 9d370fc0-22eb-495e-a510-36a0790e7760
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: 65ddbfce-7cd2-4dbb-8a9c-6bf4d0b856e0
+                        Position: {X: 0.5, Y: 0.0, Z: -15.0}
+                        Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! 966bcec7-a51a-4f35-9abd-49118da973cc
+        -   Entity:
+                Id: a4bafa3f-870e-4a57-9748-03e3d4bc2fec
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: c04b1ae0-6fd4-4001-8d8b-98989e8abc61
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 587ccf5d-f236-4c33-bd56-ff56f202df3b
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: d158bdd9-0386-4a27-b2f4-a047c447ae7b
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 9dea1337-b264-41eb-85d5-47f954e86000
+        -   Entity:
+                Id: a780f1d3-5f7d-4783-bcf5-fc1a10487730
+                Name: naturePack_014
+                Components:
+                    6c9acaf7b0ca22bb3636f98c29f255e0: !TransformComponent
+                        Id: 9cc9a679-a29a-4437-8452-141aa5b197a3
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    71b42da6f642bf922fa6568af5c6a555: !ModelComponent
+                        Id: 47449345-9ed9-4586-acea-e45334ca2e6c
+                        Model: 65ed08f7-1210-475b-98a7-c7585235d0cb:Models/naturePack_014
+                        Materials: {}
+                    01f06cf2e3c620a250bf67ac57ee5dfd: !StaticColliderComponent
+                        Id: d3ba9c2e-7273-4355-a169-f990276844c9
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            e064728d24d4aa75527495b6c224e4b2: !ColliderShapeAssetDesc
+                                Shape: 36513c4f-52a8-4222-b94c-3f805d21e9d8:Models/naturePack_014_hull
+            Base:
+                BasePartAsset: aff36c37-4b26-4a5f-b4ad-ff56b0c3142e:Terrain/naturePack_014
+                BasePartId: d428a297-ba99-4099-90d3-bfa245a7dc07
+                InstanceId: 7cb05df0-8ba7-47e4-8bb8-045bc09c1751
+        -   Folder: null
+            Entity:
+                Id: a8e326e9-86c6-4715-8ee4-4f102c0ea972
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: a085a14e-6e2d-422a-b27e-171d0dc0aa9e
+                        Position: {X: 0.5, Y: 0.0, Z: -9.0}
+                        Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! 9bd17629-9cff-45fc-ab20-214123471913
+        -   Folder: null
+            Entity:
+                Id: aa27fcaf-73ba-4150-a8af-98b31376fed5
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: ac781ea5-5840-4bda-8ba4-fa52c2f86355
+                        Position: {X: 0.5, Y: 0.0, Z: -24.0}
+                        Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! d4fe9458-8c94-46fe-9664-2349a9afc8f2
+        -   Folder: null
+            Entity:
+                Id: ad3613fe-1bfe-4547-80e2-b2cbe1f3cad7
+                Name: naturePack_116
+                Components:
+                    7aee15ba3aabcd1220a6a97145c6f8b3: !TransformComponent
+                        Id: f6c84d72-2a7e-404b-9c7d-6a2d2723a3ca
+                        Position: {X: 16.5, Y: 0.0, Z: -14.175}
+                        Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            c785aca97f3eecdfab301a96c7e741dc: ref!! 70e557f8-fc1c-4e30-8c7c-d25189656d1d
+        -   Folder: null
+            Entity:
+                Id: b4539a61-17b1-4541-a41e-1906264e2141
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: ba52ecb2-e17a-4dd1-b330-3fd53f2385c0
+                        Position: {X: 23.5, Y: 0.0, Z: -6.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! 05feca6e-5c3a-4212-9b9c-1fddeb344dfd
+        -   Folder: null
+            Entity:
+                Id: b56a8d19-873f-4a94-a8d5-cdb89e602929
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: 7226e1d0-117b-4110-aecf-1579544188cf
+                        Position: {X: 21.0, Y: 0.0, Z: -0.5}
+                        Rotation: {X: 0.0, Y: -0.707106769, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! 42eebd3a-8005-4d31-8e7f-210d30246635
+        -   Entity:
+                Id: b5f07dfd-d845-404b-a745-7bf957069084
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: ee4bfeb0-56f5-4002-9fa5-8d31539934ab
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: c3bdfc5b-ff31-4514-be49-461da274405c
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: b6d14401-779c-42c5-8033-081111d677a6
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 8b73898d-c133-4bd8-891e-317afc9219f4
+        -   Folder: null
+            Entity:
+                Id: bc4aa779-7695-4e78-aa69-f7161acd6781
+                Name: naturePack_116
+                Components:
+                    a8aa6709123ef9a3fcb0da20d01668a1: !TransformComponent
+                        Id: 06a4b16d-3011-445c-9249-e8275769fa59
+                        Position: {X: 21.0, Y: 0.0, Z: -18.275}
+                        Rotation: {X: 0.0, Y: 0.707106769, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            0ff29f1d8a3e6166d2f589960ca1c662: ref!! ba706855-5784-46d9-8612-5e241b0c3954
+        -   Entity:
+                Id: bd1531d6-ae4c-4be5-a33b-3cf10dbcb2b8
+                Name: Ground
+                Components:
+                    8206c58e7908b83b42f463ef24dce863: !TransformComponent
+                        Id: 95f1e1ac-d84b-4cdd-813d-2e8fc969bf7b
+                        Position: {X: 12.0, Y: 0.0, Z: -12.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    b6520fa959d8693333fae10cdf73877e: !ModelComponent
+                        Id: 1e66b423-0d59-4eae-8f00-b0b715a8e424
+                        Model: 63cc7a21-3406-4e73-8109-838d9855f3f5:Models/Ground
+                        Materials:
+                            1303750f691de68dec99bbc595fff721~0: 6b9a0a2e-8dde-403f-b0b6-63b3097f25ba:Models/Leafs
+                    40bdcc08e9037245703fad4a37c148fd: !StaticColliderComponent
+                        Id: 3633fa25-8c6b-45e5-b6e0-028f874e5226
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            688c82a32cb3e2825f84d6d985d644f0: !StaticPlaneColliderShapeDesc
+                                Normal: {X: 0.0, Y: 1.0, Z: 0.0}
+                                Offset: 0.0
+        -   Folder: null
+            Entity:
+                Id: c6f939c5-f179-4584-b71c-aaf165009ff8
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: 9d776420-9c82-474c-8d39-374953ebb5e6
+                        Position: {X: 12.0, Y: 0.0, Z: -23.5}
+                        Rotation: {X: 0.0, Y: 0.707106769, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! 37415494-70e5-45f0-ba99-c3606e092a0a
+        -   Entity:
+                Id: c7cd8d45-c476-4235-9d9a-d38ce6913961
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: dd250926-1022-4b7f-9b2c-1553f5fdc17a
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 1fb52766-3871-4969-9340-8145d71740a4
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 81c32c1a-c18f-4a6f-8246-434fdc3d0f5f
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: c985413f-4255-443c-b1f1-ea58a77949e3
+        -   Entity:
+                Id: cead2914-5598-4c82-800e-e762e3c9ab25
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 392b0f20-c104-4af2-891f-8fa19e02afa2
+                        Position*: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 81382c93-4d6b-44b4-8394-324a0621f654
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 5f372533-1460-4b5f-8419-b7d393a7099f
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 23a0625b-a8b2-49d6-a44c-e02a77f38a6c
+        -   Entity:
+                Id: d1d8c346-98bb-4d85-b7a2-25acfd89e850
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 70e557f8-fc1c-4e30-8c7c-d25189656d1d
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 2e4da27d-9fef-41d2-8f14-c25814e5fad0
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 399b979c-e97a-4913-849c-e484822e9ef9
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: d07f9087-d545-481a-a39c-b5ae273f08f9
+        -   Entity:
+                Id: e078dadf-a627-49c1-b7f1-7ea42184cfca
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 789b85ab-97fd-4485-aa2a-053fea6683db
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 807dd5d5-3485-402c-9bb7-80ef3ee460de
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 7f6dc034-15eb-437c-9b97-48b201e48e27
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 6a835b3b-7513-478d-9816-f76b9ecedcab
+        -   Entity:
+                Id: e677c46c-89f1-4cbc-a748-ecc79a72b991
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: ee2a7f6c-f445-4b3d-baf2-f75a54d93867
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: c6f975aa-87f2-48e0-8ca5-21081412c5a2
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 2df04587-b8dd-4f57-9ec6-062df4bea5ec
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 48e42d3d-4d1e-47f6-88e0-0225a6000682
+        -   Entity:
+                Id: ed10294b-dbd6-4fe6-a389-ceede8b9144e
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: d15de87f-3e02-4298-b4c2-380fd422ccce
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 04756206-9406-4560-a2b4-96ae5f4e256b
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: e68dd47d-e93e-4664-a6ff-f5b4daf25880
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: 4a8dd4ec-3e0f-41e7-a18b-3f4e5926f26e
+        -   Entity:
+                Id: f0a9f69a-32ae-4df5-9aae-59eab9a44ff9
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 504aaa9a-f216-4622-a3d3-32315291d1c2
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 87bf65b3-b673-44aa-ad9b-83cc5961b83b
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: a68c6feb-d8c0-40e2-ac8e-dadd702ad53c
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: e8f8a368-7b69-4e60-851f-a8531c3275c2
+        -   Folder: null
+            Entity:
+                Id: f3c76953-40ae-4bce-a617-0e0ed12c1fcc
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: 0e45a905-f2fd-47fe-98ec-a17ce97431fa
+                        Position: {X: 6.0, Y: 0.0, Z: -0.5}
+                        Rotation: {X: 0.0, Y: -0.707106769, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! bd8a1852-2566-44d5-9d59-e3a513db0022
+        -   Entity:
+                Id: f4094212-82f6-45da-9a3d-0f8060c05708
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: ba706855-5784-46d9-8612-5e241b0c3954
+                        Position*: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 28f10fa3-9efd-45f8-baa3-2408887ebd14
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 30a0d19b-7207-48f1-9df3-e70514367cfb
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+            Base:
+                BasePartAsset: 84778302-20c1-43a7-8fd2-5672edd03808:Terrain/naturePack_116
+                BasePartId: b3f2429a-6c64-4572-8467-87529e7c6ab8
+                InstanceId: f8c17bcb-997a-48a9-95d7-079ea1d48379
+        -   Folder: null
+            Entity:
+                Id: f4a5679a-ec6a-4eec-a9e7-7e302c420dbb
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: e0eb26e9-83b0-4e54-9173-f32b0580135d
+                        Position: {X: 3.0, Y: 0.0, Z: -0.5}
+                        Rotation: {X: 0.0, Y: -0.707106769, Z: 0.0, W: 0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! ee4bfeb0-56f5-4002-9fa5-8d31539934ab

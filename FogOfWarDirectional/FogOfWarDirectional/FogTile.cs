@@ -1,31 +1,27 @@
-﻿using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Concurrent;
 using Xenko.Core.Mathematics;
-using Xenko.Input;
 using Xenko.Engine;
+using Xenko.Physics;
+
+// ReSharper disable MemberCanBePrivate.Global
 
 namespace FogOfWarDirectional
 {
     public class FogTile : SyncScript
     {
         // Declared public member fields and properties will show in the game studio
+        public Point Coord { get; }
 
-        private Point fogTileCoord;
-        private ConcurrentDictionary<Point, bool> fogVisibilityMap;
+        private readonly ConcurrentDictionary<Point, bool> fogState;
 
-        public FogTile(ConcurrentDictionary<Point, bool> fogVisibilityMap, Point fogTileCoord)
+        public FogTile(ConcurrentDictionary<Point, bool> fogState, Point fogTileCoord)
         {
-            this.fogVisibilityMap = fogVisibilityMap;
-            this.fogTileCoord = fogTileCoord;
+            this.fogState = fogState;
+            Coord = fogTileCoord;
         }
 
         public override void Start()
         {
-            // Initialization of the script.
         }
 
         public override void Update()
@@ -33,9 +29,10 @@ namespace FogOfWarDirectional
             UpdateVisibility();
         }
 
-        internal void Seen()
-        { 
-            fogVisibilityMap[fogTileCoord] = true;
+        public void DisableRigidBody()
+        {
+            Entity.Get<RigidbodyComponent>().Enabled = false;
+            //Entity.Get<SpriteComponent>().Enabled = false;
         }
 
         private void UpdateVisibility()
