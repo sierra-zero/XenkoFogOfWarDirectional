@@ -12,20 +12,6 @@ Goals:
 ==================================================================
 ==================================================================
 
-0) Make the fading of tiles.
-0) "Smoothing" of fog based on all 8 surrounding directions (logics for every thing like top right two).
-
-
-
-
-
-
-
-
-
-
-====================================
-
 2) Make the pink black.
 3) Pump the otho camera through it's own render group for testing.
 4) Test with tuning post effects.

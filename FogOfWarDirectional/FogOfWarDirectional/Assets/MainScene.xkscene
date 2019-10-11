@@ -79,11 +79,11 @@ Hierarchy:
                         FogTileStartZ: 0.0
                         FogRows: 25
                         FogColumns: 25
-                        VisionRadius: 5.75
+                        VisionRadius: 6.0
                         VisionStep: 1
                         ElevationY: 0.5
                         Character: ref!! 627bd541-5360-4ba9-8222-68dcd6c8f76d
-                        FogRenderDistance: 11.0
+                        FogRenderDistance: 12.0
         -   Folder: null
             Entity:
                 Id: 07d34428-016a-44fd-9314-df16a5e5da61
@@ -822,7 +822,7 @@ Hierarchy:
                         Enabled: false
                         Name: Orthographic
                         Projection: Orthographic
-                        OrthographicSize: 12.0
+                        OrthographicSize: 16.0
                         Slot: 54fb6c31-cfe7-4374-9ce0-0d5d2027016a
         -   Entity:
                 Id: 6a4a27e4-47a3-436c-bd68-0428792e488a
@@ -1687,7 +1687,7 @@ Hierarchy:
                         Id: 235bfe47-f46b-496d-86fd-503890f7b1c8
                         Name: Perspective
                         Projection: Perspective
-                        VerticalFieldOfView: 10.0
+                        VerticalFieldOfView: 11.0
                         FarClipPlane: 225.0
                         Slot: 54fb6c31-cfe7-4374-9ce0-0d5d2027016a
         -   Entity:
