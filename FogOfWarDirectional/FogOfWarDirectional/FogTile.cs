@@ -31,8 +31,12 @@ namespace FogOfWarDirectional
         private Vector2 southWestRecycler;
         private Vector2 westRecycler;
         private Vector2 northWestRecycler;
+        private Vector2 prevCharacterPos;
+        private Vector2 characterPos;
 
-        private readonly ConcurrentDictionary<Vector2, bool> fogVisibilityState;
+        private readonly FogOfWarSystem fog;
+        private readonly ConcurrentDictionary<Vector2, bool> fogState;
+        private readonly float renderDistance;
 
         private static readonly Vector2 NorthCoord = new Vector2(0, -1);
         private static readonly Vector2 NorthEastCoord = new Vector2(1, -1);
@@ -43,9 +47,12 @@ namespace FogOfWarDirectional
         private static readonly Vector2 WestCoord =  new Vector2(-1, 0);
         private static readonly Vector2 NorthWestCoord = new Vector2(-1, -1);
 
-        public FogTile(ConcurrentDictionary<Vector2, bool> fogVisibilityState, Vector2 fogTileCoord)
+        public FogTile(FogOfWarSystem fog, Vector2 fogTileCoord)
         {
-            this.fogVisibilityState = fogVisibilityState;
+            this.fog = fog;
+            characterPos = fog.CharacterPos;
+            fogState = fog.State;
+            renderDistance = fog.FogRenderDistance;
             Coord = fogTileCoord;
         }
 
@@ -66,6 +73,21 @@ namespace FogOfWarDirectional
 
         private void UpdateVisibility()
         {
+            characterPos = fog.CharacterPos;
+            if (prevCharacterPos == characterPos) {
+                return;
+            }
+
+            if (Vector2.Distance(Coord, characterPos) > renderDistance) {
+                spriteComponent.Enabled = false;
+                return;
+            }
+
+            if (!spriteComponent.Enabled) {
+                spriteComponent.Enabled = true;
+            }
+
+            prevCharacterPos = characterPos;
             northRecycler = Coord + NorthCoord;
             northEastRecycler = Coord + NorthEastCoord;
             eastRecycler = Coord + EastCoord;
@@ -75,17 +97,17 @@ namespace FogOfWarDirectional
             westRecycler = Coord + WestCoord;
             northWestRecycler = Coord + NorthWestCoord;
 
-            northVisible = fogVisibilityState.ContainsKey(northRecycler) && fogVisibilityState[northRecycler];
-            northEastVisible = fogVisibilityState.ContainsKey(northEastRecycler) && fogVisibilityState[northEastRecycler];
-            eastVisible = fogVisibilityState.ContainsKey(eastRecycler) && fogVisibilityState[eastRecycler];
-            southEastVisible = fogVisibilityState.ContainsKey(southEastRecycler) && fogVisibilityState[southEastRecycler];
-            southVisible = fogVisibilityState.ContainsKey(southRecycler) && fogVisibilityState[southRecycler];
-            southWestVisible = fogVisibilityState.ContainsKey(southWestRecycler) && fogVisibilityState[southWestRecycler];
-            westVisible = fogVisibilityState.ContainsKey(westRecycler) && fogVisibilityState[westRecycler];
-            northWestVisible = fogVisibilityState.ContainsKey(northWestRecycler) && fogVisibilityState[northWestRecycler];
+            northVisible = fogState.ContainsKey(northRecycler) && fogState[northRecycler];
+            northEastVisible = fogState.ContainsKey(northEastRecycler) && fogState[northEastRecycler];
+            eastVisible = fogState.ContainsKey(eastRecycler) && fogState[eastRecycler];
+            southEastVisible = fogState.ContainsKey(southEastRecycler) && fogState[southEastRecycler];
+            southVisible = fogState.ContainsKey(southRecycler) && fogState[southRecycler];
+            southWestVisible = fogState.ContainsKey(southWestRecycler) && fogState[southWestRecycler];
+            westVisible = fogState.ContainsKey(westRecycler) && fogState[westRecycler];
+            northWestVisible = fogState.ContainsKey(northWestRecycler) && fogState[northWestRecycler];
 
-            if (fogVisibilityState.ContainsKey(Coord)) {
-                if (fogVisibilityState[Coord]) {
+            if (fogState.ContainsKey(Coord)) {
+                if (fogState[Coord]) {
                     spriteProvider.CurrentFrame = 1;
                 }
                 else {

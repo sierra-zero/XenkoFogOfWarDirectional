@@ -17,7 +17,7 @@ namespace FogOfWarDirectional
         // Declared public member fields and properties will show in the game studio
         public bool Enable;
         public Prefab FogTile;
-        public float FogTileSpacing;
+        public float FogTileScaling;
         public float FogTileStartX;
         public float FogTileStartZ;
         public ushort FogRows;
@@ -25,9 +25,13 @@ namespace FogOfWarDirectional
         public float VisionRadius;
         public int VisionStep;
         public float ElevationY;
+        public CharacterComponent Character;
+        public float FogRenderDistance;
+
+        internal Vector2 CharacterPos { get; private set; }
+        internal ConcurrentDictionary<Vector2, bool> State { get; private set; }
 
         private ConcurrentDictionary<Vector2, FogTile> fogMap;
-        private ConcurrentDictionary<Vector2, bool> fogVisibilityState;
         private ConcurrentDictionary<Vector2, FastList<Vector2>> fogVisibilityMap;
         private FastList<Entity> subscribers;
         private Vector3 subscriberPosRecycler;
@@ -37,6 +41,9 @@ namespace FogOfWarDirectional
         private Vector3 positionRecycler;
         private Vector3 targetRecycler;
         private Vector2 coordRecycler;
+        private Vector3 characterPosRecycler;
+        private int characterPosXRecycler;
+        private int characterPosZRecycler;
         private Simulation simulation;
 
         public override void Start()
@@ -66,19 +73,25 @@ namespace FogOfWarDirectional
 
         private void UpdateFogState()
         {
-            foreach (var fogTile in fogVisibilityState) {
-                fogVisibilityState[fogTile.Key] = false;
+            // Vector out camera position
+            characterPosRecycler = Character.Entity.Transform.Position;
+            characterPosXRecycler = Convert.ToInt32(Math.Round(characterPosRecycler.X * 1/FogTileScaling));
+            characterPosZRecycler = Convert.ToInt32(Math.Round(characterPosRecycler.Z * 1/FogTileScaling));
+            CharacterPos = new Vector2(characterPosXRecycler, characterPosZRecycler);
+
+            foreach (var fogTile in State) {
+                State[fogTile.Key] = false;
             }
 
             foreach (var subscriber in subscribers) {
                 subscriberPosRecycler = subscriber.Transform.Position;
-                subscriberPosXRecycler = Convert.ToInt32(Math.Round(subscriberPosRecycler.X));
-                subscriberPosZRecycler = Convert.ToInt32(Math.Round(subscriberPosRecycler.Z));
+                subscriberPosXRecycler = Convert.ToInt32(Math.Round(subscriberPosRecycler.X * 1/FogTileScaling));
+                subscriberPosZRecycler = Convert.ToInt32(Math.Round(subscriberPosRecycler.Z * 1/FogTileScaling));
                 subscriberPos = new Vector2(subscriberPosXRecycler, subscriberPosZRecycler);
 
                 if (fogVisibilityMap.ContainsKey(subscriberPos)) {
                     foreach (var point in fogVisibilityMap[subscriberPos]) {
-                        fogVisibilityState[point] = true;
+                        State[point] = true;
                     }
                 }
             }
@@ -96,7 +109,7 @@ namespace FogOfWarDirectional
             }
 
             fogMap = new ConcurrentDictionary<Vector2, FogTile>();
-            fogVisibilityState = new ConcurrentDictionary<Vector2, bool>();
+            State = new ConcurrentDictionary<Vector2, bool>();
             fogVisibilityMap = new ConcurrentDictionary<Vector2, FastList<Vector2>>();
             simulation = this.GetSimulation();
             subscribers = new FastList<Entity>();
@@ -107,14 +120,14 @@ namespace FogOfWarDirectional
                     var coord = new Vector2(x, z);
 
                     var fogTileEntity = FogTile.Instantiate().First();
-                    fogTileEntity.Transform.Position = new Vector3(x * FogTileSpacing + FogTileStartX,
-                        0, z * FogTileSpacing + FogTileStartZ);
+                    fogTileEntity.Transform.Position = new Vector3(x * FogTileScaling + FogTileStartX,
+                        0, z * FogTileScaling + FogTileStartZ);
 
-                    var fogTile = new FogTile(fogVisibilityState, coord);
+                    var fogTile = new FogTile(this, coord);
                     fogTileEntity.Add(fogTile);
 
                     fogMap.TryAdd(coord, fogTile);
-                    fogVisibilityState.TryAdd(coord, false);
+                    State.TryAdd(coord, false);
                     fogVisibilityMap.TryAdd(coord, new FastList<Vector2>());
                     Entity.AddChild(fogTileEntity);
                 }

@@ -1098,3 +1098,7 @@ UsedParameters:
                 Definition: 1
             -   Name: XENKO_MULTISAMPLE_COUNT
                 Definition: 1
+---
+!EffectCompileRequest
+EffectName: SpriteAlphaCutoffEffect
+UsedParameters: {}

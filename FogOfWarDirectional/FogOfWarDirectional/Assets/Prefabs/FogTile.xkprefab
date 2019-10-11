@@ -22,6 +22,7 @@ Hierarchy:
                             Sheet: d049bbd6-874e-40b9-b545-453fd26248a7:Textures/FogSprite
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         IsAlphaCutoff: true
+                        RenderGroup: Group31
         -   Entity:
                 Id: e4bc251f-03a2-4b0e-81ee-a0342abefa0f
                 Name: FogTile
@@ -54,6 +55,6 @@ Hierarchy:
                         ColliderShapes:
                             6bff6748c4bf0a0c6c96f25f3e88fb8d: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 0.75, Y: 0.75, Z: 1.0}
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}

@@ -7,9 +7,9 @@ ColliderShapes:
         ConvexHulls: null
         ConvexHullsIndices: null
         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
-        LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+        LocalOffset: {X: -0.07, Y: 0.0, Z: 0.0}
         LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-        Scaling: {X: 1.0, Y: 1.0, Z: 1.0}
+        Scaling: {X: 1.15, Y: 1.0, Z: 1.0}
         Decomposition:
             Depth: 3
             PosSampling: 3

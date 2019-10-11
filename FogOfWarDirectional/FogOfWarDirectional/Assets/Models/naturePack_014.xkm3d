@@ -5,6 +5,7 @@ Tags: []
 Source: !file naturePack_014.obj
 Skeleton: null
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+ScaleImport: 2.0
 Materials:
     01edeb83e0653e36fff109a98e558b34:
         Name: Green_leafs

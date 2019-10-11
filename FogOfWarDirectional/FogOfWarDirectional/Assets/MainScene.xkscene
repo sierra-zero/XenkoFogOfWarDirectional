@@ -74,14 +74,16 @@ Hierarchy:
                         Id: e9db08cf-25be-411d-a926-68ebac015ed0
                         Enable: true
                         FogTile: 1f3666af-137a-4f1a-bc2e-0a05eb4dc1a1:Prefabs/FogTile
-                        FogTileSpacing: 1.0
+                        FogTileScaling: 1.0
                         FogTileStartX: 0.0
                         FogTileStartZ: 0.0
                         FogRows: 25
                         FogColumns: 25
-                        VisionRadius: 6.0
+                        VisionRadius: 5.75
                         VisionStep: 1
                         ElevationY: 0.5
+                        Character: ref!! 627bd541-5360-4ba9-8222-68dcd6c8f76d
+                        FogRenderDistance: 11.0
         -   Folder: null
             Entity:
                 Id: 07d34428-016a-44fd-9314-df16a5e5da61
@@ -817,6 +819,7 @@ Hierarchy:
                         Children: {}
                     ec37f54afc586f567e445c140930f97c: !CameraComponent
                         Id: 0f4a6067-9e9f-4021-8dfa-69a747bb91a5
+                        Enabled: false
                         Name: Orthographic
                         Projection: Orthographic
                         OrthographicSize: 12.0
@@ -1682,10 +1685,9 @@ Hierarchy:
                         Children: {}
                     f9ef6de60e4174118b7e4d9d7deb716d: !CameraComponent
                         Id: 235bfe47-f46b-496d-86fd-503890f7b1c8
-                        Enabled: false
                         Name: Perspective
                         Projection: Perspective
-                        VerticalFieldOfView: 9.0
+                        VerticalFieldOfView: 10.0
                         FarClipPlane: 225.0
                         Slot: 54fb6c31-cfe7-4374-9ce0-0d5d2027016a
         -   Entity:
@@ -1915,7 +1917,7 @@ Hierarchy:
                 Components:
                     3657c454a20f09d2a762e83a74039abd: !TransformComponent
                         Id: 2c174688-0ca2-488c-97c9-dc22bef7d6e6
-                        Position: {X: 18.4804974, Y: 0.0, Z: -7.63247776}
+                        Position*: {X: 18.4804974, Y: 0.0, Z: -8.041984}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
