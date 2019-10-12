@@ -2,6 +2,7 @@
 using Xenko.Core.Mathematics;
 using Xenko.Engine;
 using Xenko.Physics;
+using Xenko.Rendering;
 using Xenko.Rendering.Sprites;
 
 // ReSharper disable MemberCanBePrivate.Global
@@ -12,8 +13,15 @@ namespace FogOfWarDirectional
         // Declared public member fields and properties will show in the game studio
         public Vector2 Coord { get; }
 
-        private SpriteComponent spriteComponent;
-        private SpriteFromSheet spriteProvider;
+        private ModelComponent modelComponent;
+        private ParameterCollection shaderParams;
+
+        private bool seen;
+        private float fadeRate = .05f;
+        private float alpha = 1;
+        private Vector2 characterPos;
+        private Vector2 prevCharacterPos;
+
         private bool northVisible;
         private bool northEastVisible;
         private bool eastVisible;
@@ -31,12 +39,6 @@ namespace FogOfWarDirectional
         private Vector2 southWestRecycler;
         private Vector2 westRecycler;
         private Vector2 northWestRecycler;
-        private Vector2 prevCharacterPos;
-        private Vector2 characterPos;
-
-        private readonly FogOfWarSystem fog;
-        private readonly ConcurrentDictionary<Vector2, bool> fogState;
-        private readonly float renderDistance;
 
         private static readonly Vector2 NorthCoord = new Vector2(0, -1);
         private static readonly Vector2 NorthEastCoord = new Vector2(1, -1);
@@ -47,6 +49,18 @@ namespace FogOfWarDirectional
         private static readonly Vector2 WestCoord =  new Vector2(-1, 0);
         private static readonly Vector2 NorthWestCoord = new Vector2(-1, -1);
 
+        private readonly FogOfWarSystem fog;
+        private readonly ConcurrentDictionary<Vector2, bool> fogState;
+        private readonly float renderDistance;
+        private FogTileState tileState = FogTileState.NotVisible;
+        private FogTileState prevTileState = FogTileState.NotVisible;
+
+        private enum FogTileState
+        {
+            NotVisible,
+            Visible,
+        }
+        
         public FogTile(FogOfWarSystem fog, Vector2 fogTileCoord)
         {
             this.fog = fog;
@@ -73,98 +87,34 @@ namespace FogOfWarDirectional
 
         private void UpdateVisibility()
         {
-            characterPos = fog.CharacterPos;
-            if (prevCharacterPos == characterPos) {
-                return;
-            }
+            // Identify tile state
+            seen = fogState.ContainsKey(Coord) && fogState[Coord];
 
-            if (Vector2.Distance(Coord, characterPos) > renderDistance) {
-                spriteComponent.Enabled = false;
-                return;
-            }
+            // TODO write a method for identifying complex states.
+            tileState = seen ? FogTileState.Visible : FogTileState.NotVisible;
 
-            if (!spriteComponent.Enabled) {
-                spriteComponent.Enabled = true;
-            }
+            // TODO need a lerp bump timer of sorts if the state is different
 
-            prevCharacterPos = characterPos;
-            northRecycler = Coord + NorthCoord;
-            northEastRecycler = Coord + NorthEastCoord;
-            eastRecycler = Coord + EastCoord;
-            southEastRecycler = Coord + SouthEastCoord;
-            southRecycler = Coord + SouthCoord;
-            southWestRecycler = Coord + SouthWestCoord;
-            westRecycler = Coord + WestCoord;
-            northWestRecycler = Coord + NorthWestCoord;
+            //// Shortcut out if no movement
+            //characterPos = fog.CharacterPos;
+            //if (prevCharacterPos == characterPos) {
+            //    return;
+            //}
 
-            northVisible = fogState.ContainsKey(northRecycler) && fogState[northRecycler];
-            northEastVisible = fogState.ContainsKey(northEastRecycler) && fogState[northEastRecycler];
-            eastVisible = fogState.ContainsKey(eastRecycler) && fogState[eastRecycler];
-            southEastVisible = fogState.ContainsKey(southEastRecycler) && fogState[southEastRecycler];
-            southVisible = fogState.ContainsKey(southRecycler) && fogState[southRecycler];
-            southWestVisible = fogState.ContainsKey(southWestRecycler) && fogState[southWestRecycler];
-            westVisible = fogState.ContainsKey(westRecycler) && fogState[westRecycler];
-            northWestVisible = fogState.ContainsKey(northWestRecycler) && fogState[northWestRecycler];
+            //// Shortcut out if outside of camera view
+            //if (Vector2.Distance(Coord, characterPos) > renderDistance) {
+            //    modelComponent.Enabled = false;
+            //    return;
+            //}
 
-            if (fogState.ContainsKey(Coord)) {
-                if (fogState[Coord]) {
-                    spriteProvider.CurrentFrame = 1;
-                }
-                else {
-                    if (northVisible && eastVisible && southVisible && westVisible) {
-                        spriteProvider.CurrentFrame = 0;
-                        return;
-                    }
-
-                    if (northVisible && westVisible && eastVisible) {
-                        spriteProvider.CurrentFrame = 0;
-                        return;
-                    }
-
-                    if (southVisible && westVisible && eastVisible) {
-                        spriteProvider.CurrentFrame = 0;
-                        return;
-                    }
-
-                    if (northVisible && westVisible && southVisible) {
-                        spriteProvider.CurrentFrame = 0;
-                        return;
-                    }
-
-                    if (northVisible && eastVisible && southVisible) {
-                        spriteProvider.CurrentFrame = 0;
-                        return;
-                    }
-
-                    if (northVisible && westVisible) {
-                        spriteProvider.CurrentFrame = 4;
-                        return;
-                    }
-
-                    if (northVisible && eastVisible) {
-                        spriteProvider.CurrentFrame = 5;
-                        return;
-                    }
-
-                    if (southVisible && eastVisible) {
-                        spriteProvider.CurrentFrame = 2;
-                        return;
-                    }
-
-                    if (southVisible && westVisible) {
-                        spriteProvider.CurrentFrame = 3;
-                        return;
-                    }
-
-                    spriteProvider.CurrentFrame = 0;
-                }
-            }
+            // Update shader
+            //shaderParams?.Set(FogTileShaderKeys.Tile, (int)tileState);
         }
 
         private void InitializeFogTile()
         {
-            spriteComponent = Entity.FindChild("Sprite").Get<SpriteComponent>();
-            spriteProvider = spriteComponent.SpriteProvider as SpriteFromSheet;
+            modelComponent = Entity.Get<ModelComponent>();
+            shaderParams = modelComponent?.GetMaterial(0)?.Passes[0]?.Parameters;
         }
     }
 }

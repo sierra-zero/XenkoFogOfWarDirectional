@@ -1,0 +1,7 @@
+!Texture
+Id: 53c54b6f-8ff3-44ca-a7dd-0f3bf4a1c255
+SerializedVersion: {Xenko: 2.0.0.0}
+Tags: []
+Source: !file FogTile0.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

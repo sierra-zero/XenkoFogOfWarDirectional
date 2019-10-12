@@ -1,0 +1,21 @@
+!MaterialAsset
+Id: fb90181f-9989-4529-902e-8f2a00063365
+SerializedVersion: {Xenko: 2.0.0.0}
+Tags: []
+Attributes:
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeShaderClassColor
+            MixinReference: FogTileShader
+            Generics: {}
+            CompositionNodes:
+                bf8a8a37e96b2fc982391d6578dcc46c~Tile0: !ComputeTextureColor
+                    Texture: 53c54b6f-8ff3-44ca-a7dd-0f3bf4a1c255:Textures/FogTile0
+                    FallbackValue:
+                        Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    Scale: {X: 1.0, Y: 1.0}
+                    Offset: {X: 0.0, Y: 0.0}
+                    Swizzle: null
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers: {}

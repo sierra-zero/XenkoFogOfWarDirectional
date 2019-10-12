@@ -7,33 +7,15 @@ Hierarchy:
         - ref!! e4bc251f-03a2-4b0e-81ee-a0342abefa0f
     Parts:
         -   Entity:
-                Id: 2c8a156e-6738-4ecb-9ead-b76124d25a31
-                Name: Sprite
-                Components:
-                    214fe60f51ddd36afd609c8f848a7066: !TransformComponent
-                        Id: 4041c3c0-3987-4439-af6b-5c83fa6619e1
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    daa798bd2d3a0f21b37e77bbb162b2a2: !SpriteComponent
-                        Id: f633dea3-3008-4346-afda-f1ec54887cd0
-                        SpriteProvider: !SpriteFromSheet
-                            Sheet: d049bbd6-874e-40b9-b545-453fd26248a7:Textures/FogSprite
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        IsAlphaCutoff: true
-                        RenderGroup: Group31
-        -   Entity:
                 Id: e4bc251f-03a2-4b0e-81ee-a0342abefa0f
                 Name: FogTile
                 Components:
                     c860bf7700e11cc714396612ea7be335: !TransformComponent
                         Id: c5a6f8cf-023d-4e19-a743-e4a7df7c09c8
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: -0.707106769, Y: 0.0, Z: 0.0, W: 0.707106769}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            3d603ade56cd6c193085b23c2911af6b: ref!! 4041c3c0-3987-4439-af6b-5c83fa6619e1
+                        Children: {}
                     7c612cd707ecd7a64f487871dfa8d020: !RigidbodyComponent
                         Id: cd92c4f6-123b-4e96-a08f-c63de251289f
                         CollisionGroup: CustomFilter10
@@ -58,3 +40,10 @@ Hierarchy:
                                 Size: {X: 1.0, Y: 1.0, Z: 1.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    5aec3bd1a8e7804b854769510813bb1c: !ModelComponent
+                        Id: dc0bc3c9-7031-4e93-8ec7-8baf27b5a101
+                        Model: 83b5c5a7-cb56-4b72-bb45-351021f0aea9:Models/FogTile
+                        RenderGroup: Group31
+                        IsShadowCaster: false
+                        Materials:
+                            7101fb89712d2c3a759c27f2c1515713~0: fb90181f-9989-4529-902e-8f2a00063365:Materials/FogMaterial

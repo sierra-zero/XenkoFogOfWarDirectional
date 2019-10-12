@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
@@ -10,5 +10,19 @@
     <PackageReference Include="Xenko.Particles" Version="3.1.0.1-beta02-0741" />
     <PackageReference Include="Xenko.UI" Version="3.1.0.1-beta02-0741" />
     <PackageReference Include="Xenko.Core.Assets.CompilerApp" Version="3.1.0.1-beta02-0741" IncludeAssets="build;buildTransitive" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Effects\FogTileShader.cs">
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FogTileShader.xksl</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Effects\FogTileShader.xksl">
+      <Generator>XenkoShaderKeyGenerator</Generator>
+      <LastGenOutput>FogTileShader.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 </Project>

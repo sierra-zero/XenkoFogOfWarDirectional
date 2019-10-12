@@ -12,6 +12,4 @@ Goals:
 ==================================================================
 ==================================================================
 
-2) Make the pink black.
-3) Pump the otho camera through it's own render group for testing.
-4) Test with tuning post effects.
+0) Convert to shader version.
