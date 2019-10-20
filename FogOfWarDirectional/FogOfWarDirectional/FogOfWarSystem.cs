@@ -27,6 +27,7 @@ namespace FogOfWarDirectional
         public float ElevationY;
         public CharacterComponent Character;
         public float FogRenderDistance;
+        public int FogFadeTimer;
 
         internal Vector2 CharacterPos { get; private set; }
         internal ConcurrentDictionary<Vector2, bool> State { get; private set; }

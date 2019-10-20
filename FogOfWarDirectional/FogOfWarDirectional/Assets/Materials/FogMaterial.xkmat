@@ -8,13 +8,24 @@ Attributes:
             MixinReference: FogTileShader
             Generics: {}
             CompositionNodes:
-                81daab8d6819fdef0f7d1bdbc003428c~Tile0: !ComputeTextureColor
+                b51d2857b7444b759f78a318cc00a774~Tile0: !ComputeTextureColor
                     Texture: 253aa0e2-412e-4912-ac7d-d0f635c711b2:Textures/FogTile0
                     FallbackValue:
                         Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                     Scale: {X: 1.0, Y: 1.0}
                     Offset: {X: 0.0, Y: 0.0}
                     Swizzle: null
+                915b318bb8bea49d641df95dcc817687~Tile1: !ComputeTextureColor
+                    Texture: 61a461fe-c7bf-4d14-bcf6-f63e0f2a57f1:Textures/FogTile1
+                    FallbackValue:
+                        Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    Scale: {X: 1.0, Y: 1.0}
+                    Offset: {X: 0.0, Y: 0.0}
+                    Swizzle: null
+                58dcdf8646447f8f8c778db8cacd64e9~Tile2: null
+                718f791ef50367f55cd3b605e23911d1~Tile3: null
+                9f2abb3f68392a829f4235ea822a9ede~Tile4: null
+                bde339df3479873981b9d5015828432b~Tile5: null
     DiffuseModel: !MaterialDiffuseLambertModelFeature {}
     Overrides:
         UVScale: {X: 1.0, Y: 1.0}

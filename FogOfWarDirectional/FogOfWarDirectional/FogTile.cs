@@ -17,8 +17,10 @@ namespace FogOfWarDirectional
         private ParameterCollection shaderParams;
 
         private bool seen;
-        private float fadeRate = .05f;
-        private float alpha = 1;
+        private int lerpTimer;
+        private float lerpRate = .05f;
+        private float lerpMax = 1;
+        private int bumpTimer;
         private Vector2 characterPos;
         private Vector2 prevCharacterPos;
 
@@ -64,6 +66,8 @@ namespace FogOfWarDirectional
         public FogTile(FogOfWarSystem fog, Vector2 fogTileCoord)
         {
             this.fog = fog;
+            lerpTimer = fog.FogFadeTimer;
+            lerpRate = 1 / (float)fog.FogFadeTimer;
             characterPos = fog.CharacterPos;
             fogState = fog.State;
             renderDistance = fog.FogRenderDistance;
@@ -89,11 +93,26 @@ namespace FogOfWarDirectional
         {
             // Identify tile state
             seen = fogState.ContainsKey(Coord) && fogState[Coord];
-
-            // TODO write a method for identifying complex states.
             tileState = seen ? FogTileState.Visible : FogTileState.NotVisible;
 
-            // TODO need a lerp bump timer of sorts if the state is different
+            // Check the bump timer - TODO this is where you are
+            if (bumpTimer > 0) {
+                lerpMax = 1 - bumpTimer * lerpRate;
+                shaderParams?.Set(FogTileShaderKeys.Lerp, 0);
+                bumpTimer--;
+                return;
+            }
+
+            // Reset the bump timer on state change
+            if (prevTileState != tileState) {
+                bumpTimer = lerpTimer;
+                lerpMax = 1 - bumpTimer * lerpRate;
+                shaderParams?.Set(FogTileShaderKeys.Lerp, lerpMax);
+                shaderParams?.Set(FogTileShaderKeys.PrevTile, (int)prevTileState);
+                shaderParams?.Set(FogTileShaderKeys.CurrentTile, (int)tileState);
+                prevTileState = tileState;
+                return;
+            }
 
             // Shortcut out if no movement
             characterPos = fog.CharacterPos;
@@ -107,12 +126,16 @@ namespace FogOfWarDirectional
                 return;
             }
 
+            // Enable any disabled model components
             if (!modelComponent.Enabled) {
                 modelComponent.Enabled = true;
             }
 
-            // Update shader
-            shaderParams?.Set(FogTileShaderKeys.Tile, (int)tileState);
+            // Update state and set shader params
+            prevTileState = tileState;
+            shaderParams?.Set(FogTileShaderKeys.Lerp, 0);
+            shaderParams?.Set(FogTileShaderKeys.PrevTile, (int)prevTileState);
+            shaderParams?.Set(FogTileShaderKeys.CurrentTile, (int)tileState);
         }
 
         private void InitializeFogTile()
