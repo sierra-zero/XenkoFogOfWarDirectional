@@ -59,6 +59,10 @@ namespace FogOfWarDirectional
 
         public void Subscribe(Entity entity)
         {
+            if (!Enable) {
+                return;
+            }
+
             if (!subscribers.Contains(entity)) {
                 subscribers.Add(entity);
             }
@@ -66,6 +70,10 @@ namespace FogOfWarDirectional
 
         public void Unsubscribe(Entity entity)
         {
+            if (!Enable) {
+                return;
+            }
+
             if (subscribers.Contains(entity)) {
                 subscribers.Remove(entity);
             }
@@ -73,6 +81,10 @@ namespace FogOfWarDirectional
 
         private void UpdateFogState()
         {
+            if (!Enable) {
+                return;
+            }
+
             // Vector out camera position
             characterPosRecycler = Character.Entity.Transform.Position;
             characterPosXRecycler = Convert.ToInt32(Math.Round(characterPosRecycler.X * 1/FogTileScaling));

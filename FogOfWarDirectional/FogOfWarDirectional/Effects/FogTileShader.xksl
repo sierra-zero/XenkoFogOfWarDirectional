@@ -3,7 +3,7 @@
     shader FogTileShader : ComputeColor, Texturing
     {
         compose ComputeColor Tile0;
-        //compose ComputeColor Tile1;
+        compose ComputeColor Tile1;
         //compose ComputeColor Tile2;
         //compose ComputeColor Tile3;
         //compose ComputeColor Tile4;
@@ -11,19 +11,19 @@
 
         cbuffer PerMaterial 
         {
-            //stage int Tile = 0;
+            stage int Tile = 0;
             //stage float Lerp = 0f;
         }
 
         override float4 Compute()
         {
-            //if (Tile == 0) {
-            //    return Tile0.Compute();                
-            //}
+            if (Tile == 0) {
+                return Tile0.Compute();                
+            }
 
-            //if (Tile == 1) {
-            //    return Tile1.Compute();
-            //}
+            if (Tile == 1) {
+                return Tile1.Compute();
+            }
             return Tile0.Compute();
         }
     };

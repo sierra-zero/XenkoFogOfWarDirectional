@@ -6,4 +6,18 @@
 // and re-save the associated .xkfx.
 // </auto-generated>
 
-// Nothing to generate
+using System;
+using Xenko.Core;
+using Xenko.Rendering;
+using Xenko.Graphics;
+using Xenko.Shaders;
+using Xenko.Core.Mathematics;
+using Buffer = Xenko.Graphics.Buffer;
+
+namespace FogOfWarDirectional
+{
+    public static partial class FogTileShaderKeys
+    {
+        public static readonly ValueParameterKey<int> Tile = ParameterKeys.NewValue<int>(0);
+    }
+}

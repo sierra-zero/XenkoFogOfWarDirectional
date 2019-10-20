@@ -11,5 +11,8 @@ Goals:
 ==================================================================
 ==================================================================
 ==================================================================
-
-0) Convert to shader version.
+0) Get Fade transitions working nicely with basic shapes (visible and not visible).
+0) Optimize performance as much as possible.
+0) Smooth and out modify tile shapes -- use all 8 tiles to determine shape.
+0) Optimize / Clean-up Map.
+0) Clean-up code.

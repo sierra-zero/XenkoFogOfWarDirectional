@@ -15,5 +15,4 @@ ExplicitFolders: []
 Bundles: []
 TemplateFolders: []
 RootAssets:
-    - 53c54b6f-8ff3-44ca-a7dd-0f3bf4a1c255:Textures/FogTile0
     - fb90181f-9989-4529-902e-8f2a00063365:Materials/FogMaterial

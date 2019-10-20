@@ -95,20 +95,24 @@ namespace FogOfWarDirectional
 
             // TODO need a lerp bump timer of sorts if the state is different
 
-            //// Shortcut out if no movement
-            //characterPos = fog.CharacterPos;
-            //if (prevCharacterPos == characterPos) {
-            //    return;
-            //}
+            // Shortcut out if no movement
+            characterPos = fog.CharacterPos;
+            if (prevCharacterPos == characterPos) {
+                return;
+            }
 
-            //// Shortcut out if outside of camera view
-            //if (Vector2.Distance(Coord, characterPos) > renderDistance) {
-            //    modelComponent.Enabled = false;
-            //    return;
-            //}
+            // Shortcut out if outside of camera view
+            if (Vector2.Distance(Coord, characterPos) > renderDistance) {
+                modelComponent.Enabled = false;
+                return;
+            }
+
+            if (!modelComponent.Enabled) {
+                modelComponent.Enabled = true;
+            }
 
             // Update shader
-            //shaderParams?.Set(FogTileShaderKeys.Tile, (int)tileState);
+            shaderParams?.Set(FogTileShaderKeys.Tile, (int)tileState);
         }
 
         private void InitializeFogTile()

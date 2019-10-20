@@ -8,8 +8,8 @@ Attributes:
             MixinReference: FogTileShader
             Generics: {}
             CompositionNodes:
-                bf8a8a37e96b2fc982391d6578dcc46c~Tile0: !ComputeTextureColor
-                    Texture: 53c54b6f-8ff3-44ca-a7dd-0f3bf4a1c255:Textures/FogTile0
+                81daab8d6819fdef0f7d1bdbc003428c~Tile0: !ComputeTextureColor
+                    Texture: 253aa0e2-412e-4912-ac7d-d0f635c711b2:Textures/FogTile0
                     FallbackValue:
                         Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                     Scale: {X: 1.0, Y: 1.0}
