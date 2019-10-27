@@ -19,7 +19,7 @@ namespace FogOfWarDirectional
         private bool seen;
         private int lerpTimer;
         private float lerpRate = .05f;
-        private float lerpMax = 1;
+        private float lerpValue = 1;
         private int bumpTimer;
         private Vector2 characterPos;
         private Vector2 prevCharacterPos;
@@ -97,7 +97,7 @@ namespace FogOfWarDirectional
 
             // Check the bump timer - TODO this is where you are
             if (bumpTimer > 0) {
-                lerpMax = 1 - bumpTimer * lerpRate;
+                lerpValue = 1 - bumpTimer * lerpRate;
                 shaderParams?.Set(FogTileShaderKeys.Lerp, 0);
                 bumpTimer--;
                 return;
@@ -106,8 +106,8 @@ namespace FogOfWarDirectional
             // Reset the bump timer on state change
             if (prevTileState != tileState) {
                 bumpTimer = lerpTimer;
-                lerpMax = 1 - bumpTimer * lerpRate;
-                shaderParams?.Set(FogTileShaderKeys.Lerp, lerpMax);
+                lerpValue = 1 - bumpTimer * lerpRate;
+                shaderParams?.Set(FogTileShaderKeys.Lerp, lerpValue);
                 shaderParams?.Set(FogTileShaderKeys.PrevTile, (int)prevTileState);
                 shaderParams?.Set(FogTileShaderKeys.CurrentTile, (int)tileState);
                 prevTileState = tileState;
@@ -133,7 +133,7 @@ namespace FogOfWarDirectional
 
             // Update state and set shader params
             prevTileState = tileState;
-            shaderParams?.Set(FogTileShaderKeys.Lerp, 0);
+            shaderParams?.Set(FogTileShaderKeys.Lerp, lerpValue);
             shaderParams?.Set(FogTileShaderKeys.PrevTile, (int)prevTileState);
             shaderParams?.Set(FogTileShaderKeys.CurrentTile, (int)tileState);
         }
