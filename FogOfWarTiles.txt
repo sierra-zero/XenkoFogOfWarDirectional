@@ -12,12 +12,7 @@ Goals:
 ==================================================================
 ==================================================================
 
-0) Get fades working, need to test logic.
-	- This should be interpolating from green to black.
-
-
-0) Create GridTile logic, if a sum of 5, tile should be not revealed.
-0) Smooth and out modify tile shapes -- use all 8 tiles to determine shape.
+0) Smoothing and shaping logic, try to do it with only N, E , S, W consideration.
 0) Optimize performance as much as possible.
 0) Optimize / Clean-up Map.
 0) Clean-up code.

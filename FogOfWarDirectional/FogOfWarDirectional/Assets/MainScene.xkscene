@@ -79,12 +79,12 @@ Hierarchy:
                         FogTileStartZ: 0.0
                         FogRows: 25
                         FogColumns: 25
-                        VisionRadius: 6.0
+                        VisionRadius: 7.0
                         VisionStep: 1
                         ElevationY: 0.5
                         Character: ref!! 627bd541-5360-4ba9-8222-68dcd6c8f76d
                         FogRenderDistance: 13.0
-                        FogFadeTimer: 10
+                        FogFadeTimer: 100
         -   Folder: null
             Entity:
                 Id: 07d34428-016a-44fd-9314-df16a5e5da61

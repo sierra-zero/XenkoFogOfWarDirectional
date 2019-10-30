@@ -3,7 +3,7 @@ using Xenko.Core.Mathematics;
 using Xenko.Engine;
 using Xenko.Physics;
 using Xenko.Rendering;
-using Xenko.Rendering.Sprites;
+// ReSharper disable PossibleLossOfFraction
 
 // ReSharper disable MemberCanBePrivate.Global
 namespace FogOfWarDirectional
@@ -17,8 +17,8 @@ namespace FogOfWarDirectional
         private ParameterCollection shaderParams;
 
         private bool seen;
-        private int lerpTimer;
-        private float lerpRate = .05f;
+        private int fadeTimer;
+        private float lerpRate;
         private float lerp = 1;
         private int bumpTimer;
         private Vector2 characterPos;
@@ -66,8 +66,8 @@ namespace FogOfWarDirectional
         public FogTile(FogOfWarSystem fog, Vector2 fogTileCoord)
         {
             this.fog = fog;
-            lerpTimer = fog.FogFadeTimer;
-            lerpRate = 1 / (float)fog.FogFadeTimer;
+            fadeTimer = fog.FogFadeTimer;
+            lerpRate = 1 / (float)fadeTimer;
             characterPos = fog.CharacterPos;
             fogState = fog.State;
             renderDistance = fog.FogRenderDistance;
@@ -95,32 +95,8 @@ namespace FogOfWarDirectional
             seen = fogState.ContainsKey(Coord) && fogState[Coord];
             tileState = seen ? FogTileState.Visible : FogTileState.NotVisible;
 
-            // Check the bump timer - TODO this is where you are
-            if (bumpTimer > 0) {
-                lerp = 1 - bumpTimer * lerpRate;
-                shaderParams?.Set(FogTileShaderKeys.Lerp, 0);
-                bumpTimer--;
-                return;
-            }
-
-            // Reset the bump timer on state change
-            if (prevTileState != tileState) {
-                bumpTimer = lerpTimer;
-                lerp = 1 - bumpTimer * lerpRate;
-                shaderParams?.Set(FogTileShaderKeys.Lerp, lerp);
-                shaderParams?.Set(FogTileShaderKeys.PrevTile, (int)prevTileState);
-                shaderParams?.Set(FogTileShaderKeys.CurrentTile, (int)tileState);
-                prevTileState = tileState;
-                return;
-            }
-
-            // Shortcut out if no movement
-            characterPos = fog.CharacterPos;
-            if (prevCharacterPos == characterPos) {
-                return;
-            }
-
             // Shortcut out if outside of camera view
+            characterPos = fog.CharacterPos;
             if (Vector2.Distance(Coord, characterPos) > renderDistance) {
                 modelComponent.Enabled = false;
                 return;
@@ -131,11 +107,30 @@ namespace FogOfWarDirectional
                 modelComponent.Enabled = true;
             }
 
-            // Update state and set shader params
-            prevTileState = tileState;
-            shaderParams?.Set(FogTileShaderKeys.Lerp, lerp);
-            shaderParams?.Set(FogTileShaderKeys.PrevTile, (int)prevTileState);
-            shaderParams?.Set(FogTileShaderKeys.CurrentTile, (int)tileState);
+            // Check the bump timer - TODO this is where you are
+            if (bumpTimer >= 0) {
+                lerp = (1 - (float)bumpTimer * lerpRate);
+                shaderParams?.Set(FogTileShaderKeys.Lerp, lerp);
+                bumpTimer--;
+                return;
+            }
+
+            // Shortcut out if no movement
+            if (prevCharacterPos == characterPos) {
+                return;
+            }
+
+            // Reset the bump timer on state change
+            if (prevTileState != tileState && bumpTimer < 0) {
+                lerp = 0;
+                bumpTimer = fadeTimer;
+                shaderParams?.Set(FogTileShaderKeys.Lerp, lerp);
+                shaderParams?.Set(FogTileShaderKeys.PrevTile, (int)prevTileState);
+                shaderParams?.Set(FogTileShaderKeys.CurrentTile, (int)tileState);
+                prevTileState = tileState;
+            }
+
+            prevCharacterPos = characterPos;
         }
 
         private void InitializeFogTile()
