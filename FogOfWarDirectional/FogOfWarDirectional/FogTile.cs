@@ -118,7 +118,7 @@ namespace FogOfWarDirectional
             prevCharacterPos = characterPos;
 
             // Reset the bump timer on state change
-            if (prevTileState != tileState && bumpTimer < 0) {
+            if (prevTileState != tileState) {
                 lerp = 0;
                 bumpTimer = fadeTimer;
                 shaderParams?.Set(FogTileShaderKeys.Lerp, lerp);
@@ -129,6 +129,7 @@ namespace FogOfWarDirectional
 
             if (!seen && bumpTimer < 0) {
                 modelComponent.Enabled = false;
+                return;
             }
 
             if (seen) {

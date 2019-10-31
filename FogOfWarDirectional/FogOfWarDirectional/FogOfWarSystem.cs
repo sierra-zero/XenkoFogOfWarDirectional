@@ -136,7 +136,7 @@ namespace FogOfWarDirectional
                     fogTileEntity.Transform.Position = new Vector3(x * FogTileScaling + FogTileStartX,
                         0, z * FogTileScaling + FogTileStartZ);
 
-                    var fogTile = new FogTile(this, coord);
+                    var fogTile = new FogTile(this, coord) {Priority = 255};
                     fogTileEntity.Add(fogTile);
 
                     fogMap.TryAdd(coord, fogTile);

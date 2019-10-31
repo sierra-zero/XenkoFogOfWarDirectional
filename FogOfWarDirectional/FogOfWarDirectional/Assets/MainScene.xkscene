@@ -79,12 +79,12 @@ Hierarchy:
                         FogTileStartZ: 0.0
                         FogRows: 25
                         FogColumns: 25
-                        VisionRadius: 7.0
+                        VisionRadius: 8.0
                         VisionStep: 1
                         ElevationY: 0.5
                         Character: ref!! 627bd541-5360-4ba9-8222-68dcd6c8f76d
-                        FogRenderDistance: 11.0
-                        FogFadeTimer: 60
+                        FogRenderDistance: 12.0
+                        FogFadeTimer: 30
         -   Folder: null
             Entity:
                 Id: 07d34428-016a-44fd-9314-df16a5e5da61
@@ -822,7 +822,7 @@ Hierarchy:
                         Id: 0f4a6067-9e9f-4021-8dfa-69a747bb91a5
                         Name: Orthographic
                         Projection: Orthographic
-                        OrthographicSize: 16.0
+                        OrthographicSize: 14.0
                         FarClipPlane: 20.0
                         UseCustomAspectRatio: true
                         Slot: 54fb6c31-cfe7-4374-9ce0-0d5d2027016a
@@ -1715,7 +1715,7 @@ Hierarchy:
                 Components:
                     7aee15ba3aabcd1220a6a97145c6f8b3: !TransformComponent
                         Id: a9bc5f2e-a540-4465-b962-afa91e9ab1e8
-                        Position: {X: 16.5, Y: 0.0, Z: -14.175}
+                        Position*: {X: 16.25, Y: 0.0, Z: -14.5}
                         Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -2218,7 +2218,7 @@ Hierarchy:
                 Components:
                     7ead3dbea24290ab5e658e335601e992: !TransformComponent
                         Id: e2310ea5-a7ed-447e-8282-fbef3325404f
-                        Position*: {X: 11.5, Y: 0.0, Z: -19.0}
+                        Position*: {X: 11.5, Y: 0.0, Z: -19.5}
                         Rotation: {X: 0.0, Y: 0.707106769, Z: 0.0, W: 0.707106769}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
