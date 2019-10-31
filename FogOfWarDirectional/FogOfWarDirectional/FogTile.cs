@@ -100,19 +100,7 @@ namespace FogOfWarDirectional
         {
             // Identify tile state
             seen = fogState.ContainsKey(Coord) && fogState[Coord];
-            UpdateFogTileState();
-
-            // Shortcut out if outside of camera view
-            characterPos = fog.CharacterPos;
-            if (Vector2.Distance(Coord, characterPos) > renderDistance) {
-                modelComponent.Enabled = false;
-                return;
-            }
-
-            // Enable any disabled model components
-            if (!modelComponent.Enabled) {
-                modelComponent.Enabled = true;
-            }
+            tileState = seen ? FogTileState.Visible : FogTileState.NotVisible;
 
             // Check the bump timer - TODO this is where you are
             if (bumpTimer >= 0) {
@@ -123,9 +111,11 @@ namespace FogOfWarDirectional
             }
 
             // Shortcut out if no movement
+            characterPos = fog.CharacterPos;
             if (prevCharacterPos == characterPos) {
                 return;
             }
+            prevCharacterPos = characterPos;
 
             // Reset the bump timer on state change
             if (prevTileState != tileState && bumpTimer < 0) {
@@ -137,62 +127,18 @@ namespace FogOfWarDirectional
                 prevTileState = tileState;
             }
 
-            prevCharacterPos = characterPos;
-        }
-
-        private void UpdateFogTileState()
-        {
-            tileState = seen ? FogTileState.Visible : FogTileState.NotVisible;
-
-            if (tileState == FogTileState.NotVisible) {
-                return;
+            if (!seen && bumpTimer < 0) {
+                modelComponent.Enabled = false;
             }
 
-            // Update recyclers
-            northRecycler = Coord + NorthCoord;
-            eastRecycler = Coord + EastCoord;
-            southRecycler = Coord + SouthCoord;
-            westRecycler = Coord + WestCoord;
-
-            northEastRecycler = Coord + NorthEastCoord;
-            southEastRecycler = Coord + SouthEastCoord;
-            southWestRecycler = Coord + SouthWestCoord;
-            northWestRecycler = Coord + NorthWestCoord;
-
-            northVisible = fogState.ContainsKey(northRecycler) && !fogState[northRecycler];
-            eastVisible = fogState.ContainsKey(eastRecycler) && !fogState[eastRecycler];
-            southVisible = fogState.ContainsKey(southRecycler) && !fogState[southRecycler];
-            westVisible = fogState.ContainsKey(westRecycler) && !fogState[westRecycler];
-
-            northEastVisible = fogState.ContainsKey(northEastRecycler) && fogState[northEastRecycler];
-            southEastVisible = fogState.ContainsKey(southEastRecycler) && fogState[southEastRecycler];
-            southWestVisible = fogState.ContainsKey(southWestRecycler) && fogState[southWestRecycler];
-            northWestVisible = fogState.ContainsKey(northWestRecycler) && fogState[northWestRecycler];
-
-            if (northVisible && !eastVisible && westVisible && !southVisible) {
-                tileState = FogTileState.NorthWestVisible;
-                return;
-            }
-
-            if (northVisible && eastVisible && !westVisible && !southVisible) {
-                tileState = FogTileState.NorthEastVisible;
-                return;
-            }
-
-            if (!northVisible && eastVisible && !westVisible && southVisible) {
-                tileState = FogTileState.SouthEastVisible;
-                return;
-            }
-
-            if (!northVisible && !eastVisible && westVisible && southVisible) {
-                tileState = FogTileState.SouthWestVisible;
-                return;
+            if (seen) {
+                modelComponent.Enabled = true;
             }
         }
-
+        
         private void InitializeFogTile()
         {
-            modelComponent = Entity.Get<ModelComponent>();
+            modelComponent = Entity.FindChild("Model").Get<ModelComponent>();
             shaderParams = modelComponent?.GetMaterial(0)?.Passes[0]?.Parameters;
         }
     }

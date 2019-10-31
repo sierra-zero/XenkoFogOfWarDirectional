@@ -49,7 +49,7 @@ RenderFeatures:
                 TransparentRenderStage: ref!! f5aaff53-3ce6-41ee-9c70-ee62ded0c8d9
                 EffectName: XenkoForwardShadingEffect
             6f7224048750e7260ea87c444f74b32c: !Xenko.Rendering.Shadows.ShadowMapRenderStageSelector,Xenko.Rendering
-                ShadowMapRenderStage: ref!! f2272824-715f-4f12-866f-029b39a2070c
+                ShadowMapRenderStage*: ref!! f2272824-715f-4f12-866f-029b39a2070c
                 EffectName: XenkoForwardShadingEffect.ShadowMapCaster
             b60663d7cb46417a94341a39c3bc1a12: !Xenko.Rendering.Shadows.ShadowMapRenderStageSelector,Xenko.Rendering
                 ShadowMapRenderStage: ref!! 23faed9a-4a6f-458e-94b3-219035cd290e
@@ -124,11 +124,12 @@ SharedRenderers:
         Clear:
             Id: 4bc4b2ca-027e-4e4a-94cb-2912709bef5f
             Color*: {R: 0.0, G: 1.0, B: 0.0, A: 1.0}
-        LightProbes: true
+        LightProbes*: false
         OpaqueRenderStage: ref!! 9d24e318-daaa-4150-b7f1-5766c9e1b984
-        TransparentRenderStage: ref!! f5aaff53-3ce6-41ee-9c70-ee62ded0c8d9
+        TransparentRenderStage*: ref!! f5aaff53-3ce6-41ee-9c70-ee62ded0c8d9
         ShadowMapRenderStages:
-            fc4d1e0de5c2b0bbc27bcf96e9a848fd: ref!! f2272824-715f-4f12-866f-029b39a2070c
+            f6bac9718de6a607081ac993f07405ef*: ref!! f2272824-715f-4f12-866f-029b39a2070c
+            fc4d1e0de5c2b0bbc27bcf96e9a848fd: ~(Deleted)
         GBufferRenderStage: ref!! 940f614c-c5eb-4d7d-992f-0bb31daf0809
         PostEffects: !PostProcessingEffects ref!! e23bfc2b-ed56-4483-b45f-816eb6912b75
         LightShafts: null
@@ -146,11 +147,11 @@ SharedRenderers:
             Color: {R: 0.40491876, G: 0.411895424, B: 0.43775, A: 1.0}
         LightProbes: true
         OpaqueRenderStage: ref!! 9d24e318-daaa-4150-b7f1-5766c9e1b984
-        TransparentRenderStage: ref!! f5aaff53-3ce6-41ee-9c70-ee62ded0c8d9
+        TransparentRenderStage*: ref!! f5aaff53-3ce6-41ee-9c70-ee62ded0c8d9
         ShadowMapRenderStages:
-            2323a99a8a983e182f318e55604659b0: ref!! f2272824-715f-4f12-866f-029b39a2070c
+            2323a99a8a983e182f318e55604659b0*: null
         GBufferRenderStage: ref!! 940f614c-c5eb-4d7d-992f-0bb31daf0809
-        PostEffects: null
+        PostEffects*: !PostProcessingEffects ref!! f608653f-3a67-4cfc-8177-7d4ffc329585
         LightShafts: null
         VRSettings:
             Enabled: false
@@ -197,20 +198,45 @@ SharedRenderers:
                     Color: {R: 0.0, G: 0.0, B: 0.0}
         Antialiasing*: !FXAAEffect
             Enabled*: false
-            Dither*: None
-            Quality*: 9
+            Dither*: Medium
+            Quality*: 5
             InputLuminanceInAlpha*: false
     ee80a20a9bd99f2d70711114e15fe7ca: !Xenko.Rendering.Compositing.DebugRenderer,Xenko.Rendering
         Id: b2bfa014-10de-43a2-9828-b3c5c5eab9e3
         DebugRenderStages: {}
+    75565772ad9756c128ba86a452cb50ab*: !PostProcessingEffects
+        Id: f608653f-3a67-4cfc-8177-7d4ffc329585
+        AmbientOcclusion:
+            Enabled: false
+        LocalReflections:
+            Enabled: false
+            ResolvePassResolution: Full
+            DepthResolution: Half
+        DepthOfField:
+            Enabled: false
+            DOFAreas: {X: 0.5, Y: 6.0, Z: 50.0, W: 200.0}
+        BrightFilter:
+            Enabled: false
+            Color: {R: 1.0, G: 1.0, B: 1.0}
+        Bloom:
+            Enabled: false
+            Distortion: {X: 1.0, Y: 1.0}
+            Afterimage:
+                Enabled: false
+        LightStreak:
+            Enabled: false
+            Attenuation: 0.7
+        LensFlare:
+            Enabled: false
+        ColorTransforms:
+            Enabled: false
+            Transforms: {}
+        Antialiasing: !FXAAEffect
+            Dither: Medium
 Game: !Xenko.Rendering.Compositing.SceneCameraRenderer,Xenko.Engine
     Id: 76fe87cf-f574-4ad6-85b8-e9a9586be0e2
     Camera: ref!! 54fb6c31-cfe7-4374-9ce0-0d5d2027016a
-    Child: !Xenko.Rendering.Compositing.SceneRendererCollection,Xenko.Rendering
-        Id: 82568e46-92e7-421a-8dca-114a74e0cd69
-        Children:
-            d39c5ddbf8b7d5ca02bafb6496b1cc3c: !Xenko.Rendering.Compositing.ForwardRenderer,Xenko.Engine ref!! 77996492-9ebf-471f-83ef-a3839dd28f51
-            01d338078e9b21121ead0868932613dd: !Xenko.Rendering.Compositing.DebugRenderer,Xenko.Rendering ref!! b2bfa014-10de-43a2-9828-b3c5c5eab9e3
+    Child*: !Xenko.Rendering.Compositing.ForwardRenderer,Xenko.Engine ref!! 77996492-9ebf-471f-83ef-a3839dd28f51
     RenderMask*: Group31
 SingleView*: !Xenko.Rendering.Compositing.ForwardRenderer,Xenko.Engine ref!! a769a1f1-07a7-47f7-a804-01092bf323df
 Editor*: !Xenko.Rendering.Compositing.ForwardRenderer,Xenko.Engine ref!! a769a1f1-07a7-47f7-a804-01092bf323df

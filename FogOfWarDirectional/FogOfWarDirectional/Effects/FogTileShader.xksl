@@ -4,10 +4,6 @@
     {
         compose ComputeColor Tile0;
         compose ComputeColor Tile1;
-        compose ComputeColor Tile2;
-        compose ComputeColor Tile3;
-        compose ComputeColor Tile4;
-        compose ComputeColor Tile5;
 
         cbuffer PerMaterial 
         {
@@ -28,14 +24,6 @@
                     { return Tile0.Compute(); }
                 case 1:
                     { return Tile1.Compute(); }
-                case 2:
-                    { return Tile2.Compute(); }
-                case 3:
-                    { return Tile3.Compute(); }
-                case 4:
-                    { return Tile4.Compute(); }
-                case 5:
-                    { return Tile5.Compute(); }
                 default:
                     { return Tile1.Compute(); }
              }

@@ -8,43 +8,15 @@ Attributes:
             MixinReference: FogTileShader
             Generics: {}
             CompositionNodes:
-                b51d2857b7444b759f78a318cc00a774~Tile0: !ComputeTextureColor
+                e1144697e477ec3a93036becd13f62ab~Tile0: !ComputeTextureColor
                     Texture: de2b8ae9-a6a8-46a6-b571-e9429e50cf31:Textures/FogTile0
                     FallbackValue:
                         Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                     Scale: {X: 1.0, Y: 1.0}
                     Offset: {X: 0.0, Y: 0.0}
                     Swizzle: null
-                915b318bb8bea49d641df95dcc817687~Tile1: !ComputeTextureColor
+                0eefcab28af6340bd45f5baaf97d1a87~Tile1: !ComputeTextureColor
                     Texture: 88ffc03b-b0ad-4201-b474-732624b18514:Textures/FogTile1
-                    FallbackValue:
-                        Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                    Scale: {X: 1.0, Y: 1.0}
-                    Offset: {X: 0.0, Y: 0.0}
-                    Swizzle: null
-                58dcdf8646447f8f8c778db8cacd64e9~Tile2: !ComputeTextureColor
-                    Texture: 59a7abb1-7f78-4cb9-9a55-788c1ed49be2:Textures/FogTile2
-                    FallbackValue:
-                        Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                    Scale: {X: 1.0, Y: 1.0}
-                    Offset: {X: 0.0, Y: 0.0}
-                    Swizzle: null
-                718f791ef50367f55cd3b605e23911d1~Tile3: !ComputeTextureColor
-                    Texture: 4ee8700a-ff3e-4d1b-889e-e3d5c6c7d688:Textures/FogTile3
-                    FallbackValue:
-                        Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                    Scale: {X: 1.0, Y: 1.0}
-                    Offset: {X: 0.0, Y: 0.0}
-                    Swizzle: null
-                9f2abb3f68392a829f4235ea822a9ede~Tile4: !ComputeTextureColor
-                    Texture: eea71bb4-82e7-43cf-b935-c0caf917f4fb:Textures/FogTile4
-                    FallbackValue:
-                        Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                    Scale: {X: 1.0, Y: 1.0}
-                    Offset: {X: 0.0, Y: 0.0}
-                    Swizzle: null
-                bde339df3479873981b9d5015828432b~Tile5: !ComputeTextureColor
-                    Texture: 3ac1f6a3-70f1-4db3-90dd-b832a0ced8d6:Textures/FogTile5
                     FallbackValue:
                         Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                     Scale: {X: 1.0, Y: 1.0}
