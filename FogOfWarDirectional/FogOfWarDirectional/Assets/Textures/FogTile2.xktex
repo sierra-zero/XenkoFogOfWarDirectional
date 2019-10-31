@@ -1,8 +1,8 @@
 !Texture
-Id: de2b8ae9-a6a8-46a6-b571-e9429e50cf31
+Id: 59a7abb1-7f78-4cb9-9a55-788c1ed49be2
 SerializedVersion: {Xenko: 2.0.0.0}
 Tags: []
-Source: !file FogTile0.png
+Source: !file FogTile2.png
 Width: 108.0
 Height: 108.0
 IsSizeInPercentage: false

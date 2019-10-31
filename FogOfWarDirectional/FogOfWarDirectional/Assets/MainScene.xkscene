@@ -84,7 +84,7 @@ Hierarchy:
                         ElevationY: 0.5
                         Character: ref!! 627bd541-5360-4ba9-8222-68dcd6c8f76d
                         FogRenderDistance: 13.0
-                        FogFadeTimer: 100
+                        FogFadeTimer: 10
         -   Folder: null
             Entity:
                 Id: 07d34428-016a-44fd-9314-df16a5e5da61
@@ -820,10 +820,11 @@ Hierarchy:
                         Children: {}
                     ec37f54afc586f567e445c140930f97c: !CameraComponent
                         Id: 0f4a6067-9e9f-4021-8dfa-69a747bb91a5
-                        Enabled: false
                         Name: Orthographic
                         Projection: Orthographic
                         OrthographicSize: 16.0
+                        FarClipPlane: 20.0
+                        UseCustomAspectRatio: true
                         Slot: 54fb6c31-cfe7-4374-9ce0-0d5d2027016a
         -   Entity:
                 Id: 6a4a27e4-47a3-436c-bd68-0428792e488a
@@ -1686,6 +1687,7 @@ Hierarchy:
                         Children: {}
                     f9ef6de60e4174118b7e4d9d7deb716d: !CameraComponent
                         Id: 235bfe47-f46b-496d-86fd-503890f7b1c8
+                        Enabled: false
                         Name: Perspective
                         Projection: Perspective
                         VerticalFieldOfView: 11.0

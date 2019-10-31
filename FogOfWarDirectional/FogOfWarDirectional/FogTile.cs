@@ -3,6 +3,9 @@ using Xenko.Core.Mathematics;
 using Xenko.Engine;
 using Xenko.Physics;
 using Xenko.Rendering;
+using Xenko.Rendering.Materials;
+using Xenko.Rendering.Materials.ComputeColors;
+
 // ReSharper disable PossibleLossOfFraction
 
 // ReSharper disable MemberCanBePrivate.Global
@@ -61,6 +64,10 @@ namespace FogOfWarDirectional
         {
             NotVisible,
             Visible,
+            NorthWestVisible,
+            NorthEastVisible,
+            SouthEastVisible,
+            SouthWestVisible
         }
         
         public FogTile(FogOfWarSystem fog, Vector2 fogTileCoord)
@@ -93,7 +100,7 @@ namespace FogOfWarDirectional
         {
             // Identify tile state
             seen = fogState.ContainsKey(Coord) && fogState[Coord];
-            tileState = seen ? FogTileState.Visible : FogTileState.NotVisible;
+            UpdateFogTileState();
 
             // Shortcut out if outside of camera view
             characterPos = fog.CharacterPos;
@@ -131,6 +138,56 @@ namespace FogOfWarDirectional
             }
 
             prevCharacterPos = characterPos;
+        }
+
+        private void UpdateFogTileState()
+        {
+            tileState = seen ? FogTileState.Visible : FogTileState.NotVisible;
+
+            if (tileState == FogTileState.NotVisible) {
+                return;
+            }
+
+            // Update recyclers
+            northRecycler = Coord + NorthCoord;
+            eastRecycler = Coord + EastCoord;
+            southRecycler = Coord + SouthCoord;
+            westRecycler = Coord + WestCoord;
+
+            northEastRecycler = Coord + NorthEastCoord;
+            southEastRecycler = Coord + SouthEastCoord;
+            southWestRecycler = Coord + SouthWestCoord;
+            northWestRecycler = Coord + NorthWestCoord;
+
+            northVisible = fogState.ContainsKey(northRecycler) && !fogState[northRecycler];
+            eastVisible = fogState.ContainsKey(eastRecycler) && !fogState[eastRecycler];
+            southVisible = fogState.ContainsKey(southRecycler) && !fogState[southRecycler];
+            westVisible = fogState.ContainsKey(westRecycler) && !fogState[westRecycler];
+
+            northEastVisible = fogState.ContainsKey(northEastRecycler) && fogState[northEastRecycler];
+            southEastVisible = fogState.ContainsKey(southEastRecycler) && fogState[southEastRecycler];
+            southWestVisible = fogState.ContainsKey(southWestRecycler) && fogState[southWestRecycler];
+            northWestVisible = fogState.ContainsKey(northWestRecycler) && fogState[northWestRecycler];
+
+            if (northVisible && !eastVisible && westVisible && !southVisible) {
+                tileState = FogTileState.NorthWestVisible;
+                return;
+            }
+
+            if (northVisible && eastVisible && !westVisible && !southVisible) {
+                tileState = FogTileState.NorthEastVisible;
+                return;
+            }
+
+            if (!northVisible && eastVisible && !westVisible && southVisible) {
+                tileState = FogTileState.SouthEastVisible;
+                return;
+            }
+
+            if (!northVisible && !eastVisible && westVisible && southVisible) {
+                tileState = FogTileState.SouthWestVisible;
+                return;
+            }
         }
 
         private void InitializeFogTile()

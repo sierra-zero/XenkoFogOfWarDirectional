@@ -196,7 +196,10 @@ SharedRenderers:
                     Enabled: false
                     Color: {R: 0.0, G: 0.0, B: 0.0}
         Antialiasing*: !FXAAEffect
-            Quality*: 7
+            Enabled*: false
+            Dither*: None
+            Quality*: 9
+            InputLuminanceInAlpha*: false
     ee80a20a9bd99f2d70711114e15fe7ca: !Xenko.Rendering.Compositing.DebugRenderer,Xenko.Rendering
         Id: b2bfa014-10de-43a2-9828-b3c5c5eab9e3
         DebugRenderStages: {}
@@ -208,7 +211,7 @@ Game: !Xenko.Rendering.Compositing.SceneCameraRenderer,Xenko.Engine
         Children:
             d39c5ddbf8b7d5ca02bafb6496b1cc3c: !Xenko.Rendering.Compositing.ForwardRenderer,Xenko.Engine ref!! 77996492-9ebf-471f-83ef-a3839dd28f51
             01d338078e9b21121ead0868932613dd: !Xenko.Rendering.Compositing.DebugRenderer,Xenko.Rendering ref!! b2bfa014-10de-43a2-9828-b3c5c5eab9e3
-    RenderMask*: All
+    RenderMask*: Group31
 SingleView*: !Xenko.Rendering.Compositing.ForwardRenderer,Xenko.Engine ref!! a769a1f1-07a7-47f7-a804-01092bf323df
 Editor*: !Xenko.Rendering.Compositing.ForwardRenderer,Xenko.Engine ref!! a769a1f1-07a7-47f7-a804-01092bf323df
 BlockPositions: {}

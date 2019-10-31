@@ -28,8 +28,16 @@
                     { return Tile0.Compute(); }
                 case 1:
                     { return Tile1.Compute(); }
+                case 2:
+                    { return Tile2.Compute(); }
+                case 3:
+                    { return Tile3.Compute(); }
+                case 4:
+                    { return Tile4.Compute(); }
+                case 5:
+                    { return Tile5.Compute(); }
                 default:
-                    { return Tile0.Compute(); }
+                    { return Tile1.Compute(); }
              }
         }
     };

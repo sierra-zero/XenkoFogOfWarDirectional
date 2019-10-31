@@ -12,7 +12,12 @@ Goals:
 ==================================================================
 ==================================================================
 
-0) Smoothing and shaping logic, try to do it with only N, E , S, W consideration.
+
+0) Put in render texture.
+0) Place in fog of war model.
+0) Write fog of war shader to take in render texture.
+
+
 0) Optimize performance as much as possible.
 0) Optimize / Clean-up Map.
 0) Clean-up code.
