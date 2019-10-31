@@ -13,11 +13,8 @@ Goals:
 ==================================================================
 
 
-0) Put in render texture.
-0) Place in fog of war model.
-0) Write fog of war shader to take in render texture.
-
-
+0) Continue optimizing, try to get down to 5-6ms.
+0) Try with smaller tiles after optimization?
 0) Optimize performance as much as possible.
 0) Optimize / Clean-up Map.
 0) Clean-up code.
