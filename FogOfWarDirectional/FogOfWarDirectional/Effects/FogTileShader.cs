@@ -6,8 +6,13 @@
 // and re-save the associated .xkfx.
 // </auto-generated>
 
+using System;
+using Xenko.Core;
 using Xenko.Rendering;
-
+using Xenko.Graphics;
+using Xenko.Shaders;
+using Xenko.Core.Mathematics;
+using Buffer = Xenko.Graphics.Buffer;
 
 namespace FogOfWarDirectional
 {

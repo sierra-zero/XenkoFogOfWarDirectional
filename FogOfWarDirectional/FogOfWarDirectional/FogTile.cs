@@ -102,7 +102,7 @@ namespace FogOfWarDirectional
             seen = fogState.ContainsKey(Coord) && fogState[Coord];
             tileState = seen ? FogTileState.Visible : FogTileState.NotVisible;
 
-            // Check the bump timer - TODO this is where you are
+            // Check the bump timer
             if (bumpTimer >= 0) {
                 lerp = (1 - (float)bumpTimer * lerpRate);
                 shaderParams?.Set(FogTileShaderKeys.Lerp, lerp);

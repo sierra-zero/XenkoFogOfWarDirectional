@@ -84,7 +84,7 @@ Hierarchy:
                         ElevationY: 0.5
                         Character: ref!! 627bd541-5360-4ba9-8222-68dcd6c8f76d
                         FogRenderDistance: 12.0
-                        FogFadeTimer: 30
+                        FogFadeTimer: 35
         -   Folder: null
             Entity:
                 Id: 07d34428-016a-44fd-9314-df16a5e5da61
@@ -244,7 +244,7 @@ Hierarchy:
                         Id: 44596023-7894-483c-a734-8af29dda7a00
                         Position: {X: 12.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.707106769, Y: 0.0, Z: 0.0, W: 0.707106769}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Scale*: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     8be18cd261a3de30a1cc82cc476839e1: !StaticColliderComponent
                         Id: 718e2600-9e82-4df2-91c7-fd3b9fc43d1a
@@ -259,7 +259,7 @@ Hierarchy:
                         ColliderShapes:
                             eb53681b65b828aacdb54bc61670cc87: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 24.75, Y: 0.75, Z: 5.0}
+                                Size: {X: 25.0, Y: 0.75, Z: 5.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:
@@ -385,7 +385,7 @@ Hierarchy:
                         Id: 7653f4ff-dfae-4bc5-acd2-782c71035a2f
                         Position: {X: 0.0, Y: 0.0, Z: -12.0}
                         Rotation: {X: 0.499913663, Y: 0.5000863, Z: -0.499913663, W: 0.5000863}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Scale: {X: 1.0, Y: 1.25, Z: 1.0}
                         Children: {}
                     8be18cd261a3de30a1cc82cc476839e1: !StaticColliderComponent
                         Id: 745d2676-5a63-47ad-bfe2-ae68df98c75a
@@ -400,7 +400,7 @@ Hierarchy:
                         ColliderShapes:
                             eb53681b65b828aacdb54bc61670cc87: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 24.75, Y: 0.75, Z: 5.0}
+                                Size: {X: 25.0, Y: 0.75, Z: 5.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:
@@ -824,8 +824,8 @@ Hierarchy:
                         Projection: Orthographic
                         OrthographicSize: 14.0
                         FarClipPlane: 20.0
-                        UseCustomAspectRatio: true
-                        Slot: 54fb6c31-cfe7-4374-9ce0-0d5d2027016a
+                        AspectRatio: 1.0
+                        Slot: 8029e506-a2f3-41ec-8568-5227e7f063ef
         -   Entity:
                 Id: 6a4a27e4-47a3-436c-bd68-0428792e488a
                 Name: naturePack_116
@@ -1239,7 +1239,7 @@ Hierarchy:
                         Id: baf26bc7-22c0-4ae5-bda6-ad7c9196bc29
                         Position: {X: 24.0, Y: 0.0, Z: -12.0}
                         Rotation: {X: 0.499913663, Y: 0.5000863, Z: -0.499913663, W: 0.5000863}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Scale: {X: 1.0, Y: 1.25, Z: 1.0}
                         Children: {}
                     8be18cd261a3de30a1cc82cc476839e1: !StaticColliderComponent
                         Id: af43e68d-9101-4de9-8721-edea322a14db
@@ -1254,7 +1254,7 @@ Hierarchy:
                         ColliderShapes:
                             eb53681b65b828aacdb54bc61670cc87: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 24.75, Y: 0.75, Z: 5.0}
+                                Size: {X: 25.0, Y: 0.75, Z: 5.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:
@@ -1538,7 +1538,8 @@ Hierarchy:
                         Scale: {X: 0.5, Y: 0.5, Z: 0.5}
                         Children:
                             a507710611b6634b92824ce7693f4e35: ref!! 0ca7cb99-e600-4124-aadf-f3947a09c474
-                            a4f54b6a6a30442b242fbc203f30afb7: ref!! 5b08178d-43bf-4515-99d4-ff6cedc9d392
+                            d2bc68b780d8df83a5e5d4883505a9e0: ref!! 5b08178d-43bf-4515-99d4-ff6cedc9d392
+                            1398298e4ec2d94c0d60b63448e4ed57: ref!! 0e113570-b369-4ec6-9960-074c380e35a9
                     4b82a5c88ee681bc717ae4e2e5d094a2: !ModelComponent
                         Id: 0c36ec45-5454-4d5a-ac4b-6cbbc6cc5181
                         Model: 3b7ae418-4e30-4d68-966a-e8f6f10612a5:Models/Cube
@@ -1563,6 +1564,7 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     7e5f5e40b037501f8ccf0a361b434416: !FogOfWarDirectional.PlayerController,FogOfWarDirectional
                         Id: 87ade47e-3c27-451d-8e0d-a907bfca59ff
+                        Speed: 2.0
                     906d081a8f366fcfebc14070af0f299b: !FogOfWarDirectional.FogDetector,FogOfWarDirectional
                         Id: d3ffd13e-7935-42ac-bffe-efb366bd934f
                         Priority: 1
@@ -1687,7 +1689,6 @@ Hierarchy:
                         Children: {}
                     f9ef6de60e4174118b7e4d9d7deb716d: !CameraComponent
                         Id: 235bfe47-f46b-496d-86fd-503890f7b1c8
-                        Enabled: false
                         Name: Perspective
                         Projection: Perspective
                         VerticalFieldOfView: 11.0
@@ -1851,6 +1852,23 @@ Hierarchy:
                 BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
                 BasePartId: c6f939c5-f179-4584-b71c-aaf165009ff8
                 InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+        -   Entity:
+                Id: df4ba22a-8a09-4a5b-80cf-bbd332ebb7d6
+                Name: FogOfWar
+                Components:
+                    2cf9145eaf19e8f8f0c7fe03a6b47bed: !TransformComponent
+                        Id: 0e113570-b369-4ec6-9960-074c380e35a9
+                        Position: {X: 0.0, Y: 0.25, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    d7bd2236c35c1ebba0b99ccf8617a78d: !ModelComponent
+                        Id: 21b29f11-8ee6-441b-91b2-f5111aa76305
+                        Model: a766e2f6-a0c2-4b46-8096-cd59706f1482:Models/FogOfWar
+                        RenderGroup: Group31
+                        IsShadowCaster: false
+                        Materials:
+                            0d5f86fa744d6030a09db0ace5db1bed~0: c1992ca2-de50-4176-85a1-11cc07589bf8:Materials/FogOfWarMaterial
         -   Entity:
                 Id: e00de2ee-a0ab-4cb0-8313-d382910bbbc7
                 Name: naturePack_116
@@ -2218,7 +2236,7 @@ Hierarchy:
                 Components:
                     7ead3dbea24290ab5e658e335601e992: !TransformComponent
                         Id: e2310ea5-a7ed-447e-8282-fbef3325404f
-                        Position*: {X: 11.5, Y: 0.0, Z: -19.5}
+                        Position*: {X: 12.0, Y: 0.0, Z: -20.0}
                         Rotation: {X: 0.0, Y: 0.707106769, Z: 0.0, W: 0.707106769}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -2397,7 +2415,7 @@ Hierarchy:
                         Id: 1cb1845d-ea6d-4e3d-a6ed-494d07351c20
                         Position: {X: 12.0, Y: 0.0, Z: -24.0}
                         Rotation: {X: 0.707106769, Y: 0.0, Z: 0.0, W: 0.707106769}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Scale: {X: 1.0, Y: 1.25, Z: 1.0}
                         Children: {}
                     8be18cd261a3de30a1cc82cc476839e1: !StaticColliderComponent
                         Id: 3c98da07-0662-4210-b7a5-d8b17e4140ac
@@ -2412,7 +2430,7 @@ Hierarchy:
                         ColliderShapes:
                             eb53681b65b828aacdb54bc61670cc87: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 24.75, Y: 0.75, Z: 5.0}
+                                Size: {X: 25.0, Y: 0.75, Z: 5.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:

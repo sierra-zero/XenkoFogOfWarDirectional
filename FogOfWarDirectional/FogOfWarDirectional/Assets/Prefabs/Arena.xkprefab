@@ -307,7 +307,7 @@ Hierarchy:
                         Id: 1311d7fd-4e61-4a17-972e-dd8cc4c4a0dd
                         Position: {X: 24.0, Y: 0.0, Z: -12.0}
                         Rotation: {X: 0.499913663, Y: 0.5000863, Z: -0.499913663, W: 0.5000863}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Scale: {X: 1.0, Y: 1.25, Z: 1.0}
                         Children: {}
                     8be18cd261a3de30a1cc82cc476839e1: !StaticColliderComponent
                         Id: 2dd41586-2a87-4b61-8e34-e833b8bc6a16
@@ -322,7 +322,7 @@ Hierarchy:
                         ColliderShapes:
                             eb53681b65b828aacdb54bc61670cc87: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 24.75, Y: 0.75, Z: 5.0}
+                                Size: {X: 25.0, Y: 0.75, Z: 5.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:
@@ -344,7 +344,7 @@ Hierarchy:
                         Id: 646b99f4-75db-4f91-8d98-72687fd465ca
                         Position: {X: 12.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.707106769, Y: 0.0, Z: 0.0, W: 0.707106769}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Scale: {X: 1.0, Y: 1.25, Z: 1.0}
                         Children: {}
                     8be18cd261a3de30a1cc82cc476839e1: !StaticColliderComponent
                         Id: 0422250e-deea-4974-a5b0-83a6ab569b39
@@ -359,7 +359,7 @@ Hierarchy:
                         ColliderShapes:
                             eb53681b65b828aacdb54bc61670cc87: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 24.75, Y: 0.75, Z: 5.0}
+                                Size: {X: 25.0, Y: 0.75, Z: 5.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:
@@ -790,7 +790,7 @@ Hierarchy:
                 Components:
                     7ead3dbea24290ab5e658e335601e992: !TransformComponent
                         Id: 2e19ccd4-7374-4547-a7c3-f1d9a0516ba7
-                        Position: {X: 11.5, Y: 0.0, Z: -19.46182}
+                        Position: {X: 11.2211, Y: 0.0, Z: -20.37705}
                         Rotation: {X: 0.0, Y: 0.707106769, Z: 0.0, W: 0.707106769}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -1815,7 +1815,7 @@ Hierarchy:
                         Id: de367b46-9c59-4bfa-b221-fb143a307e90
                         Position: {X: 0.0, Y: 0.0, Z: -12.0}
                         Rotation: {X: 0.499913663, Y: 0.5000863, Z: -0.499913663, W: 0.5000863}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Scale: {X: 1.0, Y: 1.25, Z: 1.0}
                         Children: {}
                     8be18cd261a3de30a1cc82cc476839e1: !StaticColliderComponent
                         Id: c7ab89c3-43f3-464f-b864-575546d5a7c2
@@ -1830,7 +1830,7 @@ Hierarchy:
                         ColliderShapes:
                             eb53681b65b828aacdb54bc61670cc87: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 24.75, Y: 0.75, Z: 5.0}
+                                Size: {X: 25.0, Y: 0.75, Z: 5.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:
@@ -1904,7 +1904,7 @@ Hierarchy:
                         Id: e881f2c7-36a9-4859-93f5-6fdd89ed3e77
                         Position: {X: 12.0, Y: 0.0, Z: -24.0}
                         Rotation: {X: 0.707106769, Y: 0.0, Z: 0.0, W: 0.707106769}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Scale: {X: 1.0, Y: 1.25, Z: 1.0}
                         Children: {}
                     8be18cd261a3de30a1cc82cc476839e1: !StaticColliderComponent
                         Id: 89a037af-ea5c-43e9-8d82-eb66740680d8
@@ -1919,7 +1919,7 @@ Hierarchy:
                         ColliderShapes:
                             eb53681b65b828aacdb54bc61670cc87: !BoxColliderShapeDesc
                                 Is2D: false
-                                Size: {X: 24.75, Y: 0.75, Z: 5.0}
+                                Size: {X: 25.0, Y: 0.75, Z: 5.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:

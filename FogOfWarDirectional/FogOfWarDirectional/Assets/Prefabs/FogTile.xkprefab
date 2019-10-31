@@ -48,7 +48,7 @@ Hierarchy:
                     597d3471b1625f83a7c170c4db886c55: !ModelComponent
                         Id: 0df68758-4a9c-43c6-a497-769ac699a6b5
                         Model: 83b5c5a7-cb56-4b72-bb45-351021f0aea9:Models/FogTile
-                        RenderGroup: Group31
+                        RenderGroup: Group30
                         IsShadowCaster: false
                         Materials:
                             5d3569166d48d7646f3435113452bedf~0: fb90181f-9989-4529-902e-8f2a00063365:Materials/FogMaterial
