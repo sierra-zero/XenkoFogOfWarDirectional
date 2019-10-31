@@ -159,6 +159,7 @@ namespace FogOfWarDirectional
                         .OrderBy(result => Vector3.Distance(positionRecycler, result.Point))) {
 
                         if (hitResult.Collider.CollisionGroup == CollisionFilterGroups.StaticFilter) {
+                            //TODO testing adding this cube to the visibility
                             break;
                         }
 

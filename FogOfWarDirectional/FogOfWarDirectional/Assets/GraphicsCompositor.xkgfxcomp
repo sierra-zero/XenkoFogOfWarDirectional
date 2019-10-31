@@ -133,7 +133,7 @@ SharedRenderers:
         TransparentRenderStage*: ref!! f5aaff53-3ce6-41ee-9c70-ee62ded0c8d9
         ShadowMapRenderStages:
             fc4d1e0de5c2b0bbc27bcf96e9a848fd: ~(Deleted)
-        GBufferRenderStage*: ref!! 940f614c-c5eb-4d7d-992f-0bb31daf0809
+        GBufferRenderStage*: null
         PostEffects: !PostProcessingEffects ref!! e23bfc2b-ed56-4483-b45f-816eb6912b75
         LightShafts: null
         VRSettings:
@@ -177,12 +177,13 @@ SharedRenderers:
             DOFAreas: {X: 0.5, Y: 6.0, Z: 50.0, W: 200.0}
         BrightFilter:
             Enabled*: true
-            Threshold*: 0.001
+            Threshold*: 0.0
+            Steepness*: 1.0
             Color: {R: 1.0, G: 1.0, B: 1.0}
         Bloom:
             Enabled*: true
-            Radius*: 14.0
-            Amount*: 4.5
+            Radius*: 20.0
+            Amount*: 7.5
             SigmaRatio*: 3.5
             Distortion: {X: 1.0, Y: 1.0}
             Afterimage:
