@@ -177,18 +177,18 @@ SharedRenderers:
             DOFAreas: {X: 0.5, Y: 6.0, Z: 50.0, W: 200.0}
         BrightFilter:
             Enabled*: true
-            Threshold*: 0.0
-            Steepness*: 1.0
-            Color: {R: 1.0, G: 1.0, B: 1.0}
+            Threshold*: 0.1
+            Steepness*: 0.5
+            Color*: {R: 1.0, G: 1.0, B: 1.0}
         Bloom:
             Enabled*: true
-            Radius*: 20.0
+            Radius*: 50.0
             Amount*: 12.0
-            SigmaRatio*: 3.5
+            SigmaRatio*: 12.0
             Distortion: {X: 1.0, Y: 1.0}
             Afterimage:
                 Enabled: false
-            StableConvolution*: false
+            StableConvolution*: true
         LightStreak:
             Enabled*: false
             Attenuation: 0.7
@@ -198,6 +198,7 @@ SharedRenderers:
             Enabled*: false
             Transforms:
                 1e06f805f8b2e949a06c30d45fe413ef: !ToneMap
+                    Enabled*: false
                     Operator: !ToneMapHejl2Operator {}
                     KeyValue*: 1.7
                 c57351444609d14ea258b3f511ec8a74: !FilmGrain
@@ -206,7 +207,7 @@ SharedRenderers:
                     Enabled: false
                     Color: {R: 0.0, G: 0.0, B: 0.0}
         Antialiasing*: !FXAAEffect
-            Enabled*: false
+            Enabled*: true
             Dither*: Medium
             Quality*: 3
             InputLuminanceInAlpha*: false
