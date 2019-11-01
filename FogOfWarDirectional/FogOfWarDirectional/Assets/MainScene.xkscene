@@ -79,11 +79,11 @@ Hierarchy:
                         FogTileStartZ: 0.0
                         FogRows: 25
                         FogColumns: 25
-                        VisionRadius: 7.75
+                        VisionRadius: 9.0
                         VisionStep: 1
                         ElevationY: 0.5
                         Character: ref!! 627bd541-5360-4ba9-8222-68dcd6c8f76d
-                        FogRenderDistance: 12.0
+                        FogRenderDistance: 13.0
                         FogFadeTimer: 60
         -   Folder: null
             Entity:
@@ -413,7 +413,7 @@ Hierarchy:
                 Components:
                     b2f9bf93dd024be7bcf2e0d206a83c44: !TransformComponent
                         Id: 59db454b-2e4c-4b11-a55a-d179d1329e44
-                        Position: {X: 9.261371, Y: 0.0, Z: -3.844872}
+                        Position*: {X: 9.261371, Y: 0.0, Z: -3.99753332}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -1113,7 +1113,7 @@ Hierarchy:
                 Components:
                     1479cbdffb5d3abdb54d28464b9bcd67: !TransformComponent
                         Id: d088a2da-2575-4d00-b552-bf38cda6f1d0
-                        Position: {X: 13.20656, Y: 0.0, Z: -15.6565456}
+                        Position*: {X: 13.205, Y: 0.0, Z: -16.05}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -1161,7 +1161,7 @@ Hierarchy:
                         Id: 6ba121b6-fe3a-40f8-af97-fe35326ff22c
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.65, Y: 1.65, Z: 1.65}
                         Children: {}
                     71b42da6f642bf922fa6568af5c6a555: !ModelComponent
                         Id: 8a675d43-8410-476b-acdf-404cfb3e8112
@@ -1269,7 +1269,7 @@ Hierarchy:
                         Id: 7e246b83-8390-4b9c-865e-87a901625aa3
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.65, Y: 1.65, Z: 1.65}
                         Children: {}
                     71b42da6f642bf922fa6568af5c6a555: !ModelComponent
                         Id: b279a516-475f-4da1-be9f-aed8f451ad47
@@ -1716,7 +1716,7 @@ Hierarchy:
                 Components:
                     7aee15ba3aabcd1220a6a97145c6f8b3: !TransformComponent
                         Id: a9bc5f2e-a540-4465-b962-afa91e9ab1e8
-                        Position*: {X: 16.25, Y: 0.0, Z: -14.5}
+                        Position*: {X: 16.6, Y: 0.0, Z: -15.0}
                         Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -1938,7 +1938,7 @@ Hierarchy:
                 Components:
                     3657c454a20f09d2a762e83a74039abd: !TransformComponent
                         Id: 2c174688-0ca2-488c-97c9-dc22bef7d6e6
-                        Position*: {X: 18.0459976, Y: 0.0, Z: -8.041984}
+                        Position*: {X: 18.175, Y: 0.0, Z: -8.05}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -1959,6 +1959,7 @@ Hierarchy:
                         Children: {}
                     b6520fa959d8693333fae10cdf73877e: !ModelComponent
                         Id: 5e20dde5-a265-41ed-a8d1-2254438e5404
+                        Enabled*: true
                         Model: 63cc7a21-3406-4e73-8109-838d9855f3f5:Models/Ground
                         Materials:
                             1303750f691de68dec99bbc595fff721~0: 6b9a0a2e-8dde-403f-b0b6-63b3097f25ba:Models/Leafs
@@ -2157,7 +2158,7 @@ Hierarchy:
                 Components:
                     a382ff20e4885d98667d5027fb1727c7: !TransformComponent
                         Id: 278a75fc-3751-4d75-9482-9f16b8b5b1a0
-                        Position: {X: 4.303834, Y: 0.0, Z: -8.917643}
+                        Position*: {X: 4.09833145, Y: 0.0, Z: -8.917643}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -2236,7 +2237,7 @@ Hierarchy:
                 Components:
                     7ead3dbea24290ab5e658e335601e992: !TransformComponent
                         Id: e2310ea5-a7ed-447e-8282-fbef3325404f
-                        Position*: {X: 12.0, Y: 0.0, Z: -20.0}
+                        Position*: {X: 12.0, Y: 0.0, Z: -19.5}
                         Rotation: {X: 0.0, Y: 0.707106769, Z: 0.0, W: 0.707106769}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:

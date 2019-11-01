@@ -57,7 +57,7 @@ Hierarchy:
                         Id: 420fa02a-219b-4af8-84d7-705e986a60d7
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.65, Y: 1.65, Z: 1.65}
                         Children: {}
                     71b42da6f642bf922fa6568af5c6a555: !ModelComponent
                         Id: 984d18a5-849d-4aca-816b-109af15b9e00
@@ -1547,7 +1547,7 @@ Hierarchy:
                         Id: 9cc9a679-a29a-4437-8452-141aa5b197a3
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 2.0, Y: 2.0, Z: 2.0}
+                        Scale: {X: 1.65, Y: 1.65, Z: 1.65}
                         Children: {}
                     71b42da6f642bf922fa6568af5c6a555: !ModelComponent
                         Id: 47449345-9ed9-4586-acea-e45334ca2e6c

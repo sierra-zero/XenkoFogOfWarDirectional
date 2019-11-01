@@ -43,6 +43,7 @@ namespace FogOfWarDirectional
         private Vector3 targetRecycler;
         private Vector2 coordRecycler;
         private Vector3 characterPosRecycler;
+        private bool nextTileRecycler;
         private int characterPosXRecycler;
         private int characterPosZRecycler;
         private Simulation simulation;
@@ -152,13 +153,30 @@ namespace FogOfWarDirectional
                 fogVisibilityMap[fogTile.Key].Add(fogTile.Key);
 
                 for (var i = 0; i <= 360; i += VisionStep) {
-                    targetRecycler = new Vector3(positionRecycler.X + VisionRadius * (float)Math.Cos(i), ElevationY,
-                        positionRecycler.Z + VisionRadius * (float)Math.Sin(i));
+                    targetRecycler = new Vector3(positionRecycler.X + (VisionRadius * 2) * (float)Math.Cos(i), ElevationY,
+                        positionRecycler.Z + (VisionRadius * 2) * (float)Math.Sin(i));
+
+                    nextTileRecycler = false;
 
                     foreach (var hitResult in simulation.RaycastPenetrating(positionRecycler, targetRecycler)
                         .OrderBy(result => Vector3.Distance(positionRecycler, result.Point))) {
 
+                        if (nextTileRecycler && hitResult.Collider.CollisionGroup == CollisionFilterGroups.CustomFilter10) {
+                            coordRecycler = hitResult.Collider.Entity.Get<FogTile>().Coord;
+                            if (!fogVisibilityMap[fogTile.Key].Contains(coordRecycler)) {
+                                fogVisibilityMap[fogTile.Key].Add(coordRecycler);
+                            }
+                            break;
+                        }
+
                         if (hitResult.Collider.CollisionGroup == CollisionFilterGroups.StaticFilter) {
+                            nextTileRecycler = true;
+                            continue;
+                        }
+
+                        if (Vector3.Distance(positionRecycler, hitResult.Point) > VisionRadius) {
+                            //nextTileRecycler = true;
+                            //continue;
                             break;
                         }
 

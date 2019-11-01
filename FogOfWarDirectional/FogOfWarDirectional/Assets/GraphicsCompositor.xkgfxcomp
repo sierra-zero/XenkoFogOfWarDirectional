@@ -177,12 +177,12 @@ SharedRenderers:
             DOFAreas: {X: 0.5, Y: 6.0, Z: 50.0, W: 200.0}
         BrightFilter:
             Enabled*: true
-            Threshold*: 0.1
+            Threshold*: 0.01
             Steepness*: 0.5
             Color*: {R: 1.0, G: 1.0, B: 1.0}
         Bloom:
             Enabled*: true
-            Radius*: 50.0
+            Radius*: 40.0
             Amount*: 12.0
             SigmaRatio*: 12.0
             Distortion: {X: 1.0, Y: 1.0}
