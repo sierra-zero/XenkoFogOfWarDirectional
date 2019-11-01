@@ -24,11 +24,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 024ba65a-7f4c-401b-833c-8ffc54e14c5c
+                        Id: 48d9e592-9cd1-4da3-b275-77d1e7e4a899
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 4088ba56-c99a-4987-b21a-26fcb07ed387
+                        Id: 953273a1-8364-4fdd-afbb-0e3308815b86
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -41,9 +41,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 5d9136fb-4e5c-4580-985c-cb095ba0ad25
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: c731368b-a31e-418d-ac16-05d48a381c68
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: 03b281a9-0558-493d-a6c9-606b263b6bb9
@@ -57,9 +57,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 6dcfa7dc-0935-4592-9a46-ae8a95393a52
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 035ae240-42ad-4ccd-b341-2c2e7c2bfa20
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 535439e9-0ec8-4456-b755-f3bc4deb0034
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 0660e4ef-6cf0-4b78-af0f-4103da495cb5
                 Name: FogOfWarSystem
@@ -70,7 +70,7 @@ Hierarchy:
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
-                    ced91470f273b399e044d5359505688b: !FogOfWarDirectional.FogOfWarSystem,FogOfWarDirectional
+                    0ce52ffef5d470f0affe5e97c222973f: !FogOfWarDirectional.FogOfWarSystem,FogOfWarDirectional
                         Id: e9db08cf-25be-411d-a926-68ebac015ed0
                         Enable: true
                         FogTile: 1f3666af-137a-4f1a-bc2e-0a05eb4dc1a1:Prefabs/FogTile
@@ -98,9 +98,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! d1a563eb-7c86-4147-80a8-b133bec0b34b
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 1b319583-6a09-49ce-b9ee-3839e1355e6c
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 3c0845cc-2faf-4fd6-a53d-d3ef1b5da6d7
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 0d166fe2-b40f-4ccb-9b62-645e3594ea21
                 Name: PlayerSpace
@@ -123,11 +123,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 698c8717-3abc-4d12-acc1-8e5108d4cb4a
+                        Id: 6ce8d645-e239-4f65-9764-20cc34efb67e
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 4cc9b7f1-0354-49e3-a216-f4ab4eae78eb
+                        Id: 7b8c02ef-4dfd-4216-b9ab-4fbbe8e1c479
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -140,9 +140,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 2e037a89-929b-445d-bfe3-095bc3d440a9
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: cc6d3ed0-c3f5-431b-a8d9-2e8a88e9f1a1
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 0f6f9517-3013-4580-adff-bf43edb97a16
                 Name: naturePack_116
@@ -154,11 +154,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: a7195efc-a974-4522-a75f-6833b34ea479
+                        Id: 78b27ec5-a38c-44fa-8c80-5016e8d27869
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 1b2243ce-0c21-4c7e-9b57-817c12a08b0b
+                        Id: a1e9e176-9d6e-403c-9752-5825d8ecb20e
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -171,9 +171,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: f0a9f69a-32ae-4df5-9aae-59eab9a44ff9
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: f3e083b2-6e05-4538-820e-2236b8b91c2a
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 0fcf965d-9d54-4cf5-aeb1-88089bac1497
                 Name: Arena
@@ -198,6 +198,7 @@ Hierarchy:
                             bd8cc3506ecfc5e82c88571f7cfae593: ref!! d82e5754-1667-4981-b9d1-4a2ab9adfb6d
                             f62a205bdce77bfdf443f6430f3d09a2: ref!! 20d1e601-0b1c-48c4-8d35-394a889fc94b
                             3b59f6647a0e35308157f137fa14e12d: ref!! e2310ea5-a7ed-447e-8282-fbef3325404f
+                            df282b98a75ba93ba31c9e8e66c8d496: ref!! 1a5b27b8-ce37-4779-ab3a-f1deca33cd69
                             83898ad9a3b337ad7ae28856721597f4: ref!! 6c04dcb6-c6ab-4cd7-8758-01fc9099da14
                             dcfe1cd9cb124fce8717606d5b5efdd1: ref!! b3d78367-0817-451b-afaf-3cf933f4cfa9
                             4d111494c83b0f4796f9728e70aa6cb7: ref!! 66205c00-ddd9-46ae-94ca-9838cb96ac4c
@@ -233,9 +234,9 @@ Hierarchy:
                             7753ecbcf80f4ab2c03a04d8f251adf7: ref!! 7653f4ff-dfae-4bc5-acd2-782c71035a2f
                             319c453deb1584315cbea1f9da565165: ref!! baf26bc7-22c0-4ae5-bda6-ad7c9196bc29
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 41b8009c-b8b8-42ea-8e67-17cb4bea576f
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 01f92b29-c445-4269-a1dc-47b776c18c47
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 1b323acc-122d-4e44-9d29-736ee0ff43e7
                 Name: wall_collider
@@ -244,10 +245,10 @@ Hierarchy:
                         Id: 44596023-7894-483c-a734-8af29dda7a00
                         Position: {X: 12.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.707106769, Y: 0.0, Z: 0.0, W: 0.707106769}
-                        Scale*: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     8be18cd261a3de30a1cc82cc476839e1: !StaticColliderComponent
-                        Id: 718e2600-9e82-4df2-91c7-fd3b9fc43d1a
+                        Id: 316c3140-7800-4cee-a401-ac3643043d2f
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -263,9 +264,9 @@ Hierarchy:
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 2878e9a5-72e1-4758-8de7-1c9ed565188d
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: ca3fba34-65f6-4f06-a96d-891a93ca3a9e
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 1c7f48b5-459d-4a1a-8f12-484809600e58
                 Name: Ambient light
@@ -293,11 +294,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 0e5b71ac-eea4-4ed4-82b1-e02ee267c335
+                        Id: 0c996ecd-c9e8-4537-b913-dd893f8e6bfe
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 9f30d9b0-f31c-4e49-b1bb-56beb446b317
+                        Id: 2635d0cf-b61c-42e1-a46e-5a3984ae8aff
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -310,9 +311,40 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 12e10146-96f0-4a1d-a73f-c07fe01a4a8d
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 8af8d2c8-9ca4-4d04-8a67-1154565b2d32
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
+        -   Entity:
+                Id: 24d49e50-d460-4ac5-811c-764575db2eb4
+                Name: naturePack_116
+                Components:
+                    8905041f292a0c6b8364953f91986e1a: !TransformComponent
+                        Id: 243ca6d9-e50a-422f-b879-57b2103d2ac8
+                        Position: {X: 1.45237955E-08, Y: 0.0, Z: -0.25}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
+                        Id: 2853e2c0-0c79-4e13-bd4e-827540ae473c
+                        Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
+                        Materials: {}
+                    a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
+                        Id: 19bd908c-14b8-4c76-97ec-79244e5fe1fd
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
+            Base:
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Arena
+                BasePartId: 7f1ba8c8-198b-49e5-b118-ed72283618c4
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: 26c72176-b4d2-4679-bd6f-faed5ff0aff6
@@ -326,9 +358,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 3917af54-6276-4ddb-bd76-682707a5e7e3
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 1e6e5fdd-eb90-49d8-9933-618d2462fdb0
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: fea8cae5-373c-45b9-9bbf-c6523a06e069
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 28fdca9b-2675-4f61-919a-19293cc18526
                 Name: naturePack_116
@@ -340,11 +372,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: d81cff10-3b9c-44c9-a563-29947bdb466e
+                        Id: 17fdce64-dc68-42da-b9d8-beea41361021
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 8b395122-ae7e-4e0e-b6df-234739dd2666
+                        Id: b42d9f70-3079-422e-8aaa-c12024c1c046
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -357,9 +389,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: cead2914-5598-4c82-800e-e762e3c9ab25
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 508a394e-b35b-4793-a68b-acd49441c3ab
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: 2db8b316-b85c-41a0-b122-a1940bad1b16
@@ -373,9 +405,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 9decc272-31c6-4aa4-bd99-30e5fdb31cda
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: f3c76953-40ae-4bce-a617-0e0ed12c1fcc
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: d20aa83e-be79-43cc-a88d-939c8e1561f5
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: 2fa8b4ed-e3b4-4b36-936b-598b976b916d
@@ -388,7 +420,7 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.25, Z: 1.0}
                         Children: {}
                     8be18cd261a3de30a1cc82cc476839e1: !StaticColliderComponent
-                        Id: 745d2676-5a63-47ad-bfe2-ae68df98c75a
+                        Id: 08926992-a710-4db6-87c0-654a9a981ed9
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -404,24 +436,24 @@ Hierarchy:
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: db4061c2-1bbb-458c-b7c8-10c1b030ccee
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: bf792f61-21de-4bdf-8fff-31492343d50c
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 3261ae83-cc51-4426-8507-f7e1b6f69a2c
                 Name: naturePack_008
                 Components:
                     b2f9bf93dd024be7bcf2e0d206a83c44: !TransformComponent
                         Id: 59db454b-2e4c-4b11-a55a-d179d1329e44
-                        Position*: {X: 9.261371, Y: 0.0, Z: -3.99753332}
+                        Position: {X: 9.261371, Y: 0.0, Z: -3.99753332}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             bbbc541dbd5c81f8d1654bf364f44b55: ref!! d8773f20-af27-4036-b54e-a12f41d9b693
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 60ab9e26-d2f7-43bd-85bd-c25ac8dc2d89
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 713529ac-10c8-4dc9-9a82-dfb24d7a250a
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: 32ac865f-ae8f-4587-825c-462abc34e281
@@ -435,9 +467,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! cdcfb4cc-1655-4646-a413-6ccd0844cdfc
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 6ea25f95-2c80-4177-b05c-2070d4a3746d
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 7bc28f33-8715-4b1a-9c18-7e39fc4870d3
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 3a1a83ea-99fb-46d2-b3f9-8061fbe03fa8
                 Name: naturePack_116
@@ -449,11 +481,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: ac348c8b-68f0-4737-9e37-64e0a765d754
+                        Id: 4e2124de-5063-4572-9926-f1a7cffa5f6f
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 881a4b00-1f5d-4e5f-9f69-00b38c899897
+                        Id: 90961f4f-9f51-4db0-8cf7-83c2a403386b
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -466,9 +498,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 918d865f-c5cb-4989-bd8c-3ad97740b622
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 40891838-1366-4de7-bcda-84151ecca754
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: 3b06c300-0c05-48d7-8c1c-7b0392f942af
@@ -482,9 +514,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! f96db8d2-a7c9-48ab-97d0-6af8241a19a1
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 517c41a7-c9ee-46bf-8f14-8f4ce2c3d402
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 7130366b-1e28-4c99-aac6-53a7ad529bbf
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: 3b0ca3d6-e19b-4c18-96f7-20ef0ef7639c
@@ -498,9 +530,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! d8b233e6-19c8-4527-9308-361d8f93479e
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 7b43d2eb-756e-44ea-af83-3cc961a437d4
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: a0480961-690d-4003-b8a7-88dac1dc38f1
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 3d2f2cec-e850-43e7-bedc-6d0ee389261c
                 Name: naturePack_116
@@ -512,11 +544,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 1154e879-35cf-442f-b67b-cf35d2fac31b
+                        Id: ba8c996f-da13-4deb-8fd0-ae0e9bf7802a
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: d2c40b6f-7ccf-4f71-89ca-878c756a28f3
+                        Id: 0e55ced3-e6bc-43b4-81ec-c14061295183
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -529,9 +561,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 702f81a8-6e62-438c-8611-80af64a57efa
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 1df282d8-a68f-44b3-a5aa-dc3293cadef6
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 3ea0f322-ad25-49fd-9873-dee2b17a0917
                 Name: naturePack_116
@@ -543,11 +575,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 174d31b4-ef80-473d-9111-bdbba5825ac4
+                        Id: fc25d6d5-e6d6-45b2-a822-5355ecc797d7
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 93cea533-9005-4e25-b068-6f025da0d411
+                        Id: aa9d9f64-38ea-401f-a665-659ac0d2ac26
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -560,9 +592,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 296dfbdf-0c12-444c-b390-58eae9bc191e
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: ae5fe562-241d-4293-8630-2da2d0418f27
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: 4401a086-0ae4-4de0-b4f5-fcb9c797f68c
@@ -576,9 +608,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 7d1b19b5-3598-433d-bb9b-46d2ca0d349e
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 41a76b3e-691f-4679-8266-be4125fb0382
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: f2f13d62-b7ec-4a7b-9d40-024ee0206eed
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: 5011a529-c41d-4a79-a0ba-715021195387
@@ -592,9 +624,9 @@ Hierarchy:
                         Children:
                             0ff29f1d8a3e6166d2f589960ca1c662: ref!! 293473c0-8229-4f81-954b-cbe44550697d
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 2fc123aa-f593-41a0-89da-0031044a5a28
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 1861a0d9-35a2-48a2-b101-47f57edeeccc
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 52c48546-1232-4381-8bb2-16ee6cede3c8
                 Name: naturePack_116
@@ -606,11 +638,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 115b6dd6-44bd-4732-91bf-2d78b7c6be28
+                        Id: 0e5d3dde-0f4b-4f41-9c57-559793842d06
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 8105689b-9a7d-4edc-a235-1827c6c09e13
+                        Id: 078db4d3-9fb1-4a4d-ad35-1dc6c04b47f1
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -623,9 +655,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 93335043-9f4b-49d7-bba1-9d6abc1f057b
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: f748dfe3-57a2-4068-9cf5-8e8c307bd94c
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 5616f2b3-8544-4b15-a791-c335404c21c5
                 Name: naturePack_116
@@ -637,11 +669,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 780dd3de-bc57-4062-bac7-5983b1088447
+                        Id: 56a1db53-1177-43a1-8171-fe5546cc8a4a
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 03adac73-92d3-4715-b27a-8b2f4e386cca
+                        Id: 92586ada-5e72-4224-8813-f7098410e77a
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -654,9 +686,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 2a64d5ba-8424-4a40-9841-ae65b9623211
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: e4db714f-ded1-4176-ade6-4c8a6530dcc7
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 56d95ef9-76cc-4fb7-b968-5f4101f06ff2
                 Name: FogOfWar
@@ -679,11 +711,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     08b0ed3f5237ea1218a6c272000ecd33: !ModelComponent
-                        Id: 4fc8d6d2-7666-4333-b22e-f652bcb70850
+                        Id: 66a02482-4d9e-4664-bd4b-1cd542485eda
                         Model: 82c7079d-5c71-4fe1-bd2e-f83a9d094452:Models/naturePack_008
                         Materials: {}
                     22825e90c4417e238276a88090122a7d: !StaticColliderComponent
-                        Id: 1ec23538-1fb3-4d5a-9236-c3cdd7625828
+                        Id: d00b3b7e-f881-41d8-86a0-31a138515208
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -696,9 +728,9 @@ Hierarchy:
                             e3141c585c878fc312f02b56771e6474: !ColliderShapeAssetDesc
                                 Shape: 06e356fc-831c-4441-b861-4e24a4af9fc3:Terrain/naturePack_008_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 6e58f709-6e2e-469d-8b64-fa0596687e3f
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 60584bd1-f78c-4316-9f89-677c78e276f0
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: 585a9615-bf9d-4ba9-9ffa-306e11c75591
@@ -712,9 +744,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 36729e51-2197-4220-87d1-edb9019820bd
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 852b0330-3cd5-4ca3-af4a-3888b3fd3db5
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: bff132c7-e11a-477c-ae67-306fd8fd55ef
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: 58b19876-e25e-4981-80a9-2ab88902c5d6
@@ -728,9 +760,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! fb7cfefc-f024-45c4-942b-b37ee7c450f5
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 63bd985d-a503-436a-a21b-f5553ad826a2
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: bd5cfa6b-50be-4a2b-9804-7d3e178fc501
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 5ca1109e-a8a0-4b01-9216-5750934fdaef
                 Name: naturePack_116
@@ -742,11 +774,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: a80ced6f-c4f0-49ba-bac7-06beb1413bb9
+                        Id: fa8c7b72-bac6-450e-bb29-d32f21a0815a
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: e3aba0a6-0fca-49a1-8751-414b922861d7
+                        Id: c7805a94-4966-4dd8-99fe-e1915bc9b20a
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -759,9 +791,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 9cffdd55-54d4-41dc-b260-b1b5275877de
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: f96fffd9-dd85-4651-9a96-d5387e37b748
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 5e3702b6-25c6-436f-89ed-9e0b71786ede
                 Name: naturePack_116
@@ -774,9 +806,25 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! f2d17dc2-e0a1-47b8-bcd4-f63f6f38f344
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 5335b43c-6375-48de-bec9-c531c0ff90f8
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: e8895a42-5754-4502-a29b-fa73ee52e4a6
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
+        -   Folder: null
+            Entity:
+                Id: 5e652064-a1d0-487d-8ba0-1c315676a23e
+                Name: naturePack_116
+                Components:
+                    7ead3dbea24290ab5e658e335601e992: !TransformComponent
+                        Id: 1a5b27b8-ce37-4779-ab3a-f1deca33cd69
+                        Position: {X: 7.749537, Y: 0.0, Z: -15.5862093}
+                        Rotation: {X: 0.0, Y: 0.707106769, Z: 0.0, W: -0.707106769}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            5086d1db8fb8460e890c32af7d651387: ref!! 243ca6d9-e50a-422f-b879-57b2103d2ac8
+            Base:
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Arena
+                BasePartId: 651da9e7-c69f-4cfa-9934-5ee045f9e24f
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 60722a1a-7cf6-40cf-83e6-53670b546afa
                 Name: naturePack_116
@@ -788,11 +836,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 7ba2abfc-2c06-42b1-9146-2ccff642d696
+                        Id: 437d86c1-5bf1-4bd5-9afb-01fbc521b3d8
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: bb67557f-06e1-40cc-b520-018d8e5ce2e2
+                        Id: 1411a760-5d37-4b1d-9e53-bf58b4a013a6
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -805,9 +853,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 474eae19-7b4e-4277-8784-92b7ea4c2249
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 3efbcd41-7e40-42fe-9938-0523d110e521
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 6603f537-372b-4502-8a81-82fa744764bc
                 Name: Orthographic
@@ -837,11 +885,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 262618b5-baa1-45cd-8430-b683b29c9190
+                        Id: e613b567-3585-42b9-aa98-3ad811736143
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 2d161754-15f7-4539-9101-d1ac73cac366
+                        Id: 1e63f5b1-a51b-41a8-8141-196cafa39c0d
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -854,9 +902,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 7fb298ec-f561-4088-aebd-af96146e93d6
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: cd00457d-35dc-4f0c-b8e9-01ca25b63529
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 6b3e24a8-7c19-413e-a6ef-1854ef540906
                 Name: naturePack_116
@@ -868,11 +916,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: cb9db7b8-334f-4cd9-833e-e617abd7dce3
+                        Id: ddab8118-ec7a-4274-83b6-4267f0455b93
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: d92c2ade-c9ca-4264-9b03-5f20a3099a21
+                        Id: 4dd646ae-f6c9-45ed-bc05-d432baff7037
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -885,9 +933,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 7bb80b95-c602-4ffd-bddd-53d7ffd340d7
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 7307e63f-e195-4fdb-8a26-c4475f9104e8
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 6cd07bf6-f010-423b-ac95-f16839ee4477
                 Name: naturePack_116
@@ -899,11 +947,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 16e39dfc-8be4-457f-9b00-6e74f95c9238
+                        Id: fb5438ff-f0a9-4ae1-bea9-25ab83bad282
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 93d88c81-fc67-4095-a82e-e237ef11ef79
+                        Id: f932508b-487c-4b71-b217-446239330d37
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -916,9 +964,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: b5f07dfd-d845-404b-a745-7bf957069084
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: b8b7d9a7-4953-4de7-a24e-e6e1f5b9bbf2
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: 6f0fafb7-d820-4f56-b470-09d5d9ff71ff
@@ -932,9 +980,9 @@ Hierarchy:
                         Children:
                             0ff29f1d8a3e6166d2f589960ca1c662: ref!! 34d75077-1e73-4350-b816-85acf30a4916
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: bc4aa779-7695-4e78-aa69-f7161acd6781
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 9d0b4084-fe91-4458-8388-3c3836a4c8d4
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: 6f58cead-d0f1-42f6-9354-7ae5a8a7e8f1
@@ -948,9 +996,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 2f828a0d-848f-438f-a62f-1685bec83563
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 1caea9fc-86f2-44d9-a486-360085fb0caa
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 8d72705c-8682-4553-83ac-4cf32f08df49
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 71de8be7-200c-43fe-8202-c1e9cd23ae45
                 Name: naturePack_116
@@ -962,11 +1010,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: cf64662e-901e-4f10-816a-9191d0018ca1
+                        Id: b7b81daf-793d-4d7e-a39b-d5cf60dca42c
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 98c44481-8b0b-44f7-9763-58fae09a4e34
+                        Id: 2f8046d3-a92c-4817-b3a3-59885ca4c80c
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -979,9 +1027,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 18139247-7ac7-493f-9ffb-a58e00106cc3
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: bfe29fbc-d590-4fb9-9939-9b0e1c005c1a
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: 7273887b-e1b1-4316-aab0-c5ee9be324ae
@@ -995,9 +1043,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 7759df9b-11e6-46ad-b6df-cc702d034da3
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 9d370fc0-22eb-495e-a510-36a0790e7760
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 8ba04cbf-2912-46a0-8a2b-a48937253adf
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 74888a51-fefa-4bc9-b855-07928e4abed1
                 Name: naturePack_116
@@ -1009,11 +1057,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 21bda3d2-7155-43f0-921a-a72904b70689
+                        Id: d9f5b22d-90e9-4b80-994b-5127117d5d62
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 7b0e87d5-3ff3-408d-a0ac-a7f1f3cf1b7a
+                        Id: 2c803030-061f-4c30-895c-d902c1b0bb84
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -1026,9 +1074,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 76010677-bb1a-4ef0-a678-8308500b5698
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: d1c1d0c9-1d02-4262-9f5b-0a911134ba7d
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: 74bc49bb-07a9-444a-9e0f-6a7192eba4a3
@@ -1042,9 +1090,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 887ba487-5dbf-4de4-82c3-a7db9fa87fdd
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 1cd34122-64e8-4bfe-8271-35bd74948f45
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 39896a7f-5813-4dac-a36a-4ab2044932ac
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 7552fb6c-d450-4082-bf5d-8adf72b05d63
                 Name: naturePack_116
@@ -1056,11 +1104,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 6265ea45-862c-468a-8090-e4520261ca1c
+                        Id: db3b6c13-77f4-4320-a937-c6010aa6e144
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 32965cdd-8a85-4790-811b-3ee583df6f01
+                        Id: 25e0e91a-8423-4386-a0a7-db04791f6f47
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -1073,9 +1121,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 82e610dd-6186-446d-bafb-c2069c0ed0a4
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: ab8a28e0-8ce2-4ae7-bc8a-ba3ea2b06bbc
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 7579e04b-b86e-4c58-b481-56bc72be275b
                 Name: naturePack_116
@@ -1087,11 +1135,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: e68e8b58-f828-4887-a894-c382e8e260c2
+                        Id: 8e533300-f4b6-4a4a-8e2a-b672a4a5771e
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 70075a79-fa12-4fb3-9e6a-e48cdd221dbf
+                        Id: a23cad71-4a6c-4de2-a29f-eda0c3472fa4
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -1104,24 +1152,24 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 16906212-8637-4a5c-9910-0144bd674735
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 9c0aa68e-cd22-4dda-bd8f-4b25f9b9afe7
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 76a6057c-18c5-4071-8def-c2a758e6cb2e
                 Name: naturePack_014
                 Components:
                     1479cbdffb5d3abdb54d28464b9bcd67: !TransformComponent
                         Id: d088a2da-2575-4d00-b552-bf38cda6f1d0
-                        Position*: {X: 13.205, Y: 0.0, Z: -16.05}
+                        Position: {X: 13.205, Y: 0.0, Z: -16.05}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             a434961db2d51b53039dbc5e64b6a092: ref!! 7e246b83-8390-4b9c-865e-87a901625aa3
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 262878e5-e716-4d1d-987a-84a5a7ebd847
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: accb6189-c129-401d-a958-c7d0e88c76b8
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 78d3444b-b19a-430f-83b6-46ed808d8f6a
                 Name: naturePack_116
@@ -1133,11 +1181,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 32716ba5-84b6-474c-be5b-f4a0c687caca
+                        Id: 7409ec91-f46f-4900-8e53-b2eadbae4fe5
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 97f80f4c-e0f6-4d4b-83b9-b5430c041a73
+                        Id: 0227f5ee-bac6-4b68-b006-a69044ccc745
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -1150,9 +1198,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 7f39b740-be6e-49c7-9ec2-a78bbe4dd5ae
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 76b17a23-56ab-4457-8fee-37751d9756bc
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 79c92b6d-df36-4d4c-8d9b-0ddeb29fd80a
                 Name: naturePack_014
@@ -1164,11 +1212,11 @@ Hierarchy:
                         Scale: {X: 1.65, Y: 1.65, Z: 1.65}
                         Children: {}
                     71b42da6f642bf922fa6568af5c6a555: !ModelComponent
-                        Id: 8a675d43-8410-476b-acdf-404cfb3e8112
+                        Id: 7b8acf05-1785-48aa-b7f2-cdc1909412ce
                         Model: 65ed08f7-1210-475b-98a7-c7585235d0cb:Models/naturePack_014
                         Materials: {}
                     01f06cf2e3c620a250bf67ac57ee5dfd: !StaticColliderComponent
-                        Id: fd8cf713-47e8-4c0a-a162-fdbc789df0a3
+                        Id: cd5ed73c-d9ef-47fd-9a06-6e4f346e8df7
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -1181,9 +1229,9 @@ Hierarchy:
                             e064728d24d4aa75527495b6c224e4b2: !ColliderShapeAssetDesc
                                 Shape: 36513c4f-52a8-4222-b94c-3f805d21e9d8:Terrain/naturePack_014_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 0dbf63e4-df4a-4013-a9c4-6b96d609fe61
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 4126851e-8f17-48d3-ae19-64e0e62a08ef
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 7b85b855-78ca-41d4-be78-a416236a7198
                 Name: naturePack_011
@@ -1196,9 +1244,9 @@ Hierarchy:
                         Children:
                             e6e2742ffa7331c87e73c84e6c4b7f3a: ref!! cc8a2762-2ca1-4705-ae35-c7253cdd9b08
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 11c7f7ad-021a-4e7e-9150-1cf6e1effa78
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 1e75f70a-d2a9-43e9-929e-b8fa6f036b6f
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 7fb068cf-5e00-4afd-9be5-a73f437975c5
                 Name: naturePack_116
@@ -1210,11 +1258,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 16969dc6-0199-4529-ab32-40adeb38e322
+                        Id: f8ce41ce-94b0-46f9-8d24-77ce1a3e1541
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: cbd09b7b-dc1b-4484-9e5d-b20311a333ac
+                        Id: 7112983a-57a4-4721-b4fc-17dfe4883d38
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -1227,9 +1275,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: c7cd8d45-c476-4235-9d9a-d38ce6913961
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 9420e6f7-d265-4303-854d-832b53e94cda
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: 80ff6c7e-4118-40d0-8088-3e0ae9d29165
@@ -1242,7 +1290,7 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.25, Z: 1.0}
                         Children: {}
                     8be18cd261a3de30a1cc82cc476839e1: !StaticColliderComponent
-                        Id: af43e68d-9101-4de9-8721-edea322a14db
+                        Id: c9918de9-ffea-4130-827f-25f85faea951
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -1258,9 +1306,9 @@ Hierarchy:
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 2447d4fc-6a66-4de2-8e89-ddc0b06c100e
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 469420b7-d434-41e2-80dd-c0047a66b084
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 84962df3-db37-4410-a50f-ed844511c7f3
                 Name: naturePack_014
@@ -1272,11 +1320,11 @@ Hierarchy:
                         Scale: {X: 1.65, Y: 1.65, Z: 1.65}
                         Children: {}
                     71b42da6f642bf922fa6568af5c6a555: !ModelComponent
-                        Id: b279a516-475f-4da1-be9f-aed8f451ad47
+                        Id: b03282a5-62c6-4e6c-a900-4550040a8e79
                         Model: 65ed08f7-1210-475b-98a7-c7585235d0cb:Models/naturePack_014
                         Materials: {}
                     01f06cf2e3c620a250bf67ac57ee5dfd: !StaticColliderComponent
-                        Id: 4aea6708-7e48-4a93-87c7-7dc4c8bedc21
+                        Id: ffae1c6d-7d18-4994-9c14-e4c50761d4ab
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -1289,9 +1337,9 @@ Hierarchy:
                             e064728d24d4aa75527495b6c224e4b2: !ColliderShapeAssetDesc
                                 Shape: 36513c4f-52a8-4222-b94c-3f805d21e9d8:Terrain/naturePack_014_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: a780f1d3-5f7d-4783-bcf5-fc1a10487730
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: c395561a-dcee-42b4-a6a3-21c81f039460
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: 84b1967b-aa53-478c-8476-f321259f337b
@@ -1305,9 +1353,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! c85dca92-4d05-494c-a531-5fa58cc06fc4
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 2a778fe5-0ee3-4d6f-8587-3f0cd75d21d8
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 682c96ec-5f96-470e-b17c-8a1cadfb6546
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: 8a75c91f-a830-4ef5-8f5b-b339e34d2ec4
@@ -1321,9 +1369,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 9599a971-5b2c-4857-8377-d5f2fefab0b8
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 0ef901db-a285-4a29-bcbb-c71899787eea
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: b424595a-f2a7-47ab-8384-4033bc082375
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: 907bff4d-ff33-4948-99d0-702777c97adf
                 Name: naturePack_116
@@ -1336,9 +1384,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! e5615db0-b1bf-43b6-833c-3cb0d9e52baf
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 616f66a3-e14f-41f3-ad58-0886edfa9e09
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 92fe0500-9b13-4bfc-9feb-3556f1300c00
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: 9f3aedd2-d204-4aaa-bd23-c4a4c86b60a7
@@ -1352,9 +1400,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! d5bd8172-788d-42b5-8f22-0dac55ef452b
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 68c5d791-a7b9-4371-9993-5294b708888e
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: cc8e10e8-1258-4d1a-a674-be68b5227c53
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: a1f61e77-b208-4b66-ae03-8631627c8ee3
                 Name: naturePack_116
@@ -1366,11 +1414,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: c3f0933c-d7ce-448e-b3e1-471a1835ee82
+                        Id: 1b0526de-103e-4b70-9fef-15c0affffafd
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 26ce2df8-6fec-464d-aae6-b56f86715ae3
+                        Id: 4cc77848-8018-4671-b430-fe2a21fecb41
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -1383,9 +1431,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 990ec697-da33-4d78-99d2-071539ef2c20
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: e274ce95-c4ce-4fc6-93ae-1a4c04dde254
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: a6c9aa29-94af-41cb-82fa-fc548293be00
                 Name: naturePack_116
@@ -1397,11 +1445,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 0c5ccf91-b78a-4aee-b973-0b1d2c7641c5
+                        Id: 0b9edabc-1292-4d6f-9eb3-06e9446f74db
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: afdd7383-ec36-4feb-940f-cf5d252d3041
+                        Id: 6fb59832-7101-4a9e-8037-1a774624eb17
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -1414,9 +1462,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: d1d8c346-98bb-4d85-b7a2-25acfd89e850
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 4b8884da-f100-4781-97ba-7ee157725b72
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: aa6849f8-8bc1-44da-a183-c008555996a0
@@ -1430,9 +1478,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 627b2298-4a02-4b3d-b7ce-92b48bc7a8e3
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 32e370cd-063e-4c64-8344-1c862d7d4bf1
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 5c364a39-3f5e-4480-b7b9-e11ff668a3a3
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: ad52ff22-ef58-48ca-b723-c0f2a19ea1ac
@@ -1446,9 +1494,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 4fa06d05-de03-4496-9eb4-d9f8da906a51
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: b4539a61-17b1-4541-a41e-1906264e2141
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 0a8cfb8e-31fb-410f-ad19-69614180f357
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: ae70a2f5-bb7f-4166-bd05-c96c3d428b49
                 Name: naturePack_009
@@ -1460,11 +1508,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     dfaf768b093d4f6b7c6cc3f3ecdf32d4: !ModelComponent
-                        Id: e0f63d2e-df3f-44bd-a865-3dc6482e5a2a
+                        Id: 8d337025-d5f4-492c-ab76-e4b3064bea91
                         Model: fe51c1b2-3794-49c1-b372-427336586731:Models/naturePack_009
                         Materials: {}
                     14fd6cec745e32fcb6605339371bcffd: !StaticColliderComponent
-                        Id: 96e289f9-94fa-46e9-a24d-8cf4ed6e8c18
+                        Id: 017a4a66-2ac2-4d4f-83ef-92855d41f567
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -1477,9 +1525,9 @@ Hierarchy:
                             e5ea3bff3d37b2e13b3cf79d7b86a9cd: !ColliderShapeAssetDesc
                                 Shape: 7286cbca-d7ab-4813-821f-4369b677a9fc:Terrain/naturePack_009_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 0b003cf4-5b9a-464d-bd7b-c9cfe2d8f1c5
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 80733907-06a6-4bce-b60c-a3c16430a254
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: b0cb0480-c1af-49d7-98eb-1e639a006cb8
                 Name: naturePack_116
@@ -1491,11 +1539,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 640f49cb-1e21-4632-a2b8-09b59c84676f
+                        Id: fdba9a27-225d-42ff-8ac8-8e75d4b723e4
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 1c7fbc07-ae09-4bd7-97c3-af0f6dd0017a
+                        Id: bc53da21-2fd5-4011-84da-1238299c105a
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -1508,9 +1556,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: a4bafa3f-870e-4a57-9748-03e3d4bc2fec
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: f21260df-5e70-4dc0-9cfc-cd2af516f7f4
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: b9c77219-d68e-46b8-98bf-5aa936a206e1
@@ -1524,9 +1572,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 0e54f81d-5cf6-4f32-b726-137900ca18d7
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: b56a8d19-873f-4a94-a8d5-cdb89e602929
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: e30e39da-7884-4ca7-b107-a54c000d665c
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: bf7309ed-035b-4b66-a75a-7d632ca5cbb4
                 Name: Character
@@ -1562,10 +1610,10 @@ Hierarchy:
                                 Size: {X: 1.0, Y: 1.0, Z: 1.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    7e5f5e40b037501f8ccf0a361b434416: !FogOfWarDirectional.PlayerController,FogOfWarDirectional
+                    9ff85ee76ca02540720240ee13d1fdb6: !FogOfWarDirectional.PlayerController,FogOfWarDirectional
                         Id: 87ade47e-3c27-451d-8e0d-a907bfca59ff
                         Speed: 1.95
-                    906d081a8f366fcfebc14070af0f299b: !FogOfWarDirectional.FogDetector,FogOfWarDirectional
+                    727952bcf60d376656256f27e3e75409: !FogOfWarDirectional.FogDetector,FogOfWarDirectional
                         Id: d3ffd13e-7935-42ac-bffe-efb366bd934f
                         Priority: 1
         -   Entity:
@@ -1579,11 +1627,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 54b5d090-5072-4283-b56b-21bbdf2c7b7b
+                        Id: 9c3cd340-3018-4781-a658-5d0bd2648419
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: e396c115-b1a1-4066-82de-40adfe6034f1
+                        Id: 51ca092f-33c8-425b-b099-88eafb793c58
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -1596,9 +1644,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 2c271917-6b28-47da-b580-2c619426c4b3
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: d502d27c-5848-4c11-b9de-ccc3e49ae4dc
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: c4f1668a-3db9-4b52-ba9e-7ff79b0d362c
@@ -1612,9 +1660,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 4f4c0c9c-461b-4d3a-b6f7-1471652c2caa
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: f4a5679a-ec6a-4eec-a9e7-7e302c420dbb
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 999f29b7-df28-46e6-a6d0-71fe5a35a983
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: c684b12d-6e86-4f48-b4fd-b119cb9acc8d
                 Name: naturePack_116
@@ -1626,11 +1674,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 2db6a9ca-f99a-4eed-9631-a2410eea09b8
+                        Id: 9a6b09c0-0426-4a0a-b7c2-3c76dcc8be41
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: fc657576-639e-4555-9bd4-27306bca7b81
+                        Id: 88b2676d-c12a-4ce5-86f9-ca27b1d980f3
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -1643,9 +1691,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: f4094212-82f6-45da-9a3d-0f8060c05708
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 7b80330e-b69d-4ad5-9916-1c0f602d7695
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: c686e073-5a86-4efb-b606-be37646311f3
                 Name: naturePack_116
@@ -1657,11 +1705,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 562025b6-ae63-445b-abab-5f3833a66a18
+                        Id: 8b66a615-b7e7-44ae-93e7-55d98516a105
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: ff50c6c7-1277-45f1-acd2-c080b54ab1fb
+                        Id: 84b549f1-6c00-4f26-ad09-76ef2e256325
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -1674,9 +1722,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 58b0d8ec-9733-47ba-a374-47d89597d51a
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: f07e4052-4c26-4bca-93cf-1beb40e632f1
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: c776b317-5764-45e9-9dd7-a2035433292b
                 Name: Perspective
@@ -1706,9 +1754,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 3a1a59a5-4196-463a-81f6-30cec1e2e82a
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 230bde0d-cbf5-4f34-9276-0a562b346812
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 8babdfd8-dc9b-4fbd-8bed-febd76a65886
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: cedb4b8f-7293-4cf5-9255-86396943d158
@@ -1716,15 +1764,15 @@ Hierarchy:
                 Components:
                     7aee15ba3aabcd1220a6a97145c6f8b3: !TransformComponent
                         Id: a9bc5f2e-a540-4465-b962-afa91e9ab1e8
-                        Position*: {X: 16.6, Y: 0.0, Z: -15.0}
+                        Position: {X: 16.6, Y: 0.0, Z: -15.0}
                         Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c785aca97f3eecdfab301a96c7e741dc: ref!! 9c570d9f-c6c9-4dbb-b2fa-7f2de7c536f4
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: ad3613fe-1bfe-4547-80e2-b2cbe1f3cad7
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 6f05d958-0208-4c26-a530-151954eccbca
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: d176cfbd-4833-47e7-a43e-ca1bf7d6b888
                 Name: naturePack_116
@@ -1736,11 +1784,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 25c2853c-3e63-49b7-ae4c-5bf58a1e1212
+                        Id: a501e4c8-4cf5-4a86-843d-0f23a88a5fb0
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 1d3d77fa-26c6-44e8-aa90-cdb15031d3a0
+                        Id: b45f05c3-c59f-428b-8aa6-0187ff42d546
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -1753,9 +1801,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 2f67210d-4928-483f-814d-e3434f0ff7fb
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: c790dc96-54ad-4344-8307-a8fd44b9350b
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: d3316fe6-3e9f-40d8-927d-0c454f3c2a7d
@@ -1769,9 +1817,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 277f9f71-5825-4079-b22a-67f983b5db1d
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 1b97ce67-3e5d-4ca9-96a2-dd7097dda903
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 8beaec91-b16a-4a19-9dc6-a24f696ba989
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: d4c20b02-074d-414a-a413-c635a7c6952d
                 Name: naturePack_116
@@ -1784,9 +1832,9 @@ Hierarchy:
                         Children:
                             0ff29f1d8a3e6166d2f589960ca1c662: ref!! 4f329a90-f847-48f0-8618-714c8b1b0314
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 59d21280-026a-46b2-921a-73c6031c40a7
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 7f7007d7-316e-4e92-ad42-2609a7f2f874
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: d506d020-cfca-4bb5-97b7-579813ee38e2
                 Name: GameProfiler
@@ -1797,7 +1845,7 @@ Hierarchy:
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
-                    c02c7cd143bd23cf1cd464422b80dede: !FogOfWarDirectional.GameProfiler,FogOfWarDirectional
+                    420e8ab2187b13958543550790544886: !FogOfWarDirectional.GameProfiler,FogOfWarDirectional
                         Id: d87ce404-2172-43ce-bb91-b63135edf9e7
                         Enabled: true
                         TextColor: {R: 144, G: 238, B: 144, A: 255}
@@ -1816,11 +1864,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: f14bea08-b8f1-4f66-b9ad-10edc5fa19af
+                        Id: f877a0c0-f62c-4b0b-ae0b-9899f570d2ef
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 8d8dd648-45a2-41ab-a9eb-eb372c1ff0b0
+                        Id: 1936eded-13f0-47ec-988c-31cae688a4c1
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -1833,9 +1881,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: e677c46c-89f1-4cbc-a748-ecc79a72b991
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 1441ac1a-daf3-4bc1-bb25-8e3efeaa5fc0
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: dd288ab6-19f8-4a4c-a4f7-a87f85258bd0
@@ -1849,9 +1897,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 1deeae27-6901-4ee3-9dc7-1827209f4252
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: c6f939c5-f179-4584-b71c-aaf165009ff8
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: ede0712c-340c-4c96-92be-b17801a2d5fa
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: df4ba22a-8a09-4a5b-80cf-bbd332ebb7d6
                 Name: FogOfWar
@@ -1880,11 +1928,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: bbfe6bbf-4764-497f-aa0e-a730feabae81
+                        Id: 6a596d62-fb1c-4187-81a2-3d22c2756e64
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 8bab3f83-81e8-4881-a7b1-13c1cd47cf00
+                        Id: 7cab8544-8201-483e-a432-ca3678848da9
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -1897,9 +1945,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 8640a37c-b895-4dbd-afc3-dd6a556a5a59
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 937566bd-2dae-4a30-843d-fef156b8c2fb
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: e18c00dc-12a7-4d7e-8dcf-d96e249110ac
@@ -1913,9 +1961,9 @@ Hierarchy:
                         Children:
                             0ff29f1d8a3e6166d2f589960ca1c662: ref!! 7594c2d0-9dcd-488d-8e8a-eaaa1e21cded
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 473cb5c3-217b-4078-8f41-e15ef98d89da
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 9585ec46-7f57-4e3b-92fd-2c33788d6a5b
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: e27a1e62-8415-45b0-a1ec-7d7ad76b74fe
@@ -1929,24 +1977,24 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 407fa1fc-5f4e-47e0-ac2e-fcebb4ed92cb
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: aa27fcaf-73ba-4150-a8af-98b31376fed5
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: f6afa2c5-48f5-461e-9ecf-b009e1b1626f
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: e3342301-6809-4287-a35b-a6ded070771e
                 Name: naturePack_014
                 Components:
                     3657c454a20f09d2a762e83a74039abd: !TransformComponent
                         Id: 2c174688-0ca2-488c-97c9-dc22bef7d6e6
-                        Position*: {X: 18.175, Y: 0.0, Z: -8.05}
+                        Position: {X: 18.175, Y: 0.0, Z: -8.05}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             a0845c1e9f86d046a46e75a5fd2bf50f: ref!! 6ba121b6-fe3a-40f8-af97-fe35326ff22c
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 533d524b-632e-4d7f-8470-1ca0fa8d0067
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: fa5023a5-91ea-4159-90d0-dbf3f4c44da5
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: e4147dc0-e46e-41e5-867e-2503a32b87ab
                 Name: Ground
@@ -1958,13 +2006,13 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     b6520fa959d8693333fae10cdf73877e: !ModelComponent
-                        Id: 5e20dde5-a265-41ed-a8d1-2254438e5404
+                        Id: 8cbae6a0-1f29-4bb3-8da4-5ad92da90af2
                         Enabled*: true
                         Model: 63cc7a21-3406-4e73-8109-838d9855f3f5:Models/Ground
                         Materials:
                             1303750f691de68dec99bbc595fff721~0: 6b9a0a2e-8dde-403f-b0b6-63b3097f25ba:Models/Leafs
                     40bdcc08e9037245703fad4a37c148fd: !StaticColliderComponent
-                        Id: a97adffc-002d-4984-9a1e-a3bf10fcb3b0
+                        Id: be74eca3-5189-4f0e-83bd-b5068614c456
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1977,9 +2025,9 @@ Hierarchy:
                                 Normal: {X: 0.0, Y: 1.0, Z: 0.0}
                                 Offset: 0.0
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: bd1531d6-ae4c-4be5-a33b-3cf10dbcb2b8
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 003cc4a5-f147-4e63-a990-def2b3aed919
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: e54e3bff-4fee-4fd3-a874-5912e3a7e1f1
                 Name: naturePack_116
@@ -1991,11 +2039,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 804e16dc-3f48-4c26-9195-5ead557b2534
+                        Id: 8260acc3-2e73-4789-b41f-05f3a1291257
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 723d068a-9ae9-4607-9261-7eeb429e53de
+                        Id: a4f4ac65-d6da-4b3d-acee-68cd1b4ad167
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -2008,9 +2056,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 5681a890-ddee-436f-81ac-bbb29200b9df
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 8e256ac4-1f62-4e67-9111-f052f4421c23
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: e5731fdd-a337-4455-b5c8-02f4e471f8ce
                 Name: naturePack_116
@@ -2022,11 +2070,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 36fece85-d5d0-4b3a-939a-ec6e3d83d487
+                        Id: 14014033-96ff-4e90-82be-6dbd3c379ce9
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 0e2df18d-cd8e-44c1-9b0f-1037649d73bd
+                        Id: 96541269-4ced-44df-874f-cf3c5efccf92
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -2039,9 +2087,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: ed10294b-dbd6-4fe6-a389-ceede8b9144e
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 9ab3a50c-44f0-4315-8238-971a8102d9f6
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: e5a3db7f-deeb-4438-b496-d19448ac6eb2
                 Name: naturePack_116
@@ -2053,11 +2101,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: aae0e45d-27ac-48df-81cc-371f77722da9
+                        Id: ed0dba91-ee3e-42fc-9d8a-6e5c33a06131
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: c9cae7c3-dff7-45a3-a76a-d411266a9cef
+                        Id: 7dc579e2-d07a-47f8-b3db-6613680c7f56
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -2070,9 +2118,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: e078dadf-a627-49c1-b7f1-7ea42184cfca
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 2a86d989-e9ab-4a33-93d2-d6a2b1c93568
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: e75af98d-c51a-4674-8af7-6b1b6d7b07c3
@@ -2086,9 +2134,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! c4d2e7db-a211-4d64-ba7c-c28437dbe7e6
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 34dd57e8-567a-49cf-b785-0e26d551fbcb
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 98bad990-6e9e-4be4-bace-b3f7fad98eb1
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: e76205b1-4b4e-487c-aa5e-9d1828f4f04f
@@ -2102,9 +2150,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! b6069a2a-7f2e-4143-920a-8f836036ec6b
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 41271fe4-ac1a-475a-ad94-524ed13dbfbd
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 46bf3612-4c52-46ef-bac0-ed28bbf6d7b4
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: e94f0dcb-7bf3-4695-af76-359fcaa54414
                 Name: naturePack_116
@@ -2116,11 +2164,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: dc28975e-f1a4-4690-8863-3bf9aaf53e4b
+                        Id: 312d8c20-a6aa-4d94-a9cb-a4599402996a
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 859957c3-2d52-4ce2-b217-c6a34b77eed4
+                        Id: 6af1c50a-fe58-4ceb-b32e-cd10c7a1aa93
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -2133,9 +2181,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 38de2cff-08db-477a-bab4-4bc98c170743
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: b3942462-8444-4d67-b12d-da88999b2976
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: ed2302ab-96ed-4a77-bdce-a498ff34ac65
@@ -2149,24 +2197,24 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 3c7c5f51-8fe5-4a44-be2b-225f0d7ebddb
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: a8e326e9-86c6-4715-8ee4-4f102c0ea972
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 149adef8-8d18-4b40-8a3e-66d97413c14f
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: ee283f72-b3f3-4903-bea9-c80ad9715c16
                 Name: naturePack_009
                 Components:
                     a382ff20e4885d98667d5027fb1727c7: !TransformComponent
                         Id: 278a75fc-3751-4d75-9482-9f16b8b5b1a0
-                        Position*: {X: 4.09833145, Y: 0.0, Z: -8.917643}
+                        Position: {X: 4.09833145, Y: 0.0, Z: -8.917643}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             fb3a3795c6bd31c8b14251bad9409b36: ref!! 6231fa8a-e33d-430e-ad4d-07cd5f5e3f45
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 88874e1d-e48a-49b5-9ffb-e3b12f4962c9
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: fe6954aa-2318-4999-890f-7104328c8ae7
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: ee56f160-654b-4316-9bf8-5e6d52c51409
@@ -2180,9 +2228,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! d4c47d37-180a-48d5-9cf5-222fbcbfc3eb
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 68374b7e-037c-41b0-be2f-a4959aafe443
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: c42af98e-ec30-46a3-abe2-dee202cd949e
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: f1300bd0-bde2-466d-b18d-073d26870eb1
                 Name: naturePack_116
@@ -2194,11 +2242,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: c462739c-8137-4d01-af3d-73ae394f9717
+                        Id: 6a2a36c2-01c8-430b-b5d1-8e4bd072e95c
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 75336cb1-129e-435c-933c-1571ebb0c337
+                        Id: b5146bc5-a65a-4b70-abf4-1d5912fac521
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -2211,9 +2259,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 4284b941-b591-4a50-b291-a3db3cd70f7b
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 29872a9c-a5d6-4836-b0c3-2b78a8270884
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: f42d1fa4-65ca-4407-94e1-ab7b2e559a39
@@ -2227,9 +2275,9 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! e0e8a81e-39e0-456f-82bf-5ea54518bf9f
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 54a7a122-80e3-4e91-a711-07280a200aad
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 9b549c65-8113-42bc-a0bb-e02a35411962
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: f5b9adaf-df3a-41c4-a978-e8a0e037f188
@@ -2237,15 +2285,15 @@ Hierarchy:
                 Components:
                     7ead3dbea24290ab5e658e335601e992: !TransformComponent
                         Id: e2310ea5-a7ed-447e-8282-fbef3325404f
-                        Position*: {X: 12.0, Y: 0.0, Z: -19.5}
+                        Position: {X: 12.0, Y: 0.0, Z: -19.4086227}
                         Rotation: {X: 0.0, Y: 0.707106769, Z: 0.0, W: 0.707106769}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! e1dcb930-dc48-4a01-b557-bd566c8bbf0b
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 47b47216-49c6-4a8f-be67-33b8f8a755d6
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 392dda6f-3338-4d36-bb28-9abba220ead1
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: f781a742-5f34-4ed9-b1b8-8b2c4a0bc642
                 Name: naturePack_116
@@ -2257,11 +2305,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 27b5cd05-749d-448a-90a3-0928468c72e5
+                        Id: d257ffee-8a3a-4b49-a9ab-edf6344dfbba
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 1a866cfc-09c8-4a20-aab2-6a1290b083ab
+                        Id: 7ec520cd-bdc3-466b-bf94-06063063d6ae
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -2274,9 +2322,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 164a2dee-f9b9-477f-98b9-5ef7fe731f6e
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: cec2b089-9151-4e89-b28a-a8669293587b
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: f940eb20-0ddb-4c26-a9ce-0ef4c9ea5b5c
                 Name: Directional light
@@ -2314,11 +2362,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     f7c70c3b8f89523c049a5d7802f09c57: !ModelComponent
-                        Id: 1fe33bcb-2ab7-463e-9555-4293a8e71e16
+                        Id: a9effcc7-f983-4442-aff0-57c088261fef
                         Model: 9494024a-94e8-43bb-ae46-c9fd723e522a:Models/naturePack_011
                         Materials: {}
                     33b6ba91d5983af7c5a418b573dbfe79: !StaticColliderComponent
-                        Id: 5539c314-298a-43cc-8306-2b67f640ac7a
+                        Id: 7055b47c-59b8-448e-9dd1-3d428013c3e0
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -2331,9 +2379,9 @@ Hierarchy:
                             238063c80ea517e47e49782638cf440e: !ColliderShapeAssetDesc
                                 Shape: a7889d11-fd8d-4cf3-8cdb-c6410103ebbb:Terrain/naturePack_011_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 378a8ba7-6e54-4f64-ba73-acb8d56a59fb
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: dbf08950-4017-4395-9472-34708a3342f9
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: f99bbd04-830b-4003-bfcf-3108a3e9a5c0
                 Name: Arena
@@ -2356,11 +2404,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 3c606ec3-3d0b-4441-9231-8d6439618c9b
+                        Id: cb28fa91-a4d2-4071-975a-bbc283551eb5
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: 8608082f-6a55-4e3c-82e1-293e0b7bd821
+                        Id: 85e73ddb-2169-4e8d-87a4-084668e958fd
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -2373,9 +2421,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 534d690f-d732-4469-be6b-5cb71b1f8d8a
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 0969e5e0-cb87-4a33-8d22-86068034722a
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: fa5a0900-8d7a-4fb9-8417-0437dba4fea8
                 Name: naturePack_116
@@ -2387,11 +2435,11 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     2827769fe7f628ba9c01a9db577cb5da: !ModelComponent
-                        Id: 98fe6dee-5f25-4264-9e7e-96ef6e5bd59d
+                        Id: f9c34116-5f17-4d9b-91b4-cbd83babfd3b
                         Model: 69918139-7504-4d4c-adb2-5edca9a0bd1f:Models/naturePack_116
                         Materials: {}
                     a61c4f8f148d29b5df56934348367b5f: !StaticColliderComponent
-                        Id: ecdd8a38-5762-4c77-9f2a-379a4436a71f
+                        Id: b6714c3b-344e-4407-964d-c0591520c323
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -2404,9 +2452,9 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 5f279850-09e6-4094-946d-9eae2eaa4072
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 7bb6e086-0d51-4d74-9af4-e40cffca5e93
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: fcd80994-133d-4f64-b366-732f04a6c387
@@ -2419,7 +2467,7 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.25, Z: 1.0}
                         Children: {}
                     8be18cd261a3de30a1cc82cc476839e1: !StaticColliderComponent
-                        Id: 3c98da07-0662-4210-b7a5-d8b17e4140ac
+                        Id: 821f0b5b-4117-423f-a323-ec3db2b8e507
                         CollisionGroup: StaticFilter
                         CanSleep: false
                         Restitution: 0.0
@@ -2435,9 +2483,9 @@ Hierarchy:
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: e6b0702e-1179-43d0-b1f2-b9852da65767
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: fafff9e0-095d-468c-9aa1-5e2d297de15b
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
                 Id: fd6f260a-7aa6-4e2a-ad83-7b8090334d64
@@ -2451,6 +2499,6 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 97f4b7c4-2905-4205-a503-7b28d3ee0dcd
             Base:
-                BasePartAsset: 4c511203-749f-49fa-a297-0349c102f317:Prefabs/Arena
-                BasePartId: 5eec8fac-a885-4696-9165-07e6f3e73333
-                InstanceId: 74e98f18-a3bd-4586-9f80-717960a5e3cf
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 22186700-9e7b-492e-b611-787bb453b251
+                InstanceId: a086892a-f946-4320-ab25-856a8ec459de

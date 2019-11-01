@@ -176,8 +176,8 @@ namespace FogOfWarDirectional
 
                         if (Vector3.Distance(positionRecycler, hitResult.Point) > VisionRadius) {
                             //nextTileRecycler = true;
-                            //continue;
-                            break;
+                            continue;
+                            //break;
                         }
 
                         if (hitResult.Collider.CollisionGroup == CollisionFilterGroups.CustomFilter10) {
