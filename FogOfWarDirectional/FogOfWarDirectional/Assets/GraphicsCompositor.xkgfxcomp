@@ -178,13 +178,13 @@ SharedRenderers:
         BrightFilter:
             Enabled*: true
             Threshold*: 0.01
-            Steepness*: 0.5
+            Steepness*: 1.0
             Color*: {R: 1.0, G: 1.0, B: 1.0}
         Bloom:
             Enabled*: true
-            Radius*: 50.0
-            Amount*: 12.0
-            SigmaRatio*: 12.0
+            Radius*: 30.0
+            Amount*: 7.0
+            SigmaRatio*: 4.0
             Distortion: {X: 1.0, Y: 1.0}
             Afterimage:
                 Enabled: false
@@ -195,19 +195,23 @@ SharedRenderers:
         LensFlare:
             Enabled*: false
         ColorTransforms:
-            Enabled*: false
+            Enabled*: true
             Transforms:
                 1e06f805f8b2e949a06c30d45fe413ef: !ToneMap
                     Enabled*: false
                     Operator: !ToneMapHejl2Operator {}
                     KeyValue*: 1.7
+                    Contrast*: 0.1
+                    Brightness*: 1.0
                 c57351444609d14ea258b3f511ec8a74: !FilmGrain
                     Enabled: false
                 e86e22e9a5d65545b8b55fca26e0afee: !Vignetting
-                    Enabled: false
-                    Color: {R: 0.0, G: 0.0, B: 0.0}
+                    Enabled*: true
+                    Amount*: 1.0
+                    Radius*: 0.1
+                    Color*: {R: 0.0, G: 1.0, B: 0.0}
         Antialiasing*: !FXAAEffect
-            Enabled*: false
+            Enabled*: true
             Dither*: Medium
             Quality*: 3
             InputLuminanceInAlpha*: false
@@ -260,6 +264,26 @@ SharedRenderers:
         SubsurfaceScatteringBlurEffect: null
         MSAALevel: None
         MSAAResolver: {}
+    c7d576847f6ec2ca55e4501981053200*: !Xenko.Rendering.Compositing.ForwardRenderer,Xenko.Engine
+        Id: 0405f0ed-d955-4c94-8568-7a6162ee2342
+        Clear:
+            Id: 7e3f8891-9377-4971-aac7-baf0d900a94d
+            Enabled: false
+            Color: {R: 0.403921574, G: 0.4117647, B: 0.435294122, A: 1.0}
+        LightProbes: true
+        OpaqueRenderStage: ref!! 9d24e318-daaa-4150-b7f1-5766c9e1b984
+        TransparentRenderStage: ref!! f5aaff53-3ce6-41ee-9c70-ee62ded0c8d9
+        ShadowMapRenderStages: {}
+        GBufferRenderStage: ref!! 940f614c-c5eb-4d7d-992f-0bb31daf0809
+        PostEffects: null
+        LightShafts: null
+        VRSettings:
+            Enabled: false
+            RequiredApis: {}
+            Overlays: {}
+        SubsurfaceScatteringBlurEffect: null
+        MSAALevel: None
+        MSAAResolver: {}
     ee80a20a9bd99f2d70711114e15fe7ca: ~(Deleted)
 Game*: !Xenko.Rendering.Compositing.SceneRendererCollection,Xenko.Rendering
     Id: 33e4584a-7731-43cf-9b15-092e12efab20
@@ -277,6 +301,11 @@ Game*: !Xenko.Rendering.Compositing.SceneRendererCollection,Xenko.Rendering
             Camera: ref!! 54fb6c31-cfe7-4374-9ce0-0d5d2027016a
             Child: !Xenko.Rendering.Compositing.ForwardRenderer,Xenko.Engine ref!! 887b3e91-f395-4064-b265-be80d42c12ec
             RenderMask: Group0, Group1, Group2, Group3, Group4, Group5, Group6, Group7, Group8, Group9, Group10, Group11, Group12, Group13, Group14, Group15, Group16, Group17, Group18, Group19, Group20, Group21, Group22, Group23, Group24, Group25, Group26, Group27, Group28, Group29
+        b0cb154d7465a77872b5c6810ea4e5ba: !Xenko.Rendering.Compositing.SceneCameraRenderer,Xenko.Engine
+            Id: 2747ad11-0c9a-44c7-a8d5-c664732e2e0d
+            Camera: ref!! 54fb6c31-cfe7-4374-9ce0-0d5d2027016a
+            Child: !Xenko.Rendering.Compositing.ForwardRenderer,Xenko.Engine ref!! 0405f0ed-d955-4c94-8568-7a6162ee2342
+            RenderMask: Group31
 SingleView*: !Xenko.Rendering.Compositing.ForwardRenderer,Xenko.Engine ref!! a769a1f1-07a7-47f7-a804-01092bf323df
 Editor*: !Xenko.Rendering.Compositing.ForwardRenderer,Xenko.Engine ref!! a769a1f1-07a7-47f7-a804-01092bf323df
 BlockPositions: {}

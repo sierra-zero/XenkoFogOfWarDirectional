@@ -23,7 +23,7 @@ namespace FogOfWarDirectional
         public ushort FogRows;
         public ushort FogColumns;
         public float VisionRadius;
-        public int VisionStep;
+        public float VisionStep;
         public float ElevationY;
         public CharacterComponent Character;
         public float FogRenderDistance;
@@ -152,7 +152,7 @@ namespace FogOfWarDirectional
                 fogTile.Value.Entity.Transform.GetWorldTransformation(out positionRecycler, out _, out _);
                 fogVisibilityMap[fogTile.Key].Add(fogTile.Key);
 
-                for (var i = 0; i <= 360; i += VisionStep) {
+                for (float i = 0; i <= 360; i += VisionStep) {
                     targetRecycler = new Vector3(positionRecycler.X + (VisionRadius * 2) * (float)Math.Cos(i), ElevationY,
                         positionRecycler.Z + (VisionRadius * 2) * (float)Math.Sin(i));
 

@@ -13,8 +13,8 @@ Goals:
 ==================================================================
 
 
-0) Continue optimizing, try to get down to 5-6ms.
-0) Try with smaller tiles after optimization?
+0) Parameterize FogOpacity.
+0) Add in a new scene stating the map is being calculated.
 0) Optimize performance as much as possible.
 0) Optimize / Clean-up Map.
 0) Clean-up code.

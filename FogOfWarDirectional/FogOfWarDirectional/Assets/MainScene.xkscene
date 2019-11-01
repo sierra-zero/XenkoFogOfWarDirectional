@@ -79,12 +79,12 @@ Hierarchy:
                         FogTileStartZ: 0.0
                         FogRows: 25
                         FogColumns: 25
-                        VisionRadius: 9.0
-                        VisionStep: 1
+                        VisionRadius: 8.0
+                        VisionStep: 1.0
                         ElevationY: 0.5
                         Character: ref!! 627bd541-5360-4ba9-8222-68dcd6c8f76d
-                        FogRenderDistance: 13.0
-                        FogFadeTimer: 60
+                        FogRenderDistance: 10.0
+                        FogFadeTimer: 70
         -   Folder: null
             Entity:
                 Id: 07d34428-016a-44fd-9314-df16a5e5da61
@@ -282,7 +282,7 @@ Hierarchy:
                         Type: !LightAmbient
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
-                        Intensity: 0.25
+                        Intensity: 0.15
         -   Entity:
                 Id: 1dc38e80-3502-4d7c-b3bc-d069f0a864aa
                 Name: naturePack_116
@@ -342,7 +342,7 @@ Hierarchy:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
                                 Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull
             Base:
-                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Arena
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
                 BasePartId: 7f1ba8c8-198b-49e5-b118-ed72283618c4
                 InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
@@ -445,7 +445,7 @@ Hierarchy:
                 Components:
                     b2f9bf93dd024be7bcf2e0d206a83c44: !TransformComponent
                         Id: 59db454b-2e4c-4b11-a55a-d179d1329e44
-                        Position: {X: 9.261371, Y: 0.0, Z: -3.99753332}
+                        Position: {X: 9.261371, Y: -0.25, Z: -3.99753332}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -822,7 +822,7 @@ Hierarchy:
                         Children:
                             5086d1db8fb8460e890c32af7d651387: ref!! 243ca6d9-e50a-422f-b879-57b2103d2ac8
             Base:
-                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Arena
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
                 BasePartId: 651da9e7-c69f-4cfa-9934-5ee045f9e24f
                 InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
@@ -870,7 +870,7 @@ Hierarchy:
                         Id: 0f4a6067-9e9f-4021-8dfa-69a747bb91a5
                         Name: Orthographic
                         Projection: Orthographic
-                        OrthographicSize: 14.0
+                        OrthographicSize: 13.0
                         FarClipPlane: 20.0
                         AspectRatio: 1.0
                         Slot: 8029e506-a2f3-41ec-8568-5227e7f063ef
@@ -1440,7 +1440,7 @@ Hierarchy:
                 Components:
                     8905041f292a0c6b8364953f91986e1a: !TransformComponent
                         Id: 9c570d9f-c6c9-4dbb-b2fa-7f2de7c536f4
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Position: {X: 4.080798E-08, Y: 0.0, Z: -0.466788858}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -1740,7 +1740,7 @@ Hierarchy:
                         Name: Perspective
                         Projection: Perspective
                         VerticalFieldOfView: 11.0
-                        FarClipPlane: 225.0
+                        FarClipPlane: 140.0
                         Slot: 54fb6c31-cfe7-4374-9ce0-0d5d2027016a
         -   Entity:
                 Id: caef7bf7-46fc-4c60-bf59-514314b595ea
@@ -2206,7 +2206,7 @@ Hierarchy:
                 Components:
                     a382ff20e4885d98667d5027fb1727c7: !TransformComponent
                         Id: 278a75fc-3751-4d75-9482-9f16b8b5b1a0
-                        Position: {X: 4.09833145, Y: 0.0, Z: -8.917643}
+                        Position: {X: 4.09833145, Y: -0.25, Z: -8.917643}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -2350,7 +2350,7 @@ Hierarchy:
                                 ComputeTransmittance: false
                                 BiasParameters:
                                     DepthBias: 0.005
-                        Intensity: 1.85
+                        Intensity: 2.0
         -   Entity:
                 Id: f94682c3-d60a-4d00-95a5-a0254d498d4a
                 Name: naturePack_011

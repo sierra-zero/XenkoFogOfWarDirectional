@@ -27,33 +27,6 @@ namespace FogOfWarDirectional
         private Vector2 characterPos;
         private Vector2 prevCharacterPos;
 
-        private bool northVisible;
-        private bool northEastVisible;
-        private bool eastVisible;
-        private bool southEastVisible;
-        private bool southVisible;
-        private bool southWestVisible;
-        private bool westVisible;
-        private bool northWestVisible;
-
-        private Vector2 northRecycler;
-        private Vector2 northEastRecycler;
-        private Vector2 eastRecycler;
-        private Vector2 southEastRecycler;
-        private Vector2 southRecycler;
-        private Vector2 southWestRecycler;
-        private Vector2 westRecycler;
-        private Vector2 northWestRecycler;
-
-        private static readonly Vector2 NorthCoord = new Vector2(0, -1);
-        private static readonly Vector2 NorthEastCoord = new Vector2(1, -1);
-        private static readonly Vector2 EastCoord  = new Vector2(1, 0);
-        private static readonly Vector2 SouthEastCoord = new Vector2(1, 1);
-        private static readonly Vector2 SouthCoord  = new Vector2(0, 1);
-        private static readonly Vector2 SouthWestCoord = new Vector2(-1, 1);
-        private static readonly Vector2 WestCoord =  new Vector2(-1, 0);
-        private static readonly Vector2 NorthWestCoord = new Vector2(-1, -1);
-
         private readonly FogOfWarSystem fog;
         private readonly ConcurrentDictionary<Vector2, bool> fogState;
         private readonly float renderDistance;
@@ -64,10 +37,6 @@ namespace FogOfWarDirectional
         {
             NotVisible,
             Visible,
-            NorthWestVisible,
-            NorthEastVisible,
-            SouthEastVisible,
-            SouthWestVisible
         }
         
         public FogTile(FogOfWarSystem fog, Vector2 fogTileCoord)
