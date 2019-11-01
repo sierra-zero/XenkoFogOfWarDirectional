@@ -14,6 +14,7 @@ Goals:
 
 
 0) Parameterize FogOpacity.
+	- In progress
 0) Add in a new scene stating the map is being calculated.
 0) Optimize performance as much as possible.
 0) Optimize / Clean-up Map.

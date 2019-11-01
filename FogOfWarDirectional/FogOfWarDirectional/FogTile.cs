@@ -71,6 +71,11 @@ namespace FogOfWarDirectional
             seen = fogState.ContainsKey(Coord) && fogState[Coord];
             tileState = seen ? FogTileState.Visible : FogTileState.NotVisible;
 
+            // Shortcut out 
+            if (!seen && !modelComponent.Enabled) {
+                return;
+            }
+
             // Check the bump timer
             if (bumpTimer >= 0) {
                 lerp = (1 - (float)bumpTimer * lerpRate);

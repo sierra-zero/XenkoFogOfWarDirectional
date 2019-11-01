@@ -47,6 +47,7 @@ namespace FogOfWarDirectional
         private int characterPosXRecycler;
         private int characterPosZRecycler;
         private Simulation simulation;
+        private Vector2 prevCharacterPos;
 
         public override void Start()
         {
@@ -93,6 +94,11 @@ namespace FogOfWarDirectional
             characterPosZRecycler = Convert.ToInt32(Math.Round(characterPosRecycler.Z * 1/FogTileScaling));
             CharacterPos = new Vector2(characterPosXRecycler, characterPosZRecycler);
 
+            // Shortcut out
+            if (CharacterPos == prevCharacterPos) {
+                return;
+            }
+
             foreach (var fogTile in State) {
                 State[fogTile.Key] = false;
             }
@@ -109,6 +115,8 @@ namespace FogOfWarDirectional
                     }
                 }
             }
+
+            prevCharacterPos = CharacterPos;
         }
 
         private void RegisterFogOfWarSystem()
