@@ -12,7 +12,12 @@ Goals:
 ==================================================================
 ==================================================================
 
+0) Convert to sampler method.
+	- Data mine the directional stuff.
+	- Data mine the shader stuff.
 
+0) Add the triangle pieces back in.
+0) Fix for 60 fps--Add an actual timer based fog fade.
 0) Parameterize FogOpacity.
 	- In progress
 0) Add in a new scene stating the map is being calculated.
