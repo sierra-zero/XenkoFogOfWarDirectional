@@ -1,0 +1,26 @@
+!MaterialAsset
+Id: c1992ca2-de50-4176-85a1-11cc07589bf8
+SerializedVersion: {Xenko: 2.0.0.0}
+Tags: []
+Attributes:
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeColor
+            Value: {R: 0.0, G: 0.0, B: 0.0, A: 1.0}
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Transparency: !MaterialTransparencyBlendFeature
+        Alpha: !ComputeShaderClassScalar
+            MixinReference: FogOfWarDirectionalShader
+            Generics: {}
+            CompositionNodes:
+                f403f5ef73b7d63c6fbc344196b6f7b4~Fog: !ComputeTextureScalar
+                    Texture: 1d2e5689-83a7-435a-957c-2382b3501677:Textures/FogOfWarTexture
+                    FallbackValue:
+                        Value: 1.0
+                    Channel: G
+                    Scale: {X: 1.0, Y: 1.0}
+                    Offset: {X: 0.0, Y: 0.0}
+        Tint: !ComputeColor
+            Value: {R: 0.0, G: 0.0, B: 0.0, A: 1.0}
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers: {}

@@ -1,0 +1,10 @@
+!Texture
+Id: 88ffc03b-b0ad-4201-b474-732624b18514
+SerializedVersion: {Xenko: 2.0.0.0}
+Tags: []
+Source: !file FogTile1.png
+Width: 108.0
+Height: 108.0
+IsSizeInPercentage: false
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

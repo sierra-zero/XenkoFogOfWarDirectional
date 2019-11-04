@@ -12,6 +12,15 @@ Goals:
 ==================================================================
 ==================================================================
 
-2) Make the pink black.
-3) Pump the otho camera through it's own render group for testing.
-4) Test with tuning post effects.
+0) Convert to sampler method.
+	- Data mine the directional stuff.
+	- Data mine the shader stuff.
+
+0) Add the triangle pieces back in.
+0) Fix for 60 fps--Add an actual timer based fog fade.
+0) Parameterize FogOpacity.
+	- In progress
+0) Add in a new scene stating the map is being calculated.
+0) Optimize performance as much as possible.
+0) Optimize / Clean-up Map.
+0) Clean-up code.

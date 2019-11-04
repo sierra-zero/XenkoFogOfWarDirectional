@@ -1,0 +1,24 @@
+﻿namespace FogOfWarDirectional
+{
+    shader FogOfWarDirectionalShader : ComputeColor, Texturing
+    {
+        compose ComputeColor Fog;
+
+        stream float4 Position : POSITION;
+
+        cbuffer PerMaterial 
+        {
+            stage float FogOpacity = .925;
+        }
+
+        override float4 Compute()
+        {
+            var fogColor = Fog.Compute();
+            if (fogColor.x > .925) { // Fix after parameterize
+                return float4(.925, 0, 0, 0); // Fix after parameterize
+            }
+            
+            return fogColor;
+        }
+    };
+}

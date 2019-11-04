@@ -14,7 +14,7 @@ Hierarchy:
                         Id: 81b0702e-02e9-493a-9b43-3fb9a4d26bb3
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Scale: {X: 1.65, Y: 1.65, Z: 1.65}
                         Children: {}
                     71b42da6f642bf922fa6568af5c6a555: !ModelComponent
                         Id: 01443e2d-36f2-4e54-b144-8bd7f8c69703
@@ -32,4 +32,4 @@ Hierarchy:
                         IsTrigger: false
                         ColliderShapes:
                             e064728d24d4aa75527495b6c224e4b2: !ColliderShapeAssetDesc
-                                Shape: 36513c4f-52a8-4222-b94c-3f805d21e9d8:Models/naturePack_014_hull
+                                Shape: 36513c4f-52a8-4222-b94c-3f805d21e9d8:Terrain/naturePack_014_hull

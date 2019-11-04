@@ -32,4 +32,4 @@ Hierarchy:
                         IsTrigger: false
                         ColliderShapes:
                             781c7fdddde657bf4f2e65a930d6b80b: !ColliderShapeAssetDesc
-                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Models/naturePack_116_hull
+                                Shape: 7853020c-7a83-4f06-a6e8-85444da9d5aa:Terrain/naturePack_116_hull

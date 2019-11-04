@@ -23,10 +23,11 @@ namespace FogOfWarDirectional
         public ushort FogRows;
         public ushort FogColumns;
         public float VisionRadius;
-        public int VisionStep;
+        public float VisionStep;
         public float ElevationY;
         public CharacterComponent Character;
         public float FogRenderDistance;
+        public int FogFadeTimer;
 
         internal Vector2 CharacterPos { get; private set; }
         internal ConcurrentDictionary<Vector2, bool> State { get; private set; }
@@ -42,9 +43,11 @@ namespace FogOfWarDirectional
         private Vector3 targetRecycler;
         private Vector2 coordRecycler;
         private Vector3 characterPosRecycler;
+        private bool nextTileRecycler;
         private int characterPosXRecycler;
         private int characterPosZRecycler;
         private Simulation simulation;
+        private Vector2 prevCharacterPos;
 
         public override void Start()
         {
@@ -59,6 +62,10 @@ namespace FogOfWarDirectional
 
         public void Subscribe(Entity entity)
         {
+            if (!Enable) {
+                return;
+            }
+
             if (!subscribers.Contains(entity)) {
                 subscribers.Add(entity);
             }
@@ -66,6 +73,10 @@ namespace FogOfWarDirectional
 
         public void Unsubscribe(Entity entity)
         {
+            if (!Enable) {
+                return;
+            }
+
             if (subscribers.Contains(entity)) {
                 subscribers.Remove(entity);
             }
@@ -73,11 +84,20 @@ namespace FogOfWarDirectional
 
         private void UpdateFogState()
         {
+            if (!Enable) {
+                return;
+            }
+
             // Vector out camera position
             characterPosRecycler = Character.Entity.Transform.Position;
             characterPosXRecycler = Convert.ToInt32(Math.Round(characterPosRecycler.X * 1/FogTileScaling));
             characterPosZRecycler = Convert.ToInt32(Math.Round(characterPosRecycler.Z * 1/FogTileScaling));
             CharacterPos = new Vector2(characterPosXRecycler, characterPosZRecycler);
+
+            // Shortcut out
+            if (CharacterPos == prevCharacterPos) {
+                return;
+            }
 
             foreach (var fogTile in State) {
                 State[fogTile.Key] = false;
@@ -95,6 +115,8 @@ namespace FogOfWarDirectional
                     }
                 }
             }
+
+            prevCharacterPos = CharacterPos;
         }
 
         private void RegisterFogOfWarSystem()
@@ -123,7 +145,7 @@ namespace FogOfWarDirectional
                     fogTileEntity.Transform.Position = new Vector3(x * FogTileScaling + FogTileStartX,
                         0, z * FogTileScaling + FogTileStartZ);
 
-                    var fogTile = new FogTile(this, coord);
+                    var fogTile = new FogTile(this, coord) {Priority = 255};
                     fogTileEntity.Add(fogTile);
 
                     fogMap.TryAdd(coord, fogTile);
@@ -138,15 +160,32 @@ namespace FogOfWarDirectional
                 fogTile.Value.Entity.Transform.GetWorldTransformation(out positionRecycler, out _, out _);
                 fogVisibilityMap[fogTile.Key].Add(fogTile.Key);
 
-                for (var i = 0; i <= 360; i += VisionStep) {
-                    targetRecycler = new Vector3(positionRecycler.X + VisionRadius * (float)Math.Cos(i), ElevationY,
-                        positionRecycler.Z + VisionRadius * (float)Math.Sin(i));
+                for (float i = 0; i <= 360; i += VisionStep) {
+                    targetRecycler = new Vector3(positionRecycler.X + (VisionRadius * 2) * (float)Math.Cos(i), ElevationY,
+                        positionRecycler.Z + (VisionRadius * 2) * (float)Math.Sin(i));
+
+                    nextTileRecycler = false;
 
                     foreach (var hitResult in simulation.RaycastPenetrating(positionRecycler, targetRecycler)
                         .OrderBy(result => Vector3.Distance(positionRecycler, result.Point))) {
 
-                        if (hitResult.Collider.CollisionGroup == CollisionFilterGroups.StaticFilter) {
+                        if (nextTileRecycler && hitResult.Collider.CollisionGroup == CollisionFilterGroups.CustomFilter10) {
+                            coordRecycler = hitResult.Collider.Entity.Get<FogTile>().Coord;
+                            if (!fogVisibilityMap[fogTile.Key].Contains(coordRecycler)) {
+                                fogVisibilityMap[fogTile.Key].Add(coordRecycler);
+                            }
                             break;
+                        }
+
+                        if (hitResult.Collider.CollisionGroup == CollisionFilterGroups.StaticFilter) {
+                            nextTileRecycler = true;
+                            continue;
+                        }
+
+                        if (Vector3.Distance(positionRecycler, hitResult.Point) > VisionRadius) {
+                            //nextTileRecycler = true;
+                            continue;
+                            //break;
                         }
 
                         if (hitResult.Collider.CollisionGroup == CollisionFilterGroups.CustomFilter10) {

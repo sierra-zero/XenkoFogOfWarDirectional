@@ -1,0 +1,13 @@
+!ProceduralModelAsset
+Id: 83b5c5a7-cb56-4b72-bb45-351021f0aea9
+SerializedVersion: {Xenko: 2.0.0.0}
+Tags: []
+Type: !PlaneProceduralModel
+    Size: {X: 1.0, Y: 1.0}
+    Tessellation: {X: 1, Y: 1}
+    Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+    UvScale: {X: 1.0, Y: 1.0}
+    LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+    MaterialInstance:
+        Material: fb90181f-9989-4529-902e-8f2a00063365:Materials/FogMaterial
+        IsShadowCaster: false

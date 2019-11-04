@@ -1,0 +1,32 @@
+﻿namespace FogOfWarDirectional
+{
+    shader FogTileShader : ComputeColor, Texturing
+    {
+        compose ComputeColor Tile0;
+        compose ComputeColor Tile1;
+
+        cbuffer PerMaterial 
+        {
+            stage int PrevTile = 0;
+            stage int CurrentTile = 0;
+            stage float Lerp = 0;
+        }
+
+        override float4 Compute()
+        {
+            return lerp(Color(PrevTile), Color(CurrentTile), Lerp);
+        }
+
+        float4 Color(int index)
+        {
+            switch(index) {
+                case 0:
+                    { return Tile0.Compute(); }
+                case 1:
+                    { return Tile1.Compute(); }
+                default:
+                    { return Tile1.Compute(); }
+             }
+        }
+    };
+}

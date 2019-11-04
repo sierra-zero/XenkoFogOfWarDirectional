@@ -14,4 +14,6 @@ OutputGroupDirectories: {}
 ExplicitFolders: []
 Bundles: []
 TemplateFolders: []
-RootAssets: []
+RootAssets:
+    - c1992ca2-de50-4176-85a1-11cc07589bf8:Materials/FogOfWarMaterial
+    - fb90181f-9989-4529-902e-8f2a00063365:Materials/FogMaterial

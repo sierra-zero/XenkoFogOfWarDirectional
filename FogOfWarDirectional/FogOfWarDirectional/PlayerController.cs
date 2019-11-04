@@ -8,10 +8,10 @@ namespace FogOfWarDirectional
     public class PlayerController : SyncScript
     {
         // Declared public member fields and properties will show in the game studio
+        public float Speed;
+
         private CharacterComponent characterComponent;
         private Vector3 velocity;
-
-        private const float Speed = 2.5f;
 
         public override void Start()
         {
