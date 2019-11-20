@@ -11,4 +11,18 @@
     <PackageReference Include="Xenko.UI" Version="3.1.0.1" />
     <PackageReference Include="Xenko.Core.Assets.CompilerApp" Version="3.1.0.1" IncludeAssets="build;buildTransitive" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Effects\FogOfWarTileShader.cs">
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FogOfWarTileShader.xksl</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Effects\FogOfWarTileShader.xksl">
+      <Generator>XenkoShaderKeyGenerator</Generator>
+      <LastGenOutput>FogOfWarTileShader.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
 </Project>

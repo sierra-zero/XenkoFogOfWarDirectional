@@ -1,0 +1,19 @@
+﻿namespace FogOfWarDirectional
+{
+    shader FogOfWarTileShader : ComputeColor, Texturing
+    {
+        stream float4 Position : POSITION_WS;
+
+        cbuffer PerMaterial 
+        {
+            stage int Offset = 13; // Probably needs set
+            stage float FogMap[676];
+        }
+
+        override float4 Compute()
+        {
+            var index = (round(streams.Position.x + 13)) * 26 + (round(streams.Position.z + 13));
+            return float4(0, 0, 0, 1 - FogMap[index]);
+        }
+    };
+}

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Concurrent;
 using Xenko.Core.Mathematics;
 using Xenko.Engine;
 using Xenko.Games;
@@ -13,7 +12,7 @@ namespace FogOfWarDirectional
     {
         // Declared public member fields and properties will show in the game studio
         public Vector2 Coord { get; }
-        public float Visibility { get; private set; } = 1; // 0 = green or not visible, 1 = black or visible
+        public float Visibility { get; private set; } = 1; // equates to alpha, 1 = visible (black on material)
 
         private GameTime gameTime;
         private TimeSpan lastStateChange = TimeSpan.Zero;
@@ -33,19 +32,28 @@ namespace FogOfWarDirectional
 
         public void UpdateSeen(bool seenState)
         {
-            if (seenState != seen) {
-                lastStateChange = gameTime.Elapsed;
-                seen = seenState;
-            }
+            //if (seenState != seen) {
+            //    lastStateChange = gameTime.Elapsed;
+            //    seen = seenState;
+            //}
 
-            timeDeltaReycler = gameTime.Elapsed - lastStateChange;
-            Visibility = timeDeltaReycler.Milliseconds / transitionTimer.Milliseconds;
+            //timeDeltaReycler = gameTime.Elapsed - lastStateChange;
+            //Visibility = (timeDeltaReycler.Milliseconds / transitionTimer.Milliseconds);
 
-            if (Visibility > 1) {
+            //if (Visibility > 1) {
+            //    Visibility = 1;
+            //}
+
+            //if (Visibility < 0) {
+            //    Visibility = 0;
+            //}
+
+            if (seenState)
+            {
                 Visibility = 1;
             }
-
-            if (Visibility < 0) {
+            else
+            {
                 Visibility = 0;
             }
         }

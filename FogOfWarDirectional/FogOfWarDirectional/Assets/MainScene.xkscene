@@ -343,6 +343,23 @@ Hierarchy:
                 BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
                 BasePartId: 7f1ba8c8-198b-49e5-b118-ed72283618c4
                 InstanceId: a086892a-f946-4320-ab25-856a8ec459de
+        -   Entity:
+                Id: 25af061d-b6f4-483b-b8a5-b4c2d2ac4e49
+                Name: FogOfWarPre
+                Components:
+                    2cf9145eaf19e8f8f0c7fe03a6b47bed: !TransformComponent
+                        Id: 9b381c89-f34f-4573-94eb-afcce7903906
+                        Position: {X: 13.0, Y: 0.25, Z: 13.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    d7bd2236c35c1ebba0b99ccf8617a78d: !ModelComponent
+                        Id: 3a9447da-299e-4be8-906a-e222c2ed8919
+                        Model: a766e2f6-a0c2-4b46-8096-cd59706f1482:Models/FogOfWar
+                        RenderGroup: Group30
+                        IsShadowCaster: false
+                        Materials:
+                            0d5f86fa744d6030a09db0ace5db1bed~0: 2a7f21e2-0bb2-45f1-8993-7779787bade5:Materials/FogOfWarPreMaterial
         -   Folder: null
             Entity:
                 Id: 26c72176-b4d2-4679-bd6f-faed5ff0aff6
@@ -693,11 +710,12 @@ Hierarchy:
                 Components:
                     765691148d704282b6fe13d0d8df98fc: !TransformComponent
                         Id: e2d63c86-9b27-49c6-80ad-8633b672aac4
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Position: {X: -13.0, Y: 0.0, Z: -13.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c10cd0c6ad9082941605fb6aa1e422a6: ref!! bd249357-2709-4a82-9327-0f5b57941f14
+                            884fa047ba711db076ef2387909a4cec: ref!! 9b381c89-f34f-4573-94eb-afcce7903906
                             ac5a61804832f6b329c46a5a2959d80b: ref!! 0e113570-b369-4ec6-9960-074c380e35a9
         -   Entity:
                 Id: 58014ad0-d7a3-4367-8f15-961c20439017
@@ -1737,7 +1755,7 @@ Hierarchy:
                         Id: 235bfe47-f46b-496d-86fd-503890f7b1c8
                         Name: Perspective
                         Projection: Perspective
-                        VerticalFieldOfView: 11.0
+                        VerticalFieldOfView: 22.0
                         FarClipPlane: 140.0
                         Slot: 54fb6c31-cfe7-4374-9ce0-0d5d2027016a
         -   Entity:
@@ -1900,11 +1918,11 @@ Hierarchy:
                 InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
                 Id: df4ba22a-8a09-4a5b-80cf-bbd332ebb7d6
-                Name: FogOfWar
+                Name: FogOfWarPost
                 Components:
                     2cf9145eaf19e8f8f0c7fe03a6b47bed: !TransformComponent
                         Id: 0e113570-b369-4ec6-9960-074c380e35a9
-                        Position: {X: 0.0, Y: 0.25, Z: 0.0}
+                        Position: {X: 13.0, Y: 0.25, Z: 13.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -1914,7 +1932,7 @@ Hierarchy:
                         RenderGroup: Group31
                         IsShadowCaster: false
                         Materials:
-                            0d5f86fa744d6030a09db0ace5db1bed~0: c1992ca2-de50-4176-85a1-11cc07589bf8:Materials/FogOfWarMaterial
+                            0d5f86fa744d6030a09db0ace5db1bed~0: c1992ca2-de50-4176-85a1-11cc07589bf8:Materials/FogOfWarPostMaterial
         -   Entity:
                 Id: e00de2ee-a0ab-4cb0-8313-d382910bbbc7
                 Name: naturePack_116

@@ -13,29 +13,3 @@ Goals:
 ==================================================================
 
 **Converted project to DX10 for development on laptop**
-
-[DONE] 0) Work under a new branch.
-0) Determine way forward with off set and tile coordinates
-	- Will need to use world space
-0) Remove model components from fog tile, unnecessary.
-0) Will need to update a real-time current fog data class = this will be sent to shader.
-0) Ensure the "scaling" is robust and only requires being changed in ONE PLACE<<<.
-	- Would need to multiply the rows and colums by 1/scaleFactor.l
-0) Remove all of the fog tile entities from the scene after creating fig data class--instead of merely removing the model.
-	- Can likely set the active camera to test this.
-0) Create a single unified model/material that takes into consideration the fog scale (1/scaleFactor) and sends the fog data class to the GPU.
-	- What should this class look like? 
-	- This should look like float[x][y].
-	- Float will be the lerp data.
-	- If a tile is seen it will have it's float plus or minus.
-	- If a tile is not seen it will have it's float plus or minus.
-	- The concept is to send this to GPU and let a single shader render this.
-	- First start with some very simple shader logic that like, looks for positive X or something.
-0) The shader fragment should look up it position in the fog data class using round after multiplication.
-0) Fix the fade for 60 fps--Add an actual timer based fog fade.
-0) Parameterize FogOpacity.
-	- In progress
-0) Add in a new scene stating the map is being calculated.
-0) Optimize performance as much as possible.
-0) Optimize / Clean-up Map.
-0) Clean-up code.

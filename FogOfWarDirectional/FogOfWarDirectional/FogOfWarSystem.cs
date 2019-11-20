@@ -123,8 +123,9 @@ namespace FogOfWarDirectional
                 fogTile.Value.UpdateSeen(State[fogTile.Key]);
             }
 
-            // TODO update shader with state information
+            shaderParams.Set(FogOfWarTileShaderKeys.FogMap, fogMap.Values.Select(a => a.Visibility).ToArray());
 
+            // TODO likely obsolete
             prevCharacterPos = CharacterPos;
         }
 
@@ -147,10 +148,8 @@ namespace FogOfWarDirectional
             subscribers = new FastList<Entity>();
 
             // Generate master fog map
-            var rowDistance = Rows / Scale / 2;
-            var colDistance = Columns / Scale / 2;
-            for (var x = -rowDistance; x < rowDistance; x++) {
-                for (var z = -colDistance / 2; z < colDistance; z++) {
+            for (var x = 0; x < Rows; x++) {
+                for (var z = 0; z < Columns; z++) {
                     var coord = new Vector2(x, z);
 
                     var fogTileEntity = Tile.Instantiate().First();
