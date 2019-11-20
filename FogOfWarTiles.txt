@@ -12,10 +12,15 @@ Goals:
 ==================================================================
 ==================================================================
 
-0) Work under a new branch.
+**Converted project to DX10 for development on laptop**
+
+[DONE] 0) Work under a new branch.
+0) Determine way forward with off set and tile coordinates
+	- Will need to use world space
 0) Remove model components from fog tile, unnecessary.
 0) Will need to update a real-time current fog data class = this will be sent to shader.
 0) Ensure the "scaling" is robust and only requires being changed in ONE PLACE<<<.
+	- Would need to multiply the rows and colums by 1/scaleFactor.l
 0) Remove all of the fog tile entities from the scene after creating fig data class--instead of merely removing the model.
 	- Can likely set the active camera to test this.
 0) Create a single unified model/material that takes into consideration the fog scale (1/scaleFactor) and sends the fog data class to the GPU.

@@ -3,26 +3,12 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Xenko.Engine" Version="3.1.0.1-beta02-0752" />
-    <PackageReference Include="Xenko.Video" Version="3.1.0.1-beta02-0752" />
-    <PackageReference Include="Xenko.Physics" Version="3.1.0.1-beta02-0752" />
-    <PackageReference Include="Xenko.Navigation" Version="3.1.0.1-beta02-0752" />
-    <PackageReference Include="Xenko.Particles" Version="3.1.0.1-beta02-0752" />
-    <PackageReference Include="Xenko.UI" Version="3.1.0.1-beta02-0752" />
-    <PackageReference Include="Xenko.Core.Assets.CompilerApp" Version="3.1.0.1-beta02-0752" IncludeAssets="build;buildTransitive" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Update="Effects\FogTileShader.cs">
-      <DesignTime>True</DesignTime>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>FogTileShader.xksl</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Update="Effects\FogTileShader.xksl">
-      <Generator>XenkoShaderKeyGenerator</Generator>
-      <LastGenOutput>FogTileShader.cs</LastGenOutput>
-    </None>
+    <PackageReference Include="Xenko.Engine" Version="3.1.0.1" />
+    <PackageReference Include="Xenko.Video" Version="3.1.0.1" />
+    <PackageReference Include="Xenko.Physics" Version="3.1.0.1" />
+    <PackageReference Include="Xenko.Navigation" Version="3.1.0.1" />
+    <PackageReference Include="Xenko.Particles" Version="3.1.0.1" />
+    <PackageReference Include="Xenko.UI" Version="3.1.0.1" />
+    <PackageReference Include="Xenko.Core.Assets.CompilerApp" Version="3.1.0.1" IncludeAssets="build;buildTransitive" />
   </ItemGroup>
 </Project>

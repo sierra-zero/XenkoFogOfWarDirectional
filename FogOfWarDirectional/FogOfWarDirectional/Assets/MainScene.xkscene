@@ -66,25 +66,23 @@ Hierarchy:
                 Components:
                     a52aad72442f85422af24fe81eedf853: !TransformComponent
                         Id: bd249357-2709-4a82-9327-0f5b57941f14
-                        Position: {X: 0.0, Y: 0.5, Z: -24.0}
+                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     0ce52ffef5d470f0affe5e97c222973f: !FogOfWarDirectional.FogOfWarSystem,FogOfWarDirectional
                         Id: e9db08cf-25be-411d-a926-68ebac015ed0
                         Enable: true
-                        FogTile: 1f3666af-137a-4f1a-bc2e-0a05eb4dc1a1:Prefabs/FogTile
-                        FogTileScaling: 1.0
-                        FogTileStartX: 0.0
-                        FogTileStartZ: 0.0
-                        FogRows: 25
-                        FogColumns: 25
-                        VisionRadius: 8.0
-                        VisionStep: 1.0
-                        ElevationY: 0.5
+                        Tile: 1f3666af-137a-4f1a-bc2e-0a05eb4dc1a1:Prefabs/FogTile
+                        Scale: 1.0
+                        Rows: 26
+                        Columns: 26
+                        Elevation: 0.5
+                        Vision: 8.0
+                        Sweep: 1.0
                         Character: ref!! 627bd541-5360-4ba9-8222-68dcd6c8f76d
-                        FogRenderDistance: 10.0
-                        FogFadeTimer: 70
+                        FogOfWar: ref!! 21b29f11-8ee6-441b-91b2-f5111aa76305
+                        FogFadeTimerMs: 200
         -   Folder: null
             Entity:
                 Id: 07d34428-016a-44fd-9314-df16a5e5da61
@@ -107,7 +105,7 @@ Hierarchy:
                 Components:
                     a51be12be92c1fcbe98de9b779209e33: !TransformComponent
                         Id: d462e867-6a7b-425e-a45f-108c0160b985
-                        Position: {X: 0.0, Y: 0.0, Z: -24.0}
+                        Position: {X: -12.0, Y: 0.0, Z: -12.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -180,7 +178,7 @@ Hierarchy:
                 Components:
                     d1d27e800943dd0fe271c8210e130287: !TransformComponent
                         Id: 54c7b921-5967-4f26-b4b4-14ea868a53c1
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Position*: {X: -12.0, Y: 0.0, Z: 12.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -700,6 +698,7 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             c10cd0c6ad9082941605fb6aa1e422a6: ref!! bd249357-2709-4a82-9327-0f5b57941f14
+                            ac5a61804832f6b329c46a5a2959d80b: ref!! 0e113570-b369-4ec6-9960-074c380e35a9
         -   Entity:
                 Id: 58014ad0-d7a3-4367-8f15-961c20439017
                 Name: naturePack_008
@@ -1587,7 +1586,6 @@ Hierarchy:
                         Children:
                             a507710611b6634b92824ce7693f4e35: ref!! 0ca7cb99-e600-4124-aadf-f3947a09c474
                             d2bc68b780d8df83a5e5d4883505a9e0: ref!! 5b08178d-43bf-4515-99d4-ff6cedc9d392
-                            1398298e4ec2d94c0d60b63448e4ed57: ref!! 0e113570-b369-4ec6-9960-074c380e35a9
                     4b82a5c88ee681bc717ae4e2e5d094a2: !ModelComponent
                         Id: 0c36ec45-5454-4d5a-ac4b-6cbbc6cc5181
                         Model: 3b7ae418-4e30-4d68-966a-e8f6f10612a5:Models/Cube

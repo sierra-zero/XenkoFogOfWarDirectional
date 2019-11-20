@@ -15,8 +15,7 @@ Hierarchy:
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            aa7a9547f9285f8bfbd18b2485062a0a: ref!! 59b2c118-dbc6-4d5a-8cf1-47c717efcfa8
+                        Children: {}
                     7c612cd707ecd7a64f487871dfa8d020: !RigidbodyComponent
                         Id: cd92c4f6-123b-4e96-a08f-c63de251289f
                         CollisionGroup: CustomFilter10
@@ -41,20 +40,3 @@ Hierarchy:
                                 Size: {X: 0.95, Y: 0.95, Z: 0.95}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-        -   Entity:
-                Id: e90552f2-3b8b-44a5-a8d1-e4ce4f2a9f55
-                Name: Model
-                Components:
-                    597d3471b1625f83a7c170c4db886c55: !ModelComponent
-                        Id: 0df68758-4a9c-43c6-a497-769ac699a6b5
-                        Model: 83b5c5a7-cb56-4b72-bb45-351021f0aea9:Models/FogTile
-                        RenderGroup: Group30
-                        IsShadowCaster: false
-                        Materials:
-                            5d3569166d48d7646f3435113452bedf~0: fb90181f-9989-4529-902e-8f2a00063365:Materials/FogMaterial
-                    ebb1c5c727851b099c57932ec0cd9cf8: !TransformComponent
-                        Id: 59b2c118-dbc6-4d5a-8cf1-47c717efcfa8
-                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}

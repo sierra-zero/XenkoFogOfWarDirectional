@@ -18,7 +18,7 @@ Hierarchy:
                         Children: {}
                     b6520fa959d8693333fae10cdf73877e: !ModelComponent
                         Id: b284aff3-260c-4252-9501-a5c6f52d8c9b
-                        Enabled*: false
+                        Enabled*: true
                         Model: 63cc7a21-3406-4e73-8109-838d9855f3f5:Models/Ground
                         Materials:
                             1303750f691de68dec99bbc595fff721~0: 6b9a0a2e-8dde-403f-b0b6-63b3097f25ba:Models/Leafs
