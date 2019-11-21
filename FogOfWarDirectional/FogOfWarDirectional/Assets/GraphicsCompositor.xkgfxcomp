@@ -7,8 +7,8 @@ Cameras:
     de2e75c3b2b23e54162686363f3f138e:
         Id: 54fb6c31-cfe7-4374-9ce0-0d5d2027016a
         Name*: Perspective
-    8e59f21d77be7d3ea7c9501805d1f802*:
-        Id: 8029e506-a2f3-41ec-8568-5227e7f063ef
+    fbd6c2d536f6fe76cb8d7f40e73e6ce8*:
+        Id: 8b0826a4-78de-4e77-b3fc-1e310ba6d047
         Name: Orthographic
 RenderStages:
     47116750c1a5d449b4ad3625f71439b3:
@@ -182,7 +182,7 @@ SharedRenderers:
             Color*: {R: 1.0, G: 1.0, B: 1.0}
         Bloom:
             Enabled*: true
-            Radius*: 30.0
+            Radius*: 25.0
             Amount*: 7.0
             SigmaRatio*: 4.0
             Distortion: {X: 1.0, Y: 1.0}
@@ -248,7 +248,7 @@ SharedRenderers:
         Id: 887b3e91-f395-4064-b265-be80d42c12ec
         Clear:
             Id: 39330f03-1f6a-43ae-bff1-641ecfc2e9d2
-            Color: {R: 0.403921574, G: 0.4117647, B: 0.435294122, A: 1.0}
+            Color: {R: 0.3137255, G: 0.3137255, B: 0.3137255, A: 1.0}
         LightProbes: true
         OpaqueRenderStage: ref!! 9d24e318-daaa-4150-b7f1-5766c9e1b984
         TransparentRenderStage: ref!! f5aaff53-3ce6-41ee-9c70-ee62ded0c8d9
@@ -290,10 +290,10 @@ Game*: !Xenko.Rendering.Compositing.SceneRendererCollection,Xenko.Rendering
     Children:
         f0a9de09a6fbfb3a49fbf1e05369e161: !Xenko.Rendering.Compositing.SceneCameraRenderer,Xenko.Engine
             Id: 825cfebd-8985-46a3-8263-ce5762344ebd
-            Camera: ref!! 8029e506-a2f3-41ec-8568-5227e7f063ef
+            Camera: ref!! 8b0826a4-78de-4e77-b3fc-1e310ba6d047
             Child: !Xenko.Rendering.Compositing.RenderTextureSceneRenderer,Xenko.Rendering
                 Id: 43b7a15b-23ad-4cd9-8f79-453a5f214206
-                RenderTexture: 1d2e5689-83a7-435a-957c-2382b3501677:Textures/FogOfWarTexture
+                RenderTexture: 1d2e5689-83a7-435a-957c-2382b3501677:Textures/FogOfWarPostEffectTexture
                 Child: !Xenko.Rendering.Compositing.ForwardRenderer,Xenko.Engine ref!! 77996492-9ebf-471f-83ef-a3839dd28f51
             RenderMask: Group30
         326f5762f84f331ab9aed51af905594b: !Xenko.Rendering.Compositing.SceneCameraRenderer,Xenko.Engine

@@ -13,3 +13,10 @@ Goals:
 ==================================================================
 
 **Converted project to DX10 for development on laptop**
+
+1) Fix the initial reveal.
+2) Clean-Up, Refactor and Comment what is already working.
+3) Add fade in based on delta time.
+4) Update move speed to be based on delta time.
+5) Move back to Windows and target DX11.
+

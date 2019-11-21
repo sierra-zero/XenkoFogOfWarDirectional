@@ -33,8 +33,8 @@ namespace FogOfWarDirectional
         internal Vector2 CharacterPos { get; private set; }
         internal ConcurrentDictionary<Vector2, bool> State { get; private set; }
 
+        private FogTile[] fogMap;
         private ParameterCollection shaderParams;
-        private ConcurrentDictionary<Vector2, FogTile> fogMap;
         private ConcurrentDictionary<Vector2, FastList<Vector2>> fogVisibilityMap;
         private FastList<Entity> subscribers;
         private Vector3 subscriberPosRecycler;
@@ -96,8 +96,14 @@ namespace FogOfWarDirectional
             characterPosZRecycler = Convert.ToInt32(Math.Round(characterPosRecycler.Z / Scale));
             CharacterPos = new Vector2(characterPosXRecycler, characterPosZRecycler);
 
+            foreach (var fogTile in fogMap)
+            {
+                fogTile.UpdateSeen(State[fogTile.Coord]);
+            }
+
             // Shortcut out
-            if (CharacterPos == prevCharacterPos) {
+            if (CharacterPos == prevCharacterPos)
+            {
                 return;
             }
 
@@ -118,12 +124,8 @@ namespace FogOfWarDirectional
                 }
             }
 
-            foreach (var fogTile in fogMap)
-            {
-                fogTile.Value.UpdateSeen(State[fogTile.Key]);
-            }
-
-            shaderParams.Set(FogOfWarTileShaderKeys.FogMap, fogMap.Values.Select(a => a.Visibility).ToArray());
+            var test = fogMap.Select(a => a.Visibility).ToArray();
+            shaderParams.Set(FogOfWarTileShaderKeys.FogMap, test);
 
             // TODO likely obsolete
             prevCharacterPos = CharacterPos;
@@ -141,15 +143,16 @@ namespace FogOfWarDirectional
             }
 
             shaderParams = FogOfWar.GetMaterial(0)?.Passes[0]?.Parameters;
-            fogMap = new ConcurrentDictionary<Vector2, FogTile>();
+            fogMap = new FogTile[676]; //TODO fix me
             State = new ConcurrentDictionary<Vector2, bool>();
             fogVisibilityMap = new ConcurrentDictionary<Vector2, FastList<Vector2>>();
             simulation = this.GetSimulation();
             subscribers = new FastList<Entity>();
 
             // Generate master fog map
-            for (var x = 0; x < Rows; x++) {
-                for (var z = 0; z < Columns; z++) {
+            var fogMapIndex = 0;
+            for (var x = 0; x < Columns; x++) {
+                for (var z = 0; z < Rows; z++) {
                     var coord = new Vector2(x, z);
 
                     var fogTileEntity = Tile.Instantiate().First();
@@ -158,7 +161,8 @@ namespace FogOfWarDirectional
                     var fogTile = new FogTile(this, Game.UpdateTime, coord);
                     fogTileEntity.Add(fogTile);
 
-                    fogMap.TryAdd(coord, fogTile);
+                    fogMap[fogMapIndex] = fogTile;
+                    fogMapIndex++;
                     State.TryAdd(coord, false);
                     fogVisibilityMap.TryAdd(coord, new FastList<Vector2>());
                     Entity.AddChild(fogTileEntity);
@@ -167,8 +171,8 @@ namespace FogOfWarDirectional
 
             // Update visibility map for every point on the grid
             foreach (var fogTile in fogMap) {
-                fogTile.Value.Entity.Transform.GetWorldTransformation(out positionRecycler, out _, out _);
-                fogVisibilityMap[fogTile.Key].Add(fogTile.Key);
+                fogTile.Entity.Transform.GetWorldTransformation(out positionRecycler, out _, out _);
+                fogVisibilityMap[fogTile.Coord].Add(fogTile.Coord);
 
                 for (float i = 0; i <= 360; i += Sweep) {
                     targetRecycler = new Vector3(positionRecycler.X + (Vision * 2) * (float)Math.Cos(i), Elevation,
@@ -181,8 +185,8 @@ namespace FogOfWarDirectional
 
                         if (nextTileRecycler && hitResult.Collider.CollisionGroup == CollisionFilterGroups.CustomFilter10) {
                             coordRecycler = hitResult.Collider.Entity.Get<FogTile>().Coord;
-                            if (!fogVisibilityMap[fogTile.Key].Contains(coordRecycler)) {
-                                fogVisibilityMap[fogTile.Key].Add(coordRecycler);
+                            if (!fogVisibilityMap[fogTile.Coord].Contains(coordRecycler)) {
+                                fogVisibilityMap[fogTile.Coord].Add(coordRecycler);
                             }
                             break;
                         }
@@ -200,8 +204,8 @@ namespace FogOfWarDirectional
 
                         if (hitResult.Collider.CollisionGroup == CollisionFilterGroups.CustomFilter10) {
                             coordRecycler = hitResult.Collider.Entity.Get<FogTile>().Coord;
-                            if (!fogVisibilityMap[fogTile.Key].Contains(coordRecycler)) {
-                                fogVisibilityMap[fogTile.Key].Add(coordRecycler);
+                            if (!fogVisibilityMap[fogTile.Coord].Contains(coordRecycler)) {
+                                fogVisibilityMap[fogTile.Coord].Add(coordRecycler);
                             }
                         }
                     }
@@ -209,7 +213,7 @@ namespace FogOfWarDirectional
             }
 
             // Disable all fog tile colliders
-            foreach (var fogTile in fogMap.Values)
+            foreach (var fogTile in fogMap)
             {
                 SceneSystem.SceneInstance.Remove(fogTile.Entity);
             }

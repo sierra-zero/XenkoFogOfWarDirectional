@@ -14,8 +14,8 @@
         override float4 Compute()
         {
             var fogColor = Fog.Compute();
-            if (fogColor.x > .925) { // Fix after parameterize, needs set in code TODO
-                return float4(.925, 0, 0, 0); // Fix after parameterize
+            if (fogColor.x > .925) {
+                return float4(.925, 0, 0, 0);
             }
             
             return fogColor;

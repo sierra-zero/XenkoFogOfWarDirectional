@@ -15,5 +15,5 @@ ExplicitFolders: []
 Bundles: []
 TemplateFolders: []
 RootAssets:
-    - 2a7f21e2-0bb2-45f1-8993-7779787bade5:Materials/FogOfWarPreMaterial
-    - c1992ca2-de50-4176-85a1-11cc07589bf8:Materials/FogOfWarPostMaterial
+    - 2a7f21e2-0bb2-45f1-8993-7779787bade5:Materials/FogOfWarMaterial
+    - c1992ca2-de50-4176-85a1-11cc07589bf8:Materials/FogOfWarPostEffectMaterial

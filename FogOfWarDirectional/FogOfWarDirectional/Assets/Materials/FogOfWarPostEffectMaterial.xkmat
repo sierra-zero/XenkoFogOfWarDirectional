@@ -13,7 +13,7 @@ Attributes:
             Generics: {}
             CompositionNodes:
                 f403f5ef73b7d63c6fbc344196b6f7b4~Fog: !ComputeTextureScalar
-                    Texture: 1d2e5689-83a7-435a-957c-2382b3501677:Textures/FogOfWarTexture
+                    Texture: 1d2e5689-83a7-435a-957c-2382b3501677:Textures/FogOfWarPostEffectTexture
                     FallbackValue:
                         Value: 1.0
                     Channel: G

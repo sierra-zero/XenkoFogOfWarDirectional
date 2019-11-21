@@ -12,7 +12,7 @@ namespace FogOfWarDirectional
     {
         // Declared public member fields and properties will show in the game studio
         public Vector2 Coord { get; }
-        public float Visibility { get; private set; } = 1; // equates to alpha, 1 = visible (black on material)
+        public float Visibility { get; private set; } 
 
         private GameTime gameTime;
         private TimeSpan lastStateChange = TimeSpan.Zero;
@@ -40,6 +40,16 @@ namespace FogOfWarDirectional
             //timeDeltaReycler = gameTime.Elapsed - lastStateChange;
             //Visibility = (timeDeltaReycler.Milliseconds / transitionTimer.Milliseconds);
 
+            // TODO add fade logics here.
+            if (seenState)
+            {
+                Visibility = 0;
+            }
+            else
+            {
+                Visibility = 1;
+            }
+
             //if (Visibility > 1) {
             //    Visibility = 1;
             //}
@@ -48,14 +58,7 @@ namespace FogOfWarDirectional
             //    Visibility = 0;
             //}
 
-            if (seenState)
-            {
-                Visibility = 1;
-            }
-            else
-            {
-                Visibility = 0;
-            }
+
         }
     }
 }
