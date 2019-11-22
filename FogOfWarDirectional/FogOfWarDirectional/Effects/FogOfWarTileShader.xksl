@@ -6,17 +6,18 @@
 
         cbuffer PerMaterial 
         {
-            stage float FogMap[676];
+            stage int Rows;
+            stage float FogMap[4096]; // Default size supports 64 x 64 tiles
         }
 
         override float4 Compute()
         {
-            if (streams.Position.x <= 0 || streams.Position.x >= 26 - 1 ||
-                streams.Position.z <= 0 || streams.Position.z >= 26 - 1) {
+            if (streams.Position.x <= 0 || streams.Position.x >= Rows - 1 ||
+                streams.Position.z <= 0 || streams.Position.z >= Rows - 1) {
                     return float4(0, 0, 0, 0);
                 }
 
-            var index = (round(streams.Position.x) * 26 + round(streams.Position.z)); // TODO fix me.
+            var index = (round(streams.Position.x) * Rows + round(streams.Position.z));
             return float4(0, FogMap[index], 0, 0);
         }
     };

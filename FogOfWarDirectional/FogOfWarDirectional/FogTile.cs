@@ -2,7 +2,7 @@
 using Xenko.Core.Mathematics;
 using Xenko.Engine;
 using Xenko.Games;
-
+// ReSharper disable InconsistentNaming
 // ReSharper disable PossibleLossOfFraction
 // ReSharper disable MemberCanBePrivate.Global
 
@@ -10,55 +10,49 @@ namespace FogOfWarDirectional
 {
     public class FogTile : EntityComponent
     {
-        // Declared public member fields and properties will show in the game studio
         public Vector2 Coord { get; }
         public float Visibility { get; private set; } 
 
-        private GameTime gameTime;
-        private TimeSpan lastStateChange = TimeSpan.Zero;
-        private TimeSpan transitionTimer = TimeSpan.Zero;
-        private TimeSpan timeDeltaReycler = TimeSpan.Zero;
-
-        private bool seen = false;
-        private readonly FogOfWarSystem fog;
+        private float fadeDelta;
+        private bool tileSeen;
+        private readonly GameTime gameTime;
+        private readonly float fadeRate;
 
         public FogTile(FogOfWarSystem fog, GameTime gameTime, Vector2 fogTileCoord)
         {
-            this.fog = fog;
             this.gameTime = gameTime;
             Coord = fogTileCoord;
-            transitionTimer = TimeSpan.FromMilliseconds(fog.FogFadeTimerMs);
+            fadeRate = fog.FadeRate;
         }
 
-        public void UpdateSeen(bool seenState)
+        public void UpdateSeen(bool seen)
         {
-            //if (seenState != seen) {
-            //    lastStateChange = gameTime.Elapsed;
-            //    seen = seenState;
-            //}
+            tileSeen = seen;
+        }
 
-            //timeDeltaReycler = gameTime.Elapsed - lastStateChange;
-            //Visibility = (timeDeltaReycler.Milliseconds / transitionTimer.Milliseconds);
+        public void UpdateVisibility()
+        {
+            fadeDelta = fadeRate * (float)gameTime.Elapsed.TotalSeconds;
 
-            // TODO add fade logics here.
-            if (seenState)
+            if (tileSeen && Visibility - fadeDelta < 0)
             {
                 Visibility = 0;
+                return;
             }
-            else
+
+            if (!tileSeen && Visibility + fadeDelta > 1)
             {
                 Visibility = 1;
+                return;
             }
 
-            //if (Visibility > 1) {
-            //    Visibility = 1;
-            //}
+            if (tileSeen)
+            {
+                Visibility -= fadeDelta;
+                return;
+            }
 
-            //if (Visibility < 0) {
-            //    Visibility = 0;
-            //}
-
-
+            Visibility += fadeDelta;
         }
     }
 }

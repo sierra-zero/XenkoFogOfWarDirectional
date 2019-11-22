@@ -1,3 +1,4 @@
+
 Goals:
 ==================================================================
 ==================================================================
@@ -14,9 +15,15 @@ Goals:
 
 **Converted project to DX10 for development on laptop**
 
-1) Fix the initial reveal.
+[Roughed In] 3) Add fade in based on delta time.
+
+
+1) Raise the fog up to clear small obstruction
+2) Change the array size to like 2048.
 2) Clean-Up, Refactor and Comment what is already working.
-3) Add fade in based on delta time.
-4) Update move speed to be based on delta time.
+	- Convert shader variables to staged and set in game.
+
+6) Code style is all gimped.
+9) Resharper findings.
 5) Move back to Windows and target DX11.
 

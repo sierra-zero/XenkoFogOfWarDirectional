@@ -6,7 +6,6 @@ using Xenko.Core.Mathematics;
 using Xenko.Engine;
 using Xenko.Physics;
 using Xenko.Rendering;
-
 // ReSharper disable ClassNeverInstantiated.Global
 // ReSharper disable UnassignedField.Global
 // ReSharper disable MemberCanBePrivate.Global
@@ -20,19 +19,21 @@ namespace FogOfWarDirectional
         public bool Enable;
         public Prefab Tile;
         public float Scale;
-        public ushort Rows;
-        public ushort Columns;
+        public int Rows;
+        public int Columns;
         public float Elevation;
         public float Vision;
         public float Sweep;
+        public float FadeRate;
 
         public CharacterComponent Character;
         public ModelComponent FogOfWar;
-        public int FogFadeTimerMs;
 
         internal Vector2 CharacterPos { get; private set; }
         internal ConcurrentDictionary<Vector2, bool> State { get; private set; }
 
+        private float StartX = 0;
+        private float StartZ = 0;
         private FogTile[] fogMap;
         private ParameterCollection shaderParams;
         private ConcurrentDictionary<Vector2, FastList<Vector2>> fogVisibilityMap;
@@ -90,27 +91,29 @@ namespace FogOfWarDirectional
                 return;
             }
 
-            // Vector out camera position
+            // Identify player position
             characterPosRecycler = Character.Entity.Transform.Position;
             characterPosXRecycler = Convert.ToInt32(Math.Round(characterPosRecycler.X / Scale));
             characterPosZRecycler = Convert.ToInt32(Math.Round(characterPosRecycler.Z / Scale));
             CharacterPos = new Vector2(characterPosXRecycler, characterPosZRecycler);
 
-            foreach (var fogTile in fogMap)
-            {
-                fogTile.UpdateSeen(State[fogTile.Coord]);
+            // Update fog visibility
+            foreach (var fogTile in fogMap) {
+                fogTile.UpdateVisibility();
             }
 
-            // Shortcut out
-            if (CharacterPos == prevCharacterPos)
-            {
+            // Shortcut out if the player has not moved
+            if (CharacterPos == prevCharacterPos) {
+                shaderParams.Set(FogOfWarTileShaderKeys.FogMap, fogMap.Select(a => a.Visibility).ToArray());
                 return;
             }
 
+            // Reset State to not visible
             foreach (var fogTile in State) {
                 State[fogTile.Key] = false;
             }
 
+            // Set Visibility for this tick per tile in State
             foreach (var subscriber in subscribers) {
                 subscriberPosRecycler = subscriber.Transform.Position;
                 subscriberPosXRecycler = Convert.ToInt32(Math.Round(subscriberPosRecycler.X / Scale));
@@ -124,10 +127,13 @@ namespace FogOfWarDirectional
                 }
             }
 
-            var test = fogMap.Select(a => a.Visibility).ToArray();
-            shaderParams.Set(FogOfWarTileShaderKeys.FogMap, test);
+            // Update the ordered array for shader
+            foreach (var fogTile in fogMap) {
+                fogTile.UpdateSeen(State[fogTile.Coord]);
+            }
 
-            // TODO likely obsolete
+            // Update shader
+            shaderParams.Set(FogOfWarTileShaderKeys.FogMap, fogMap.Select(a => a.Visibility).ToArray());
             prevCharacterPos = CharacterPos;
         }
 
@@ -143,7 +149,7 @@ namespace FogOfWarDirectional
             }
 
             shaderParams = FogOfWar.GetMaterial(0)?.Passes[0]?.Parameters;
-            fogMap = new FogTile[676]; //TODO fix me
+            fogMap = new FogTile[Columns * Rows];
             State = new ConcurrentDictionary<Vector2, bool>();
             fogVisibilityMap = new ConcurrentDictionary<Vector2, FastList<Vector2>>();
             simulation = this.GetSimulation();
@@ -156,7 +162,8 @@ namespace FogOfWarDirectional
                     var coord = new Vector2(x, z);
 
                     var fogTileEntity = Tile.Instantiate().First();
-                    fogTileEntity.Transform.Position = new Vector3(x * Scale, 0, z * Scale);
+                    fogTileEntity.Transform.Position = new Vector3(x * Scale + StartX, 0, z * Scale + StartZ);
+                    fogTileEntity.Transform.Scale = Vector3.One * Scale;
 
                     var fogTile = new FogTile(this, Game.UpdateTime, coord);
                     fogTileEntity.Add(fogTile);
@@ -197,9 +204,7 @@ namespace FogOfWarDirectional
                         }
 
                         if (Vector3.Distance(positionRecycler, hitResult.Point) > Vision) {
-                            //nextTileRecycler = true;
                             continue;
-                            //break;
                         }
 
                         if (hitResult.Collider.CollisionGroup == CollisionFilterGroups.CustomFilter10) {
@@ -211,6 +216,9 @@ namespace FogOfWarDirectional
                     }
                 }
             }
+
+            shaderParams?.Set(FogOfWarTileShaderKeys.Rows, Rows);
+            shaderParams?.Set(FogOfWarTileShaderKeys.FogMap, fogMap.Select(a => a.Visibility).ToArray());
 
             // Disable all fog tile colliders
             foreach (var fogTile in fogMap)

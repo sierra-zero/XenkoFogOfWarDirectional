@@ -80,9 +80,9 @@ Hierarchy:
                         Elevation: 0.5
                         Vision: 8.0
                         Sweep: 1.0
+                        FadeRate: 2.0
                         Character: ref!! 627bd541-5360-4ba9-8222-68dcd6c8f76d
                         FogOfWar: ref!! 3a9447da-299e-4be8-906a-e222c2ed8919
-                        FogFadeTimerMs: 200
         -   Folder: null
             Entity:
                 Id: 07d34428-016a-44fd-9314-df16a5e5da61
@@ -1629,7 +1629,7 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     9ff85ee76ca02540720240ee13d1fdb6: !FogOfWarDirectional.PlayerController,FogOfWarDirectional
                         Id: 87ade47e-3c27-451d-8e0d-a907bfca59ff
-                        Speed: 1.95
+                        Speed: 90.0
                     727952bcf60d376656256f27e3e75409: !FogOfWarDirectional.FogDetector,FogOfWarDirectional
                         Id: d3ffd13e-7935-42ac-bffe-efb366bd934f
                         Priority: 1

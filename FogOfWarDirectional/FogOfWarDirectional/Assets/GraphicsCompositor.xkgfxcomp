@@ -182,7 +182,7 @@ SharedRenderers:
             Color*: {R: 1.0, G: 1.0, B: 1.0}
         Bloom:
             Enabled*: true
-            Radius*: 25.0
+            Radius*: 30.0
             Amount*: 7.0
             SigmaRatio*: 4.0
             Distortion: {X: 1.0, Y: 1.0}
