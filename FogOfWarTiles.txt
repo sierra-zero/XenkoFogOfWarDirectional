@@ -19,7 +19,7 @@ Goals:
 
 
 1) Raise the fog up to clear small obstruction
-2) Change the array size to like 2048.
+2) Change the array size to like 2048 or 3072.
 2) Clean-Up, Refactor and Comment what is already working.
 	- Convert shader variables to staged and set in game.
 
