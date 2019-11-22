@@ -22,7 +22,7 @@ namespace FogOfWarDirectional
         {
             this.gameTime = gameTime;
             Coord = fogTileCoord;
-            fadeRate = fog.FadeRate;
+            fadeRate = fog.Fade;
         }
 
         public void UpdateSeen(bool seen)

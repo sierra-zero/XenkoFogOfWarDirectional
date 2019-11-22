@@ -8,14 +8,14 @@
 
         cbuffer PerMaterial 
         {
-            stage float FogOpacity = .925;
+            stage float FogOpacity;
         }
 
         override float4 Compute()
         {
             var fogColor = Fog.Compute();
-            if (fogColor.x > .925) {
-                return float4(.925, 0, 0, 0);
+            if (fogColor.x > FogOpacity) {
+                return float4(FogOpacity, 0, 0, 0);
             }
             
             return fogColor;

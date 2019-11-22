@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Linq;
+using System.Xml;
 using Xenko.Core.Collections;
 using Xenko.Core.Mathematics;
 using Xenko.Engine;
@@ -21,21 +22,21 @@ namespace FogOfWarDirectional
         public float Scale;
         public int Rows;
         public int Columns;
-        public float Elevation;
         public float Vision;
         public float Sweep;
-        public float FadeRate;
-
+        public float Fade;
+        public float Opacity;
         public CharacterComponent Character;
-        public ModelComponent FogOfWar;
+        public ModelComponent FogOfWarPre;
+        public ModelComponent FogOfWarPost;
 
         internal Vector2 CharacterPos { get; private set; }
         internal ConcurrentDictionary<Vector2, bool> State { get; private set; }
 
-        private float StartX = 0;
-        private float StartZ = 0;
+        private float StartOffset = .5f;
         private FogTile[] fogMap;
-        private ParameterCollection shaderParams;
+        private ParameterCollection shaderParamsPre;
+        private ParameterCollection shaderParamsPost;
         private ConcurrentDictionary<Vector2, FastList<Vector2>> fogVisibilityMap;
         private FastList<Entity> subscribers;
         private Vector3 subscriberPosRecycler;
@@ -104,7 +105,7 @@ namespace FogOfWarDirectional
 
             // Shortcut out if the player has not moved
             if (CharacterPos == prevCharacterPos) {
-                shaderParams.Set(FogOfWarTileShaderKeys.FogMap, fogMap.Select(a => a.Visibility).ToArray());
+                shaderParamsPre.Set(FogOfWarTileShaderKeys.FogMap, fogMap.Select(a => a.Visibility).ToArray());
                 return;
             }
 
@@ -133,7 +134,7 @@ namespace FogOfWarDirectional
             }
 
             // Update shader
-            shaderParams.Set(FogOfWarTileShaderKeys.FogMap, fogMap.Select(a => a.Visibility).ToArray());
+            shaderParamsPre.Set(FogOfWarTileShaderKeys.FogMap, fogMap.Select(a => a.Visibility).ToArray());
             prevCharacterPos = CharacterPos;
         }
 
@@ -148,12 +149,13 @@ namespace FogOfWarDirectional
                 return;
             }
 
-            shaderParams = FogOfWar.GetMaterial(0)?.Passes[0]?.Parameters;
             fogMap = new FogTile[Columns * Rows];
             State = new ConcurrentDictionary<Vector2, bool>();
             fogVisibilityMap = new ConcurrentDictionary<Vector2, FastList<Vector2>>();
             simulation = this.GetSimulation();
             subscribers = new FastList<Entity>();
+
+            StartOffset *= Scale;
 
             // Generate master fog map
             var fogMapIndex = 0;
@@ -162,7 +164,8 @@ namespace FogOfWarDirectional
                     var coord = new Vector2(x, z);
 
                     var fogTileEntity = Tile.Instantiate().First();
-                    fogTileEntity.Transform.Position = new Vector3(x * Scale + StartX, 0, z * Scale + StartZ);
+                    fogTileEntity.Transform.Position = new Vector3(x * Scale + StartOffset,
+                        Entity.Transform.Position.Y, z * Scale + StartOffset);
                     fogTileEntity.Transform.Scale = Vector3.One * Scale;
 
                     var fogTile = new FogTile(this, Game.UpdateTime, coord);
@@ -182,7 +185,7 @@ namespace FogOfWarDirectional
                 fogVisibilityMap[fogTile.Coord].Add(fogTile.Coord);
 
                 for (float i = 0; i <= 360; i += Sweep) {
-                    targetRecycler = new Vector3(positionRecycler.X + (Vision * 2) * (float)Math.Cos(i), Elevation,
+                    targetRecycler = new Vector3(positionRecycler.X + (Vision * 2) * (float)Math.Cos(i), positionRecycler.Y,
                         positionRecycler.Z + (Vision * 2) * (float)Math.Sin(i));
 
                     nextTileRecycler = false;
@@ -217,8 +220,12 @@ namespace FogOfWarDirectional
                 }
             }
 
-            shaderParams?.Set(FogOfWarTileShaderKeys.Rows, Rows);
-            shaderParams?.Set(FogOfWarTileShaderKeys.FogMap, fogMap.Select(a => a.Visibility).ToArray());
+            shaderParamsPre = FogOfWarPre.GetMaterial(0)?.Passes[0]?.Parameters;
+            shaderParamsPre?.Set(FogOfWarTileShaderKeys.Rows, Rows);
+            shaderParamsPre?.Set(FogOfWarTileShaderKeys.FogMap, fogMap.Select(a => a.Visibility).ToArray());
+
+            shaderParamsPost = FogOfWarPost.GetMaterial(0)?.Passes[0]?.Parameters;
+            shaderParamsPost?.Set(FogOfWarDirectionalShaderKeys.FogOpacity, Opacity);
 
             // Disable all fog tile colliders
             foreach (var fogTile in fogMap)

@@ -15,15 +15,12 @@ Goals:
 
 **Converted project to DX10 for development on laptop**
 
-[Roughed In] 3) Add fade in based on delta time.
+1) Need to adjust "rows" before sending to shader with / Scale.
+1) Implemented scaling, will need to test.
 
-
-1) Raise the fog up to clear small obstruction
-2) Change the array size to like 2048 or 3072.
-2) Clean-Up, Refactor and Comment what is already working.
-	- Convert shader variables to staged and set in game.
-
-6) Code style is all gimped.
-9) Resharper findings.
+6) Implement coding style for braces.
+9) Resolve Resharper findings.
 5) Move back to Windows and target DX11.
+7) Test and Polish with flows & lights.
+8) Release with a video.
 
