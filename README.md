@@ -17,7 +17,8 @@ This is a directional fog of war system written for Xenko, feel free to use it d
 
 *This runs very quickly as it uses merely table lookups and simple up/down logics.
  <img src="Screenshot.png">
-  
+ <img src="Settings.png">
+ 
  [Video can be found here](INSERT VIDEO)
 
 **NOTE: Before the scene renders there is a lenghty delay while the fog map is generated. Ideally you would write the fog map/ visiblity data to a JSON or some other custom game data file and read it from disk to avoid the lengthy startup.**
