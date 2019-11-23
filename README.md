@@ -20,9 +20,9 @@ This is a directional fog of war system written for Xenko, feel free to use it d
   
  [Video can be found here](INSERT VIDEO)
 
-**NOTE: Before the scene renders there is a lenghty delay while the fog map is generated. Ideally you would use this to write the fog map/ visiblity data to a JSON or YML or some other custom game data file and read it directly to avoid the lengthy startup.
+**NOTE: Before the scene renders there is a lenghty delay while the fog map is generated. Ideally you would use this to write the fog map/ visiblity data to a JSON or YML or some other custom game data file and read it directly to avoid the lengthy startup.**
 
-**NOTE: This current project does not handle transparency of enemy units. This can be added easily by registering units with the fog of war system and doing a lookup on the fog map/ fog tile, retrieving Visibility and pumping it through a transparency shader. An example can be seen in my XenkoFogOfWarPlus on the enemy unit shader. This way enemy units or characters will fade into visibility as fog is revealed.
+**NOTE: This current project does not handle transparency of enemy units. This can be added easily by registering units with the fog of war system and doing a lookup on the fog map/ fog tile, retrieving Visibility and pumping it through a transparency shader. An example can be seen in my XenkoFogOfWarPlus on the enemy unit shader. This way enemy units or characters will fade into visibility as fog is revealed.**
 
 
 To use:
