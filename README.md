@@ -15,12 +15,12 @@ This is a directional fog of war system written for Xenko, feel free to use it d
 - For smoother fog not only can you adjust post effects settings, but also the scale of tiles
 - Game profiler is attached, control-shift-p, WASD to move around
 
->>>Runs very quickl as it only uses table lookups and simple up/down logics<<<
++Runs quickly as it only uses table lookups and simple up/down logics.
 
  <img src="Screenshot.png">
  <img src="Settings.png">
  
- [Video can be found here](INSERT VIDEO)
+ [Video can be found here](https://youtu.be/mK5pqtN96-o)
 
 **NOTE: Before the scene renders there is a lenghty delay while the fog map is generated. Ideally you would write the fog map/ visiblity data to a JSON or some other custom game data file and read it from disk to avoid the lengthy startup.**
 
