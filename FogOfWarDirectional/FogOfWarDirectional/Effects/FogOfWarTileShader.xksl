@@ -6,18 +6,21 @@
 
         cbuffer PerMaterial 
         {
-            stage int Rows;
-            stage float FogMap[4094]; // Minus two for additional variables
+            stage float Rows;
+            stage float Scale;
+            stage float FogMap[4094];
         }
 
         override float4 Compute()
         {
-            if (streams.Position.x < 0 || streams.Position.x > Rows||
+            if (streams.Position.x < 0 || streams.Position.x > Rows ||
                 streams.Position.z < 0 || streams.Position.z > Rows) {
                     return float4(0, 0, 0, 0);
                 }
 
-            var index = (round(streams.Position.x) * Rows + round(streams.Position.z));
+            var index = trunc(streams.Position.x / Scale) * Rows + trunc(streams.Position.z / Scale);
+            //var index = (round(streams.Position.x) * Rows + round(streams.Position.z));
+
             return float4(0, FogMap[index], 0, 0);
         }
     };

@@ -74,7 +74,7 @@ Hierarchy:
                         Id: e9db08cf-25be-411d-a926-68ebac015ed0
                         Enable: true
                         Tile: 1f3666af-137a-4f1a-bc2e-0a05eb4dc1a1:Prefabs/FogTile
-                        Scale: 1.0
+                        Scale: 2.0
                         Rows: 26
                         Columns: 26
                         Vision: 8.0

@@ -149,7 +149,7 @@ namespace FogOfWarDirectional
                 return;
             }
 
-            fogMap = new FogTile[Columns * Rows];
+            fogMap = new FogTile[Convert.ToInt32(Rows * Columns/Scale)];
             State = new ConcurrentDictionary<Vector2, bool>();
             fogVisibilityMap = new ConcurrentDictionary<Vector2, FastList<Vector2>>();
             simulation = this.GetSimulation();
@@ -159,8 +159,8 @@ namespace FogOfWarDirectional
 
             // Generate master fog map
             var fogMapIndex = 0;
-            for (var x = 0; x < Columns; x++) {
-                for (var z = 0; z < Rows; z++) {
+            for (var x = 0; x < Columns / Scale; x++) {
+                for (var z = 0; z < Rows / Scale; z++) {
                     var coord = new Vector2(x, z);
 
                     var fogTileEntity = Tile.Instantiate().First();
@@ -221,7 +221,8 @@ namespace FogOfWarDirectional
             }
 
             shaderParamsPre = FogOfWarPre.GetMaterial(0)?.Passes[0]?.Parameters;
-            shaderParamsPre?.Set(FogOfWarTileShaderKeys.Rows, Rows);
+            shaderParamsPre?.Set(FogOfWarTileShaderKeys.Rows, Rows / Scale);
+            shaderParamsPre?.Set(FogOfWarTileShaderKeys.Scale, Scale);
             shaderParamsPre?.Set(FogOfWarTileShaderKeys.FogMap, fogMap.Select(a => a.Visibility).ToArray());
 
             shaderParamsPost = FogOfWarPost.GetMaterial(0)?.Passes[0]?.Parameters;
