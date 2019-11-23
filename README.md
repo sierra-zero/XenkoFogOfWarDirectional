@@ -1,4 +1,4 @@
-# FogOfWarDirectional
+# Xenko FogOfWarDirectional (System)
 
 This is a directional fog of war system written for Xenko, feel free to use it directly or as an example. I am an amature so comments and/or PR's are welcomed. It consists of the following:
 - When the project is launched there is a lengthy pause while the fog map is computed
