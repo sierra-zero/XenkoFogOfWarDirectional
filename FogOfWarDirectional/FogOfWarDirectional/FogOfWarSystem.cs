@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Linq;
-using System.Xml;
 using Xenko.Core.Collections;
 using Xenko.Core.Mathematics;
 using Xenko.Engine;
@@ -149,7 +148,7 @@ namespace FogOfWarDirectional
                 return;
             }
 
-            fogMap = new FogTile[Convert.ToInt32(Rows * Columns/Scale)];
+            fogMap = new FogTile[Convert.ToInt32((Rows/Scale) * (Columns/Scale))];
             State = new ConcurrentDictionary<Vector2, bool>();
             fogVisibilityMap = new ConcurrentDictionary<Vector2, FastList<Vector2>>();
             simulation = this.GetSimulation();

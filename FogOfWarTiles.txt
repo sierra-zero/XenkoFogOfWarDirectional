@@ -13,17 +13,7 @@ Goals:
 ==================================================================
 ==================================================================
 
-**Converted project to DX10 for development on laptop**
-
-
-[WIP] 1) Implemented scaling, will need to test.
-
-6) Implement coding style for braces.
-9) Resolve Resharper findings.
-
---------------
-
 5) Move back to Windows and target DX11.
-7) Test and Polish with flows & lights.
+7) Test and Polish with flowers & lights.
 8) Release with a video.
 

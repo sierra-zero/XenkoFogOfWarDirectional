@@ -15,6 +15,7 @@ namespace FogOfWarDirectional
 
         private float fadeDelta;
         private bool tileSeen;
+
         private readonly GameTime gameTime;
         private readonly float fadeRate;
 

@@ -74,12 +74,12 @@ Hierarchy:
                         Id: e9db08cf-25be-411d-a926-68ebac015ed0
                         Enable: true
                         Tile: 1f3666af-137a-4f1a-bc2e-0a05eb4dc1a1:Prefabs/FogTile
-                        Scale: 2.0
+                        Scale: 0.5
                         Rows: 26
                         Columns: 26
-                        Vision: 8.0
+                        Vision: 9.0
                         Sweep: 1.0
-                        Fade: 0.75
+                        Fade: 2.5
                         Opacity: 0.925
                         Character: ref!! 627bd541-5360-4ba9-8222-68dcd6c8f76d
                         FogOfWarPre: ref!! 3a9447da-299e-4be8-906a-e222c2ed8919
@@ -225,8 +225,9 @@ Hierarchy:
                             3081daa39a16c7d0615b24896ea0ccb2: ref!! 0be016d6-6f23-4d72-a5c3-3895b1cea2eb
                             f949b843d1c73da408186d6f2729bbab: ref!! e62f4f36-566f-4f2f-8cf7-175887fbff3d
                             a52403bce761a794c1338dbcf1d492c5: ref!! 2c174688-0ca2-488c-97c9-dc22bef7d6e6
+                            392b1935dac0894cb140a2e01b993937: ref!! ecd73b48-1c0a-44f0-bced-2998dd6bf6ae
                             20f3247971ba7eb40ba7156f7bf613d1: ref!! 59db454b-2e4c-4b11-a55a-d179d1329e44
-                            468d12b8470bbdb451fcc8c8e0e4d491: ref!! 278a75fc-3751-4d75-9482-9f16b8b5b1a0
+                            81d6a06a84e5709e06f491ecf01730f2: ref!! 4a8f5c2b-5840-45d7-bf10-128bc55ea66d
                             f733f943f7bc12277042e406571fc30a: ref!! a9bc5f2e-a540-4465-b962-afa91e9ab1e8
                             0ed9d997e2e1e767d4367a4600c88fed: ref!! 44596023-7894-483c-a734-8af29dda7a00
                             379d489fe81e8b6f47522dc6f472caf7: ref!! 1cb1845d-ea6d-4e3d-a6ed-494d07351c20
@@ -236,6 +237,22 @@ Hierarchy:
                 BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
                 BasePartId: 01f92b29-c445-4269-a1dc-47b776c18c47
                 InstanceId: a086892a-f946-4320-ab25-856a8ec459de
+        -   Folder: null
+            Entity:
+                Id: 1827ab88-d522-4831-a5c3-14e031e3dd25
+                Name: naturePack_008
+                Components:
+                    b2f9bf93dd024be7bcf2e0d206a83c44: !TransformComponent
+                        Id: 4a8f5c2b-5840-45d7-bf10-128bc55ea66d
+                        Position*: {X: 7.044123, Y: -0.25, Z: -10.8464775}
+                        Rotation*: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            bbbc541dbd5c81f8d1654bf364f44b55: ref!! 23babfce-36d1-41f5-b7fe-e0b004447afd
+            Base:
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 713529ac-10c8-4dc9-9a82-dfb24d7a250a
+                InstanceId: 8493ff8e-37c6-4829-99ff-f4918e74a771
         -   Entity:
                 Id: 1b323acc-122d-4e44-9d29-736ee0ff43e7
                 Name: wall_collider
@@ -266,6 +283,22 @@ Hierarchy:
                 BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
                 BasePartId: ca3fba34-65f6-4f06-a96d-891a93ca3a9e
                 InstanceId: a086892a-f946-4320-ab25-856a8ec459de
+        -   Folder: null
+            Entity:
+                Id: 1baaa4eb-d52a-4270-921b-92183bcc3a1e
+                Name: naturePack_014
+                Components:
+                    3657c454a20f09d2a762e83a74039abd: !TransformComponent
+                        Id: ecd73b48-1c0a-44f0-bced-2998dd6bf6ae
+                        Position*: {X: 15.91885, Y: 0.0, Z: -5.68450165}
+                        Rotation*: {X: 0.0, Y: 0.258819044, Z: 0.0, W: 0.9659258}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            a0845c1e9f86d046a46e75a5fd2bf50f: ref!! 4a4a6abb-b391-4aa2-b327-a6531951055a
+            Base:
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: fa5023a5-91ea-4159-90d0-dbf3f4c44da5
+                InstanceId: 51a631ed-7146-4ea9-a069-2c1f90ac865f
         -   Entity:
                 Id: 1c7f48b5-459d-4a1a-8f12-484809600e58
                 Name: Ambient light
@@ -924,6 +957,37 @@ Hierarchy:
                 BasePartId: cd00457d-35dc-4f0c-b8e9-01ca25b63529
                 InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
+                Id: 6ad586c7-4f22-4743-b6fe-be8581cac890
+                Name: naturePack_008
+                Components:
+                    45362535727748e706526d8d80303203: !TransformComponent
+                        Id: 23babfce-36d1-41f5-b7fe-e0b004447afd
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    08b0ed3f5237ea1218a6c272000ecd33: !ModelComponent
+                        Id: 6b839baf-8682-42a3-9270-a9a082fff2cd
+                        Model: 82c7079d-5c71-4fe1-bd2e-f83a9d094452:Models/naturePack_008
+                        Materials: {}
+                    22825e90c4417e238276a88090122a7d: !StaticColliderComponent
+                        Id: d7b27922-eea7-493d-b58e-b3b3ae959d2e
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            e3141c585c878fc312f02b56771e6474: !ColliderShapeAssetDesc
+                                Shape: 06e356fc-831c-4441-b861-4e24a4af9fc3:Terrain/naturePack_008_hull
+            Base:
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 60584bd1-f78c-4316-9f89-677c78e276f0
+                InstanceId: 8493ff8e-37c6-4829-99ff-f4918e74a771
+        -   Entity:
                 Id: 6b3e24a8-7c19-413e-a6ef-1854ef540906
                 Name: naturePack_116
                 Components:
@@ -1405,6 +1469,37 @@ Hierarchy:
                 BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
                 BasePartId: 92fe0500-9b13-4bfc-9feb-3556f1300c00
                 InstanceId: a086892a-f946-4320-ab25-856a8ec459de
+        -   Entity:
+                Id: 94dec829-6a0a-448c-9c54-beb5c8933771
+                Name: naturePack_014
+                Components:
+                    6c9acaf7b0ca22bb3636f98c29f255e0: !TransformComponent
+                        Id: 4a4a6abb-b391-4aa2-b327-a6531951055a
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.65, Y: 1.65, Z: 1.65}
+                        Children: {}
+                    71b42da6f642bf922fa6568af5c6a555: !ModelComponent
+                        Id: 65bb9cc3-82e7-486d-8d46-67470c9ba14c
+                        Model: 65ed08f7-1210-475b-98a7-c7585235d0cb:Models/naturePack_014
+                        Materials: {}
+                    01f06cf2e3c620a250bf67ac57ee5dfd: !StaticColliderComponent
+                        Id: ad92ff99-547a-4100-b500-d30e6f92e572
+                        CollisionGroup: StaticFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        ColliderShapes:
+                            e064728d24d4aa75527495b6c224e4b2: !ColliderShapeAssetDesc
+                                Shape: 36513c4f-52a8-4222-b94c-3f805d21e9d8:Terrain/naturePack_014_hull
+            Base:
+                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
+                BasePartId: 4126851e-8f17-48d3-ae19-64e0e62a08ef
+                InstanceId: 51a631ed-7146-4ea9-a069-2c1f90ac865f
         -   Folder: null
             Entity:
                 Id: 9f3aedd2-d204-4aaa-bd23-c4a4c86b60a7
@@ -1516,37 +1611,6 @@ Hierarchy:
                 BasePartId: 0a8cfb8e-31fb-410f-ad19-69614180f357
                 InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Entity:
-                Id: ae70a2f5-bb7f-4166-bd05-c96c3d428b49
-                Name: naturePack_009
-                Components:
-                    f7506df7bdc50d6c7759b96ab7945cbb: !TransformComponent
-                        Id: 6231fa8a-e33d-430e-ad4d-07cd5f5e3f45
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    dfaf768b093d4f6b7c6cc3f3ecdf32d4: !ModelComponent
-                        Id: 8d337025-d5f4-492c-ab76-e4b3064bea91
-                        Model: fe51c1b2-3794-49c1-b372-427336586731:Models/naturePack_009
-                        Materials: {}
-                    14fd6cec745e32fcb6605339371bcffd: !StaticColliderComponent
-                        Id: 017a4a66-2ac2-4d4f-83ef-92855d41f567
-                        CollisionGroup: StaticFilter
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        IsTrigger: false
-                        ColliderShapes:
-                            e5ea3bff3d37b2e13b3cf79d7b86a9cd: !ColliderShapeAssetDesc
-                                Shape: 7286cbca-d7ab-4813-821f-4369b677a9fc:Terrain/naturePack_009_hull
-            Base:
-                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
-                BasePartId: 80733907-06a6-4bce-b60c-a3c16430a254
-                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
-        -   Entity:
                 Id: b0cb0480-c1af-49d7-98eb-1e639a006cb8
                 Name: naturePack_116
                 Components:
@@ -1630,7 +1694,7 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     9ff85ee76ca02540720240ee13d1fdb6: !FogOfWarDirectional.PlayerController,FogOfWarDirectional
                         Id: 87ade47e-3c27-451d-8e0d-a907bfca59ff
-                        Speed: 90.0
+                        Speed: 180.0
                     727952bcf60d376656256f27e3e75409: !FogOfWarDirectional.FogDetector,FogOfWarDirectional
                         Id: d3ffd13e-7935-42ac-bffe-efb366bd934f
                         Priority: 1
@@ -1865,7 +1929,7 @@ Hierarchy:
                         Children: {}
                     420e8ab2187b13958543550790544886: !FogOfWarDirectional.GameProfiler,FogOfWarDirectional
                         Id: d87ce404-2172-43ce-bb91-b63135edf9e7
-                        Enabled: true
+                        Enabled: false
                         TextColor: {R: 144, G: 238, B: 144, A: 255}
                         RefreshTime: 500.0
                         SortingMode: ByTime
@@ -2217,21 +2281,6 @@ Hierarchy:
             Base:
                 BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
                 BasePartId: 149adef8-8d18-4b40-8a3e-66d97413c14f
-                InstanceId: a086892a-f946-4320-ab25-856a8ec459de
-        -   Entity:
-                Id: ee283f72-b3f3-4903-bea9-c80ad9715c16
-                Name: naturePack_009
-                Components:
-                    a382ff20e4885d98667d5027fb1727c7: !TransformComponent
-                        Id: 278a75fc-3751-4d75-9482-9f16b8b5b1a0
-                        Position: {X: 4.09833145, Y: -0.25, Z: -8.917643}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children:
-                            fb3a3795c6bd31c8b14251bad9409b36: ref!! 6231fa8a-e33d-430e-ad4d-07cd5f5e3f45
-            Base:
-                BasePartAsset: f7581d37-d6ad-4775-aa03-9dc606dd0efd:Prefabs/Arena
-                BasePartId: fe6954aa-2318-4999-890f-7104328c8ae7
                 InstanceId: a086892a-f946-4320-ab25-856a8ec459de
         -   Folder: null
             Entity:
