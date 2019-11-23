@@ -1,8 +1,6 @@
-﻿
-using System;
+﻿using System;
 using System.Threading.Tasks;
 using Xenko.Core.Mathematics;
-using Xenko.Core.Diagnostics;
 using Xenko.Input;
 using Xenko.Engine;
 using Xenko.Profiling;
@@ -49,8 +47,9 @@ namespace FogOfWarDirectional
 
         public override async Task Execute()
         {
-            if (Enabled)
+            if (Enabled) {
                 GameProfiler.EnableProfiling();
+            }
 
             while (Game.IsRunning)
             {

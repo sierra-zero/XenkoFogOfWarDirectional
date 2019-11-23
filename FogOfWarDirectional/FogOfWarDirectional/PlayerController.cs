@@ -2,6 +2,7 @@
 using Xenko.Input;
 using Xenko.Engine;
 using Xenko.Physics;
+using System;
 
 namespace FogOfWarDirectional
 {

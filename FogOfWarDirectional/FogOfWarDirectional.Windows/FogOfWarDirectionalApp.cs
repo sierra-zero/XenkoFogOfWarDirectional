@@ -1,4 +1,7 @@
 using Xenko.Engine;
+// ReSharper disable UnusedParameter.Local
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable ArrangeTypeModifiers
 
 namespace FogOfWarDirectional.Windows
 {

@@ -18,7 +18,8 @@ namespace FogOfWarDirectional
 {
     public static partial class FogOfWarTileShaderKeys
     {
-        public static readonly ValueParameterKey<int> Rows = ParameterKeys.NewValue<int>();
+        public static readonly ValueParameterKey<float> Rows = ParameterKeys.NewValue<float>();
+        public static readonly ValueParameterKey<float> Scale = ParameterKeys.NewValue<float>();
         public static readonly ValueParameterKey<float> FogMap = ParameterKeys.NewValue<float>();
     }
 }

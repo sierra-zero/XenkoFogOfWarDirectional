@@ -15,6 +15,7 @@ namespace FogOfWarDirectional
 
         private float fadeDelta;
         private bool tileSeen;
+
         private readonly GameTime gameTime;
         private readonly float fadeRate;
 
@@ -22,7 +23,7 @@ namespace FogOfWarDirectional
         {
             this.gameTime = gameTime;
             Coord = fogTileCoord;
-            fadeRate = fog.FadeRate;
+            fadeRate = fog.Fade;
         }
 
         public void UpdateSeen(bool seen)
